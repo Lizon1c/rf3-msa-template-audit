@@ -1,0 +1,38 @@
+{
+  "source": "/mnt/j/conda_envs/foundry/DMS_Project/inputs/GOLD_MSA/rbd_SARS_CoV_2_WH1.a3m",
+  "arms": {
+    "depth01": {
+      "n_homolog_rows": 0,
+      "L": 201
+    },
+    "depth04": {
+      "n_homolog_rows": 3,
+      "L": 201
+    },
+    "depth08": {
+      "n_homolog_rows": 7,
+      "L": 201
+    },
+    "full15": {
+      "n_homolog_rows": 14,
+      "L": 201
+    },
+    "colshuffle": {
+      "n_homolog_rows": 14,
+      "L": 201
+    },
+    "consensus": {
+      "n_homolog_rows": 14,
+      "L": 201
+    },
+    "rowshuffle": {
+      "n_homolog_rows": 14,
+      "L": 201
+    },
+    "random": {
+      "n_homolog_rows": 14,
+      "L": 201
+    }
+  },
+  "note": "row0=WT query verbatim; pipeline replaces row0 per mutant (msa.py:643)"
+}

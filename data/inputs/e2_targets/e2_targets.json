@@ -1,0 +1,419 @@
+{
+  "experiment": "E2",
+  "description": "Conformational-state-selection targets for RF3: each protein has two well-characterized experimental conformational states; 'crystallized_state' is the state that dominates the PDB.",
+  "generated": "2026-07-25",
+  "n_targets": 13,
+  "references": [
+    "Wayment-Steele et al., Nature 625:832-839 (2024) - AF-Cluster (KaiB-TV validation PDB 8UBH)",
+    "Porter & Looger, PNAS 115:5968 (2018) - fold-switching census",
+    "Dishman & Volkman, Science (2021) PMC8017559 - fold-switching review",
+    "Schafer et al., bioRxiv 617857 (2024) - AF2 fails on selecase metamorphic switch",
+    "Saldano et al., Bioinformatics 38:4959 (2022) - CoDNaS-Q conformational diversity",
+    "Monzon et al., Database baw038 (2016) - CoDNaS 2.0"
+  ],
+  "targets": [
+    {
+      "id": "E2-01",
+      "name": "KaiB",
+      "organism": "Thermosynechococcus vestitus BP-1",
+      "uniprot": "Q79V61",
+      "category": "fold-switcher",
+      "state_a": {
+        "label": "ground state (GS)",
+        "pdb": "2QKE",
+        "chain": "A-F",
+        "method": "X-RAY DIFFRACTION",
+        "resolution": 2.70,
+        "citation": "Bhatt et al. 2008 EMBO J"
+      },
+      "state_b": {
+        "label": "fold-switched (fs)",
+        "pdb": "5JYT",
+        "chain": "A",
+        "method": "SOLUTION NMR",
+        "resolution": null,
+        "citation": "Chang et al. 2017 Science; alt 5JWO chB X-ray 1.80 A (complex w/ KaiA-CI)"
+      },
+      "construct": {
+        "boundaries": "1-108",
+        "notes": "WT full length. 5JYT is a fold-switch-stabilized variant (~6 subs vs WT incl. Y8A, N30A - approximate) missing residues 100-108; use WT 1-108 for RF3."
+      },
+      "crystallized_state": "ground state (GS)",
+      "msa_depth": "shallow",
+      "dms_dataset": "none found",
+      "notes": "AF-Cluster KaiB-TV validation structure is 8UBH."
+    },
+    {
+      "id": "E2-02",
+      "name": "RfaH",
+      "organism": "Escherichia coli K-12",
+      "uniprot": "P0AFW0",
+      "category": "fold-switcher",
+      "state_a": {
+        "label": "alpha-helical autoinhibited",
+        "pdb": "2OUG",
+        "chain": "A-D",
+        "method": "X-RAY DIFFRACTION",
+        "resolution": 2.10,
+        "citation": "Belogurov et al. 2007 Mol. Cell"
+      },
+      "state_b": {
+        "label": "beta-barrel CTD",
+        "pdb": "2LCL",
+        "chain": "A",
+        "method": "SOLUTION NMR",
+        "resolution": null,
+        "citation": "Burmann et al. 2012 Cell; beta state also in cryo-EM 6C6S/6C6T"
+      },
+      "construct": {
+        "boundaries": "1-162",
+        "notes": "Full length. 2LCL covers CTD residues 101-162."
+      },
+      "crystallized_state": "alpha-helical (autoinhibited)",
+      "msa_depth": "moderate",
+      "dms_dataset": "none found",
+      "notes": "Also 5OND 2.1 A (alpha state)."
+    },
+    {
+      "id": "E2-03",
+      "name": "Mad2 (MAD2A)",
+      "organism": "Homo sapiens",
+      "uniprot": "Q13257",
+      "category": "fold-switcher",
+      "state_a": {
+        "label": "O-Mad2 (open)",
+        "pdb": "1DUJ",
+        "chain": "A",
+        "method": "SOLUTION NMR",
+        "resolution": null,
+        "citation": "Luo et al. 2000 NSMB; construct UniProt 11-195 (N-terminal truncation)"
+      },
+      "state_b": {
+        "label": "C-Mad2 (closed)",
+        "pdb": "1S2H",
+        "chain": "A",
+        "method": "SOLUTION NMR",
+        "resolution": null,
+        "citation": "Sironi et al. 2004 NSMB; 1-205"
+      },
+      "construct": {
+        "boundaries": "1-205",
+        "notes": "Full length. 1DUJ is truncated (UniProt 11-195); use full 1-205 for RF3."
+      },
+      "crystallized_state": "C-Mad2 (closed)",
+      "msa_depth": "moderate-deep",
+      "dms_dataset": "none found",
+      "notes": "C state dominates PDB: 1GO4 2.05 A, 2VFX 1.95 A, many checkpoint complexes."
+    },
+    {
+      "id": "E2-04",
+      "name": "XCL1 / lymphotactin",
+      "organism": "Homo sapiens",
+      "uniprot": "P47992",
+      "category": "fold-switcher",
+      "state_a": {
+        "label": "chemokine fold",
+        "pdb": "1J8I",
+        "chain": "A",
+        "method": "SOLUTION NMR",
+        "resolution": null,
+        "citation": "Berglund et al. 2001 Biochem; mature 22-114 (auth 1-93)"
+      },
+      "state_b": {
+        "label": "beta-sandwich",
+        "pdb": "2JP1",
+        "chain": "A,B",
+        "method": "SOLUTION NMR",
+        "resolution": null,
+        "citation": "Tuinstra et al. 2008 PNAS; X-ray support 2NYZ chD/E 2.60 A (M3 complex)"
+      },
+      "construct": {
+        "boundaries": "22-114",
+        "notes": "Mature chemokine (auth 1-93)."
+      },
+      "crystallized_state": "chemokine fold",
+      "msa_depth": "shallow",
+      "dms_dataset": "none found",
+      "notes": "Both reference states are NMR; beta-sandwich has X-ray support in 2NYZ."
+    },
+    {
+      "id": "E2-05",
+      "name": "Selecase (MJ1213)",
+      "organism": "Methanocaldococcus jannaschii",
+      "uniprot": "Q58610",
+      "category": "fold-switcher (metamorphic)",
+      "state_a": {
+        "label": "Slc-1 monomer",
+        "pdb": "4QHF",
+        "chain": "A",
+        "method": "X-RAY DIFFRACTION",
+        "resolution": 2.10,
+        "citation": "Lopez-Pelegrin et al. 2014 Angew. Chem."
+      },
+      "state_b": {
+        "label": "oligomeric autoinhibited",
+        "pdb": "4QHJ",
+        "chain": "A,B",
+        "method": "X-RAY DIFFRACTION",
+        "resolution": 1.75,
+        "citation": "Lopez-Pelegrin et al. 2014 Angew. Chem.; I100F/H107F mutant (sequence-verified)"
+      },
+      "construct": {
+        "boundaries": "1-110",
+        "notes": "Concentration-dependent monomer<->oligomer switch; C-terminal helix refolds to strand and swaps. 4QHJ is the I100F/H107F mutant; exact oligomeric order (dimer vs tetramer) undetermined."
+      },
+      "crystallized_state": "monomer",
+      "msa_depth": "shallow",
+      "dms_dataset": "none found",
+      "notes": "AF2 fails on this switch (Schafer 2024 bioRxiv 617857)."
+    },
+    {
+      "id": "E2-06",
+      "name": "GA88 / GB88 (designed)",
+      "organism": "designed (no organism)",
+      "uniprot": null,
+      "category": "fold-switcher (designed)",
+      "state_a": {
+        "label": "GA88 3-alpha-helix",
+        "pdb": "2JWS",
+        "chain": "A",
+        "method": "SOLUTION NMR",
+        "resolution": null,
+        "citation": "He/Alexander/Bryan/Orban 2008 PNAS; design Alexander 2007 PNAS 104:11963; 56 aa"
+      },
+      "state_b": {
+        "label": "GB88 alpha/beta",
+        "pdb": "2JWU",
+        "chain": "A",
+        "method": "SOLUTION NMR",
+        "resolution": null,
+        "citation": "He/Alexander/Bryan/Orban 2008 PNAS; 56 aa"
+      },
+      "construct": {
+        "boundaries": "56 aa (two sequences, 88% identical)",
+        "notes": "Two distinct sequences with 7 fold-determining substitutions - a designed fold-switch pair, NOT a single-sequence switch. GA88: TTYKLILNLKQAKEEAIKELVDAGIAEKYIKLIANAKTVEGVWTLKDEILTFTVTE."
+      },
+      "crystallized_state": "n/a (two distinct sequences)",
+      "msa_depth": "shallow",
+      "dms_dataset": "GB1 parent (Olson 2014)",
+      "notes": "No UniProt accession (designed). Use with the two-sequence caveat."
+    },
+    {
+      "id": "E2-07",
+      "name": "beta2-adrenergic receptor (beta2AR)",
+      "organism": "Homo sapiens",
+      "uniprot": "P07550",
+      "category": "GPCR",
+      "state_a": {
+        "label": "inactive",
+        "pdb": "2RH1",
+        "chain": "A",
+        "method": "X-RAY DIFFRACTION",
+        "resolution": 2.40,
+        "citation": "Rasmussen et al. 2007 Science; T4L (P00720) replaces ICL3, receptor ~1-230 + 264-365"
+      },
+      "state_b": {
+        "label": "active (Gs-bound)",
+        "pdb": "3SN6",
+        "chain": "R",
+        "method": "X-RAY DIFFRACTION",
+        "resolution": 3.20,
+        "citation": "Rasmussen et al. 2011 Nature; receptor 29-365 + T4L; alt 3P0G 3.50 A (nanobody-stabilized active)"
+      },
+      "construct": {
+        "boundaries": "1-413",
+        "notes": "Native full length. Both PDB states are T4L/fusion constructs; use native 1-413 for RF3."
+      },
+      "crystallized_state": "inactive",
+      "msa_depth": "deep",
+      "dms_dataset": "Jones et al., eLife 2020 (PMC7707821) - ~7,800/7,828 singles, CRE-reporter Gs signaling, 4 isoproterenol doses",
+      "notes": "Inactive state dominates the PDB."
+    },
+    {
+      "id": "E2-08",
+      "name": "Abl1 kinase",
+      "organism": "Homo sapiens",
+      "uniprot": "P00519",
+      "category": "kinase (DFG-in/out)",
+      "state_a": {
+        "label": "DFG-in active",
+        "pdb": "2GQG",
+        "chain": "A,B",
+        "method": "X-RAY DIFFRACTION",
+        "resolution": 2.40,
+        "citation": "Tokarski et al. 2006 Cancer Res.; +dasatinib; UniProt 229-500"
+      },
+      "state_b": {
+        "label": "DFG-out inactive",
+        "pdb": "2HYY",
+        "chain": "A-D",
+        "method": "X-RAY DIFFRACTION",
+        "resolution": 2.40,
+        "citation": "Tokarski et al. 2007 Acta Cryst S; +imatinib; UniProt 228-500; alt 1IEP (mouse P00520) 2.10 A 229-515 (Schindler 2000 Science)"
+      },
+      "construct": {
+        "boundaries": "228-500",
+        "notes": "Human kinase domain. 1OPJ rejected (also imatinib-bound / DFG-out, not a DFG-in partner)."
+      },
+      "crystallized_state": "DFG-in (active)",
+      "msa_depth": "deep",
+      "dms_dataset": "none comprehensive; clinical resistance catalogs + Lyczek 2021 (94 mutations, PMC8609647)",
+      "notes": ""
+    },
+    {
+      "id": "E2-09",
+      "name": "EGFR kinase",
+      "organism": "Homo sapiens",
+      "uniprot": "P00533",
+      "category": "kinase (alphaC-in/out)",
+      "state_a": {
+        "label": "alphaC-in active",
+        "pdb": "1M17",
+        "chain": "A",
+        "method": "X-RAY DIFFRACTION",
+        "resolution": 2.60,
+        "citation": "Stamos et al. 2002 JBC; +erlotinib; UniProt 695-1022"
+      },
+      "state_b": {
+        "label": "alphaC-out inactive",
+        "pdb": "1XKK",
+        "chain": "A",
+        "method": "X-RAY DIFFRACTION",
+        "resolution": 2.40,
+        "citation": "Stamos et al. 2004 Cancer Res.; +lapatinib; UniProt 695-1022"
+      },
+      "construct": {
+        "boundaries": "695-1022",
+        "notes": "Kinase domain. 2GS6 is active + ATP-analog; 5C8M/5CAV are allosteric-site mutant structures (not used)."
+      },
+      "crystallized_state": "active (alphaC-in)",
+      "msa_depth": "deep",
+      "dms_dataset": "Hayes 2024 Nat Commun (s41467-024-45594-4) ~22,500 variants full-length PC9; + 2025 bioRxiv 646429 KD-DMS (L858R, BLU-945)",
+      "notes": "Active state dominates the PDB."
+    },
+    {
+      "id": "E2-10",
+      "name": "LacY (lactose permease)",
+      "organism": "Escherichia coli K-12",
+      "uniprot": "P02920",
+      "category": "transporter (MFS, inward/outward)",
+      "state_a": {
+        "label": "inward-facing",
+        "pdb": "1PV6",
+        "chain": "A,B",
+        "method": "X-RAY DIFFRACTION",
+        "resolution": 3.50,
+        "citation": "Abramson et al. 2003 Science; C154G mutant (sequence-verified); WT alt 2V8N 3.60 A"
+      },
+      "state_b": {
+        "label": "outward-facing",
+        "pdb": "4OAA",
+        "chain": "A,B",
+        "method": "X-RAY DIFFRACTION",
+        "resolution": 3.50,
+        "citation": "Dang/Kaback 2014 PNAS; G46W/G262W + sugar (sequence-verified; no PDBe SIFTS, RCSB maps to engineered B1XBJ1); alt 5GXB 3.30 A"
+      },
+      "construct": {
+        "boundaries": "1-417",
+        "notes": "Full length. Both reference states carry point mutations; WT outward alternative is limited."
+      },
+      "crystallized_state": "inward-facing",
+      "msa_depth": "deep (MFS)",
+      "dms_dataset": "none found (cf. Kaback classical cysteine-scanning)",
+      "notes": ""
+    },
+    {
+      "id": "E2-11",
+      "name": "Ubiquitin",
+      "organism": "Homo sapiens",
+      "uniprot": "P0CG48",
+      "category": "X-ray vs NMR (same construct)",
+      "state_a": {
+        "label": "crystal",
+        "pdb": "1UBQ",
+        "chain": "A",
+        "method": "X-RAY DIFFRACTION",
+        "resolution": 1.80,
+        "citation": "Vijay-Kumar et al. 1987 JMB"
+      },
+      "state_b": {
+        "label": "solution NMR",
+        "pdb": "1D3Z",
+        "chain": "A",
+        "method": "SOLUTION NMR",
+        "resolution": null,
+        "citation": "Cornilescu et al. 1998 JACS"
+      },
+      "construct": {
+        "boundaries": "1-76",
+        "notes": "Single 76-aa unit (polyubiquitin PDB mapping 609-684). Bias note: C-tail 72-76 ordered in crystal, flexible in solution."
+      },
+      "crystallized_state": "crystal (1UBQ)",
+      "msa_depth": "very deep",
+      "dms_dataset": "Roscoe 2013 JMB 425:1583-77 (PMC3615125, PMID 23376099) all point mutants, yeast growth; + Roscoe & Bolon 2014 JMB 426:2854",
+      "notes": "Cleanest crystal-vs-solution bias check at high resolution."
+    },
+    {
+      "id": "E2-12",
+      "name": "GB1 (protein G B1 domain)",
+      "organism": "Streptococcus group G",
+      "uniprot": "P06654",
+      "category": "X-ray vs NMR (same construct)",
+      "state_a": {
+        "label": "crystal",
+        "pdb": "1PGB",
+        "chain": "A",
+        "method": "X-RAY DIFFRACTION",
+        "resolution": 1.92,
+        "citation": "Derrick & Wigley 1994 Biochem; auth 2-56; alts 1PGA 2.07 A, 2QMT 1.05 A (P19909 variant)"
+      },
+      "state_b": {
+        "label": "solution NMR",
+        "pdb": "2GB1",
+        "chain": "A",
+        "method": "SOLUTION NMR",
+        "resolution": null,
+        "citation": "Gronenborn et al. 1991 Science; alt 3GB1"
+      },
+      "construct": {
+        "boundaries": "56-aa B1 domain (UniProt 228-282; MTYKLI...TVTE)",
+        "notes": "Cleanest single-domain bias control."
+      },
+      "crystallized_state": "crystal (1PGB)",
+      "msa_depth": "shallow",
+      "dms_dataset": "Olson et al. 2014 singles at 55 positions + pairwise, IgG-Fc binding ('GB1(55)', journal likely Curr. Biol. 24:2641 - approximate); + Wu 2016 4-site combinatorial",
+      "notes": ""
+    },
+    {
+      "id": "E2-13",
+      "name": "Thioredoxin (TrxA)",
+      "organism": "Escherichia coli K-12",
+      "uniprot": "P0AA25",
+      "category": "X-ray vs NMR (same construct)",
+      "state_a": {
+        "label": "crystal (oxidized)",
+        "pdb": "2TRX",
+        "chain": "A,B",
+        "method": "X-RAY DIFFRACTION",
+        "resolution": 1.68,
+        "citation": "Katti et al. 1990 JMB; UniProt 2-109 / auth 1-108"
+      },
+      "state_b": {
+        "label": "solution NMR (oxidized)",
+        "pdb": "1XOA",
+        "chain": "A",
+        "method": "SOLUTION NMR",
+        "resolution": null,
+        "citation": "Jeng & Dyson 1994 Structure; 1XOB = reduced (not used)"
+      },
+      "construct": {
+        "boundaries": "1-108 (auth) / 2-109 (UniProt)",
+        "notes": "Both reference structures are the oxidized form, so redox state is matched and the comparison isolates crystal-vs-solution bias."
+      },
+      "crystallized_state": "crystal (2TRX)",
+      "msa_depth": "deep",
+      "dms_dataset": "none found",
+      "notes": ""
+    }
+  ]
+}

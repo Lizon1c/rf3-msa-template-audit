@@ -1,0 +1,67 @@
+{
+  "id": "E2-05",
+  "name": "Selecase (MJ1213)",
+  "uniprot": "Q58610",
+  "boundaries_raw": "1-110",
+  "states": {
+    "stateA": {
+      "pdb": "4QHF",
+      "chain_spec": "A",
+      "chain_used": "A",
+      "boundaries_raw": "1-110",
+      "boundaries_parsed": [
+        1,
+        110
+      ],
+      "residue_range_used": [
+        1,
+        109
+      ],
+      "n_residues": 109,
+      "full_chain_length": 109,
+      "npy": "E2-05_stateA_4QHF.npy",
+      "sequence": "MKDRKILNEILSNTINELNLNDKKANIKIKIKPLKRKIASISLTNKTIYINKNILPYLSDEEIRFILAHELLHLKYGKYHINEFEEELLFLFPNKEAILINLINKLHQK",
+      "seqres_sequence": "MKDRKILNEILSNTINELNLNDKKANIKIKIKPLKRKIASISLTNKTIYINKNILPYLSDEEIRFILAHELLHLKYGKYHINEFEEELLFLFPNKEAILINLINKLHQKK",
+      "flags": [
+        "partial coverage: range 1-110 expects 110 residues, extracted 109 (auth 1-109); chain auth span 1-109, full length 109"
+      ],
+      "ok": true,
+      "error": null,
+      "download": "ok",
+      "shape": [
+        109,
+        109
+      ]
+    },
+    "stateB": {
+      "pdb": "4QHJ",
+      "chain_spec": "A,B",
+      "chain_used": "A",
+      "boundaries_raw": "1-110",
+      "boundaries_parsed": [
+        1,
+        110
+      ],
+      "residue_range_used": [
+        1,
+        108
+      ],
+      "n_residues": 108,
+      "full_chain_length": 108,
+      "npy": "E2-05_stateB_4QHJ.npy",
+      "sequence": "MKDRKILNEILSNTINELNLNDKKANIKIKIKPLKRKIASISLTNKTIYINKNILPYLSDEEIRFILAHELLHLKYGKYHINEFEEELLFLFPNKEAILFNLINKLFQ",
+      "seqres_sequence": "MKDRKILNEILSNTINELNLNDKKANIKIKIKPLKRKIASISLTNKTIYINKNILPYLSDEEIRFILAHELLHLKYGKYHINEFEEELLFLFPNKEAILFNLINKLFQKK",
+      "flags": [
+        "multi-chain spec 'A,B': used first chain 'A'",
+        "partial coverage: range 1-110 expects 110 residues, extracted 108 (auth 1-108); chain auth span 1-108, full length 108"
+      ],
+      "ok": true,
+      "error": null,
+      "download": "ok",
+      "shape": [
+        108,
+        108
+      ]
+    }
+  }
+}

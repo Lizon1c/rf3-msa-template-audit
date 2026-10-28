@@ -1,0 +1,67 @@
+{
+  "id": "E2-04",
+  "name": "XCL1 / lymphotactin",
+  "uniprot": "P47992",
+  "boundaries_raw": "22-114",
+  "states": {
+    "stateA": {
+      "pdb": "1J8I",
+      "chain_spec": "A",
+      "chain_used": "A",
+      "boundaries_raw": "22-114",
+      "boundaries_parsed": [
+        22,
+        114
+      ],
+      "residue_range_used": [
+        22,
+        93
+      ],
+      "n_residues": 72,
+      "full_chain_length": 93,
+      "npy": "E2-04_stateA_1J8I.npy",
+      "sequence": "SRIKTYTITEGSLRAVIFITKRGLKVCADPQATWVRDVVRSMDRKSNTRNNMIQTKPTGTQQSTNTAVTLTG",
+      "seqres_sequence": "VGSEVSDKRTCVSLTTQRLPVSRIKTYTITEGSLRAVIFITKRGLKVCADPQATWVRDVVRSMDRKSNTRNNMIQTKPTGTQQSTNTAVTLTG",
+      "flags": [
+        "partial coverage: range 22-114 expects 93 residues, extracted 72 (auth 22-93); chain auth span 1-93, full length 93"
+      ],
+      "ok": true,
+      "error": null,
+      "download": "ok",
+      "shape": [
+        72,
+        72
+      ]
+    },
+    "stateB": {
+      "pdb": "2JP1",
+      "chain_spec": "A,B",
+      "chain_used": "A",
+      "boundaries_raw": "22-114",
+      "boundaries_parsed": [
+        22,
+        114
+      ],
+      "residue_range_used": [
+        22,
+        60
+      ],
+      "n_residues": 39,
+      "full_chain_length": 60,
+      "npy": "E2-04_stateB_2JP1.npy",
+      "sequence": "SRIKTYTITEGSLRAVIFITKRGLKVCADPQATWVRDVV",
+      "seqres_sequence": "VGSEVSDKRTCVSLTTQRLPVSRIKTYTITEGSLRAVIFITKRGLKVCADPQATWVRDVVRSMDRKSNTRNNMIQTKPTGTQQSTNTAVTLTG",
+      "flags": [
+        "multi-chain spec 'A,B': used first chain 'A'",
+        "partial coverage: range 22-114 expects 93 residues, extracted 39 (auth 22-60); chain auth span 1-60, full length 60"
+      ],
+      "ok": true,
+      "error": null,
+      "download": "ok",
+      "shape": [
+        39,
+        39
+      ]
+    }
+  }
+}

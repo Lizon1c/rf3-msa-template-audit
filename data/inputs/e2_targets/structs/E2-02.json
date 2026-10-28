@@ -1,0 +1,67 @@
+{
+  "id": "E2-02",
+  "name": "RfaH",
+  "uniprot": "P0AFW0",
+  "boundaries_raw": "1-162",
+  "states": {
+    "stateA": {
+      "pdb": "2OUG",
+      "chain_spec": "A-D",
+      "chain_used": "A",
+      "boundaries_raw": "1-162",
+      "boundaries_parsed": [
+        1,
+        162
+      ],
+      "residue_range_used": [
+        2,
+        156
+      ],
+      "n_residues": 141,
+      "full_chain_length": 141,
+      "npy": "E2-02_stateA_2OUG.npy",
+      "sequence": "QSWYLLYCKRGQLQRAQEHLERQAVNCLAPMITLEKIVRGKRTAVSEPLFPNYLFVEFDPEVIHTTTINATRGVSHFVRFGASPAIVPSAVIHQLSVYKKVIITEGAFEGFQAIFTEPDGEARSMLLLNLINKEIKHSVKN",
+      "seqres_sequence": "MQSWYLLYCKRGQLQRAQEHLERQAVNCLAPMITLEKIVRGKRTAVSEPLFPNYLFVEFDPEVIHTTTINATRGVSHFVRFGASPAIVPSAVIHQLSVYKPKDIVDPATPYPGDKVIITEGAFEGFQAIFTEPDGEARSMLLLNLINKEIKHSVKNTEFRKL",
+      "flags": [
+        "multi-chain spec 'A-D': used first chain 'A'",
+        "partial coverage: range 1-162 expects 162 residues, extracted 141 (auth 2-156); chain auth span 2-156, full length 141"
+      ],
+      "ok": true,
+      "error": null,
+      "download": "ok",
+      "shape": [
+        141,
+        141
+      ]
+    },
+    "stateB": {
+      "pdb": "2LCL",
+      "chain_spec": "A",
+      "chain_used": "A",
+      "boundaries_raw": "1-162",
+      "boundaries_parsed": [
+        1,
+        162
+      ],
+      "residue_range_used": [
+        97,
+        162
+      ],
+      "n_residues": 66,
+      "full_chain_length": 66,
+      "npy": "E2-02_stateB_2LCL.npy",
+      "sequence": "GAMGPKDIVDPATPYPGDKVIITEGAFEGFQAIFTEPDGEARSMLLLNLINKEIKHSVKNTEFRKL",
+      "seqres_sequence": "GAMGPKDIVDPATPYPGDKVIITEGAFEGFQAIFTEPDGEARSMLLLNLINKEIKHSVKNTEFRKL",
+      "flags": [
+        "partial coverage: range 1-162 expects 162 residues, extracted 66 (auth 97-162); chain auth span 97-162, full length 66"
+      ],
+      "ok": true,
+      "error": null,
+      "download": "ok",
+      "shape": [
+        66,
+        66
+      ]
+    }
+  }
+}

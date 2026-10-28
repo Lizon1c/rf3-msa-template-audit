@@ -1,0 +1,407 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,margin=20mm]{geometry}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs,tabularx,array}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{tocloft}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\definecolor{primary}{RGB}{22,68,119}
+\definecolor{secondary}{RGB}{45,95,145}
+\definecolor{rulecolor}{RGB}{180,195,210}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    urlcolor=secondary,
+    pdftitle={S1 Text: Extended methods, analysis artifact notes, and supporting information accounting},
+    pdfauthor={Cheng Ding}
+}
+
+\setlength{\parskip}{4pt plus 1pt minus 1pt}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{4.5pt}
+\renewcommand{\arraystretch}{1.15}
+\setlist{itemsep=2pt,topsep=3pt,parsep=0pt}
+
+\renewcommand{\thesection}{S1.\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thetable}{\Alph{table}}
+\captionsetup{font=small,labelfont={bf,color=primary},skip=5pt}
+\captionsetup[table]{name=Table,labelsep=period}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize\textcolor{secondary}{\textit{S1 Text: RF3 Input-Channel Audit}}}
+\fancyhead[R]{\footnotesize\textcolor{secondary}{\textit{Ding}}}
+\fancyfoot[C]{\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\newcommand{\Zno}{\mathbf{Z}_{\mathrm{no}}}
+\newcommand{\Zmsa}{\mathbf{Z}_{\mathrm{msa}}}
+\newcommand{\FAESM}{\texttt{FAESM}}
+
+\begin{document}
+
+\begin{center}
+    {\Large\textbf{\color{primary}S1 Text}}\\[8pt]
+    {\LARGE\textbf{\color{primary}Extended methods, analysis artifact notes, and supporting information accounting}}\\[12pt]
+    {\large\textbf{An input-channel audit of RoseTTAFold3: MSA writing, mutation-effect prediction, and conformational-state selection}}\\[12pt]
+    {\normalsize Cheng Ding\textsuperscript{1,*}}\\[6pt]
+    {\small \textsuperscript{1}School of Life Science and Technology, ShanghaiTech University, Shanghai, China}\\[3pt]
+    {\small * Correspondence: \href{mailto:dingcheng2024@shanghaitech.edu.cn}{dingcheng2024@shanghaitech.edu.cn}}
+\end{center}
+
+\vspace{4pt}
+\noindent\textcolor{rulecolor}{\rule{\textwidth}{0.8pt}}
+
+\section{Purpose and relation to the main manuscript}
+
+This supporting text documents the implementation details, quality-control checks, and analysis boundaries needed to interpret the main manuscript. It is intended to make each transformation traceable from input channel to representation or sampled structure, and then to the relevant downstream readout. It does not introduce additional experiments or replace the numerical supporting tables. Protocol identifiers (E1, E7, E49, E427, E428, E429, and D1) are retained solely to link the description to the archived analysis.
+
+A central convention is that absolute Spearman $\rho$ values are compared only within a common feature set, split scheme, normalization convention, readout head, and checkpoint-selection rule. Distogram negative log-likelihood (NLL) and coordinate RMSD are likewise separate readouts: their signs can be compared after orienting both toward the same state, but their numerical magnitudes and uncertainties are not interchangeable.
+
+Literature citations for RoseTTAFold3 (RF3), ESM-2, the deep mutational scanning (DMS) datasets, linear centered kernel alignment (CKA), and the experimental state structures are provided in the main manuscript. S1--S4 Tables and S1--S2 Figs are separate supporting items; Tables A and B below belong specifically to this S1 Text.
+
+\setcounter{tocdepth}{1}
+\setlength{\cftsecnumwidth}{4em}
+\tableofcontents
+
+\section{Protocol map and shared model configuration}
+
+\subsection{Fixed model and input channels}
+
+All experiments used one fixed RF3 checkpoint and inference configuration: 10 recycles, 50 diffusion steps, and diffusion batch size 2. Within each recycle, four MSA blocks updated the residue-pair representation through operations including outer-product mean, after which the explicit MSA representation was discarded. The pair representation therefore served as the carrier of alignment information into subsequent trunk operations.
+
+The extracted trunk tensor is denoted $\mathbf{Z}_{\mathrm{II}}\in\mathbb{R}^{L\times L\times128}$ and was saved immediately after the distogram-head projection. The principal input conditions were sequence-only (no MSA), MSA-conditioned, template-conditioned, and jointly MSA/template-conditioned inference. A no-MSA arm bypasses the MSA pathway; it is not equivalent to passing a single query row through that pathway. This distinction motivates the separate \texttt{depth01} control in Protocol E1.
+
+For language-model features, final-layer ESM-2 650M embeddings (\texttt{esm2\_t33\_650M\_UR50D}) were computed independently for each mutant. The resulting \FAESM{} tensor has shape $L\times1280$. RF3 trunk weights and ESM-2 weights were frozen during supervised probing; only the specified readout or reconstruction models were trained.
+
+\subsection{Protocol non-interchangeability}
+
+Table A summarizes the analysis protocols. In particular, the RBD full-set geometry ($\texttt{eff90}=231\rightarrow171$) and the 500-mutant subset geometry ($181\rightarrow139$) come from different mutant universes. Likewise, RBD $\rho$ values from the canonical full-set, E1/E7, E49, E427, and D1 protocols are not interchangeable measurements of a single evaluation cell.
+
+\begin{table}[!htbp]
+\centering
+\caption{Protocol map used throughout the main manuscript and this S1 Text.}
+\label{tab:protocol_map}
+\scriptsize
+\begin{tabularx}{\textwidth}{l Y Y Y}
+\toprule
+\textbf{Protocol / system} & \textbf{Evaluation unit and replication} & \textbf{Normalization / model} & \textbf{Primary purpose and readout} \\
+\midrule
+Canonical full-set DMS (RBD, CASP3, CI) & Random 70/30 position holdout; 5 splits $\times$ 3 initializations & Per-position, per-channel standardization; frozen features; \texttt{SinglePredictorV2} & Best-validation Spearman $\rho$; paired MSA$-$no-MSA contrasts within each split and initialization \\
+E1 dose $\times$ content (RBD, $N=500$) & Stride-8 subset; within-protocol held-out evaluation & Lighter per-position head; per-position scalar standardization & Alignment-content perturbations referenced to \texttt{depth01}; $\rho$ and \texttt{eff90} \\
+E7 recycle gating (RBD, $N=500$) & Same subset and evaluation family as E1 & MSA supplied for the first $K$ recycles, then removed & Geometric and functional shares of the full 10-recycle effect \\
+E49 RBD template comparison ($N=500$) & Four input arms; 5 cross-position splits $\times$ 3 initializations & Frozen features; per-position standardization & No-MSA, MSA, 6M0J template, and joint-arm $\rho$ and representation geometry \\
+E427 block-CV and light probes & Five contiguous position folds for block-CV; canonical random splits for light probes; 3 initializations & Canonical \texttt{SinglePredictorV2}, flattened linear, or per-residue MLP head; per-channel standardization & Sequence-position robustness and readout-capacity controls; Spearman $\rho$ \\
+D1 distillation (full RBD) & Cross-position splits; 3 splits $\times$ 2 initializations & Per-channel standardized inputs and target; linear, MLP, transformer, and separate-encoder reconstructors & Validation CKA, coordinate $R^2$, and functional recovery of $\Zmsa$ \\
+E429 paired noise floor (RBD \texttt{x\_msa\_faesm}) & Identical split and initialization; 2 processes $\times$ 8 training replicates & Identical model and 300-epoch training configuration & Within-process SD and full range of validation $\rho$ \\
+Distogram panel (13 two-state entries) & One forward condition per declared input arm; repeat forwards for noise calibration & Shared-residue-universe scoring; no supervised head & $\mathrm{pref}=\mathrm{NLL}_B-\mathrm{NLL}_A$ and MSA-induced shift \\
+E428 coordinate sampling (6 entries) & 5 arms per entry; 8 repetitions $\times$ 2 diffusion samples $=16$ structures per cell & No feature normalization or supervised head; chain-Q C$\alpha$ coordinates & Per-sample $\Delta\mathrm{RMSD}$ and fraction closer to State A \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Mutation-site feature extraction and indexing verification}
+
+\subsection{Row/column archive and downstream views}
+
+For each single-point mutant, the pair row and pair column at the true mutated residue were extracted and stacked into a $2\times L\times128$ tensor. The two-view archive preserves both mutation-centered interactions; it does not imply that every downstream head concatenated the two views. For example, the E427 supervised loader explicitly stored a row-sliced $[N,L,128]$ cache. Each analysis used a fixed view within a given comparison.
+
+For homodimeric CASP3, the complete $488\times488\times128$ pair matrix was archived before slicing. Mutation coordinates were addressed in the monomer coordinate system, and chain-interface analyses additionally partitioned the full matrix into A--A, B--B, and A--B blocks. This preserved both the within-chain mutation context and the inter-chain representation required by the interface control.
+
+\subsection{Position-0 artifact and corrective checks}
+
+An early extraction implementation incorrectly selected position 0 for every mutant. Because that position was nearly invariant across the mutant ensemble, the with-MSA features appeared spuriously low-rank ($\texttt{eff90}\approx30$), creating an artificial contrast with correctly extracted no-MSA features. Those pre-correction results were discarded.
+
+The corrected pipeline tied the slice index to the mutation identifier rather than to array position. The extraction checks comprised:
+
+\begin{enumerate}
+    \item verification of the manifest's one-based mutation coordinate against the zero-based tensor index;
+    \item confirmation that the selected row/column changed when the mutation site changed;
+    \item recomputation of mutant-minus-wild-type differences at known mutation positions; and
+    \item for CASP3, verification that slicing occurred after archiving the full two-chain matrix and used the monomer mutation coordinate.
+\end{enumerate}
+
+All reported representation and DMS results use post-correction extractions. The position-0 episode is retained here as an analysis-artifact note, not as evidence for any biological conclusion.
+
+\section{Representation-geometry metrics}
+
+\subsection{Effective rank at 90\% variance}
+
+Let $X\in\mathbb{R}^{N\times d}$ denote the matrix of flattened, per-mutant site features after centering each feature coordinate across the $N$ mutants. If $\lambda_1\geq\lambda_2\geq\cdots\geq0$ are the eigenvalues of its covariance matrix, the reported effective rank is
+
+\begin{equation}
+\texttt{eff90}=\min\left\{k:\frac{\sum_{j=1}^{k}\lambda_j}{\sum_{j}\lambda_j}\geq0.90\right\}.
+\end{equation}
+
+Thus, \texttt{eff90} measures the dimensionality required to retain 90\% of ensemble variance. A reduction indicates compression of the mutant ensemble; it does not, by itself, establish either information loss or functional improvement.
+
+\subsection{Linear CKA}
+
+For two centered mutant feature matrices $X$ and $Y$ containing the same mutants in the same order, let $K_X=XX^{\mathsf T}$ and $K_Y=YY^{\mathsf T}$. Linear CKA was computed as
+
+\begin{equation}
+\mathrm{CKA}(X,Y)=
+\frac{\langle K_X,K_Y\rangle_F}
+{\lVert K_X\rVert_F\,\lVert K_Y\rVert_F}.
+\end{equation}
+
+This sample-space Gram formulation is equivalent to the usual feature-space linear CKA expression and was also used for reconstructed-versus-real representations in D1. Lower CKA indicates greater representational rewriting but does not identify which coordinates or biological signals changed.
+
+\subsection{Mutation-direction and norm statistics}
+
+For condition $c$, define the mutation difference vector $\delta_m^{c}=z_m^{c}-z_{\mathrm{WT}}^{c}$. Directional preservation was summarized by
+
+\begin{equation}
+\texttt{dCos}=\operatorname{median}_{m}
+\frac{\langle\delta_m^{\mathrm{MSA}},\delta_m^{\mathrm{no}}\rangle}
+{\lVert\delta_m^{\mathrm{MSA}}\rVert_2\,\lVert\delta_m^{\mathrm{no}}\rVert_2},
+\end{equation}
+
+and amplitude change by the median ratio $\lVert\delta_m^{\mathrm{MSA}}\rVert_2/\lVert\delta_m^{\mathrm{no}}\rVert_2$. A norm ratio above 1 denotes amplification rather than suppression. The template comparison replaced the MSA condition with the corresponding template or joint condition. The CASP3 block analysis used corresponding MSA and no-MSA block representations directly, as detailed in Section S1.10; that block-specific statistic should not be conflated with the mutant-minus-wild-type \texttt{dCos} defined here.
+
+\section{Supervised DMS evaluation, de-biasing, and split controls}
+
+\subsection{Canonical readout and optimization}
+
+The canonical \texttt{SinglePredictorV2} head projects each input channel to width 256, applies GELU and dropout, adds positional encoding, and uses three transformer encoder layers with 8 attention heads and feed-forward width 1024. A further projection produces 128-dimensional residue features, followed by attention pooling and a $128\rightarrow64\rightarrow1$ scalar head. Dropout was 0.1.
+
+Training used frozen input features, 300 epochs, batch size 64, AdamW with learning rate $10^{-4}$ and weight decay 0.05, a cosine learning-rate schedule, and MSE loss. The canonical random-split protocol held out mutated positions rather than individual mutants, so all variants at a held-out position remained on the same side of the split. Five position splits and three head initializations formed 15 paired runs per cell. Model selection used the best validation Spearman $\rho$ over epochs.
+
+The E1/E7 protocol deliberately used a lighter per-position head and per-position scalar standardization on the 500-mutant RBD subset. Its absolute $\rho$ values must therefore not be substituted into canonical full-set comparisons.
+
+\subsection{Strict train-only standardization}
+
+For position $i$ and channel $c$, strict standardization estimated statistics using training mutants only:
+
+\begin{equation}
+\tilde{x}_{mic}=\frac{x_{mic}-\mu_{ic}^{\mathrm{train}}}{\sigma_{ic}^{\mathrm{train}}+\epsilon},
+\qquad
+\mu_{ic}^{\mathrm{train}}=\frac{1}{N_{\mathrm{train}}}\sum_{m\in\mathrm{train}}x_{mic},
+\end{equation}
+
+with the analogous training-only variance and a small numerical-stability floor. These frozen statistics were then applied to validation and test mutants. By contrast, computing $\mu_{ic}$ and $\sigma_{ic}$ over the complete mutant set exposes distributional information from held-out positions before splitting.
+
+This distinction had a measurable asymmetric effect on RBD: strict train-only standardization reduced the MSA-only probe from $0.644$ to $0.589$ ($-0.055$ across 15/15 paired runs), compared with a $0.022$ reduction for no-MSA. The reduction is a measured normalization-convention effect, not an MSA-specific biological effect.
+
+\subsection{Dual-validation and checkpoint-selection optimism}
+
+The dual-validation protocol used 60/20/20 cross-position splits. The first held-out partition selected the training epoch, and the second was reserved for test evaluation. Test $\rho$ at the validation-selected epoch was the primary de-biased checkpoint estimate; best-test $\rho$ was retained only as a diagnostic upper envelope.
+
+Single-validation best-epoch selection contributed approximately $+0.04$ to $+0.09$ across the examined cells. This optimism was separated from the standardization effect rather than combining both into a single correction. CI did not undergo the complete de-biasing program applied to RBD and CASP3, so its canonical $+0.075$ MSA gain remains a best-validation result.
+
+\subsection{E427 contiguous blocks and low-capacity probes}
+
+For contiguous-block cross-validation, the unique mutated positions were sorted and divided with \texttt{np.array\_split} into five approximately equal blocks. Every block served once as the validation fold, giving full five-fold coverage with approximately 20\% of positions per fold. This design prevents a validation position from having an immediately adjacent mutated position in training along the sequence; it does not construct three-dimensional structural blocks.
+
+Two lower-capacity heads were evaluated separately on the canonical random splits:
+
+\begin{itemize}
+    \item \textbf{Flattened linear:} a single map from $L\times128$ features to one scalar, with no attention pooling or inter-position nonlinear mixing.
+    \item \textbf{Per-residue MLP:} $128\rightarrow256\rightarrow64$ with GELU, dropout 0.1 after the first projection, attention pooling, and a scalar output. The per-residue nonlinear map contains no inter-position mixing.
+\end{itemize}
+
+These probes shared the canonical optimization and scoring protocol. Their purpose was to test whether the MSA effect required the full transformer readout. In particular, the flattened-linear result on RBD ($+0.030$, 3/5 splits, both arms near $\rho\approx0.30$) is retained as a readout boundary rather than treated as evidence against the MSA effect observed with nonlinear per-residue decoding.
+
+\section{MSA content perturbations and recycle gating}
+
+\subsection{E1 dose-by-content controls}
+
+E1 separated the effect of passing information through the MSA featurization pathway from the effect of biological alignment content. The \texttt{depth01} arm supplied only the query row through the MSA pathway and served as the zero-biological-content baseline. Synthetic random sequences and per-row residue shuffling supplied alignment-like context without homologous information. The consensus arm repeated a modal consensus sequence, whereas \texttt{colshuffle} preserved per-column residue frequencies while destroying inter-column covariation. Real homologous rows at depths 4, 8, and 15 restored increasing amounts of alignment content.
+
+All biological gains in this decomposition were referenced to \texttt{depth01}, not to no-MSA. The $+0.076$ difference between no-MSA and \texttt{depth01} therefore describes a featurization-path effect. Random and row-shuffled alignments tested whether effective-rank compression alone could improve DMS prediction; their failure to improve $\rho$ is the basis for distinguishing shared-context compression from evolutionary content.
+
+\subsection{E7 recycle gating and effect shares}
+
+E7 supplied the 15-row MSA for only the first $K\in\{1,2,3\}$ recycles and then zeroed the MSA input for the remaining $10-K$ recycles. The no-MSA and full 10-recycle MSA arms defined the reference endpoints. Geometric and functional shares were calculated as
+
+\begin{equation}
+G_K=\frac{\texttt{eff90}_{\mathrm{no}}-\texttt{eff90}_{K}}
+{\texttt{eff90}_{\mathrm{no}}-\texttt{eff90}_{\mathrm{full}}},
+\qquad
+F_K=\frac{\rho_K-\rho_{\mathrm{no}}}{\rho_{\mathrm{full}}-\rho_{\mathrm{no}}}.
+\end{equation}
+
+For $K=1$, these ratios are $31/42\approx0.74$ and $0.191/0.224\approx0.85$, respectively. The complementary geometric fraction $1-G_1\approx0.26$ is described approximately as one-quarter washed out by the nine subsequent MSA-free recycles. These ratios belong to the 500-mutant E7 protocol and to the 10-recycle inference regime; they are not universal architectural constants.
+
+\section{Three-stream accounting, gradient interventions, and paired noise}
+
+\subsection{Marginal information on matched runs}
+
+The fusion experiments combined $\Zno$, $\Zmsa$, and \FAESM{} through modality-specific encoders and cross-attention, with dead-stream/zeros controls on identical split-by-initialization grids. The fusion objective added an orthogonality penalty to MSE:
+
+\begin{equation}
+\mathcal{L}=\mathrm{MSE}+0.05\,\operatorname{mean}_{m,i}
+\left|\frac{\langle z_{mi},f_{mi}\rangle}
+{\lVert z_{mi}\rVert_2\,\lVert f_{mi}\rVert_2+10^{-8}}\right|,
+\end{equation}
+
+where $z_{mi}$ and $f_{mi}$ are the two post-interaction modality tokens at a residue. The penalty is an optimization component of the probe, not an assumption that biological modalities must be independent.
+
+For an added stream $A$ and an existing stream set $B$, the marginal contribution was defined as the matched contrast $\Delta\rho_{A\mid B}=\rho_{A+B}-\rho_B$. Pairing was performed within the same split and initialization. This definition separates the incremental value of $\Zno$ given $\Zmsa+\FAESM$ from the incremental value of \FAESM{} given either structural stream. The unresolved CI marginal, which is driven by one outlier split, is not interpreted as an established negative effect.
+
+\subsection{Learning-rate and input-noise interventions}
+
+Late-training encoder gradient norms were measured separately for the language-model and pair streams. On RBD, the language-model encoder learning rate was multiplied by $\lambda=0.25$ while keeping the remaining training configuration fixed. The five split-paired differences were $+0.0155$, $+0.0252$, $+0.0091$, $+0.0146$, and $+0.0069$.
+
+For paired differences $d_s$, the reported mean, standard error, and $t$ statistic were
+
+\begin{equation}
+\bar d=\frac{1}{5}\sum_{s=1}^{5}d_s,\qquad
+\mathrm{SE}_{\bar d}=\frac{\operatorname{SD}(d_s)}{\sqrt{5}},\qquad
+t=\frac{\bar d}{\mathrm{SE}_{\bar d}},
+\end{equation}
+
+yielding $\bar d=+0.0143$, paired SE $=0.0032$, and $t=4.48$. The 75\% Gaussian input-noise arm provided directional support but had larger paired uncertainty (3/5 splits positive) and was not treated as independently significant. The 100\% noise arm served as a near-dead-stream reference.
+
+\subsection{E429 same-initialization noise calibration}
+
+E429 repeated the RBD \texttt{x\_msa\_faesm} training cell 16 times with the same split, same initialization, and 300-epoch configuration. Eight replicates were run in each of two independent processes. The within-process SDs were 0.0016 and 0.0027. One process gave a range of 0.0049 and the other 0.0080; across all runs, one outlier at 0.6608 produced a full range of approximately 0.012, while the remaining 15 runs lay between 0.6683 and 0.6732.
+
+This calibration addresses noise under a fixed paired design; it does not estimate variation across different position splits, model architectures, GPUs, or independently initialized cells. The older $\pm0.02$ floor is therefore reserved for unpaired independent-cell comparisons. Paired interventions are assessed using per-split sign consistency and paired SE rather than being rejected solely because their magnitude is below 0.02.
+
+\section{D1 reconstruction of the MSA-bearing representation}
+
+\subsection{Input-output contract and architecture ladder}
+
+D1 tested whether $\Zmsa$ could be reconstructed from features already present in $\Zno$ and \FAESM{}. The full RBD set was divided by cross-position splits, with three splits and two initializations. Inputs and target used the per-channel standardization convention of the D1 analysis. The basic concatenated input had $128+1280=1408$ channels per residue, and the reconstruction target had 128 channels per residue.
+
+The shallow ladder comprised:
+
+\begin{itemize}
+    \item \textbf{Linear:} $1408\rightarrow128$.
+    \item \textbf{MLP-256:} $1408\rightarrow256\rightarrow128$, with GELU between projections.
+    \item \textbf{MLP-512:} $1408\rightarrow512\rightarrow256\rightarrow128$, with GELU between projections.
+    \item \textbf{Transformers:} projection to 256 dimensions, positional encoding, and a 128-channel output projection. The one-layer model used 4 attention heads; the two-layer model used 8 heads. Transformer feed-forward width was 512 and dropout was 0.1. The deeper ladder extended this design to 2, 3, 4, 6, and 8 layers with 8 heads.
+\end{itemize}
+
+Training used 300 epochs, batch size 64, AdamW with learning rate $10^{-4}$ and weight decay 0.05, cosine scheduling, and MSE reconstruction loss. The shallow ladder selected predictions by validation MSE. The deep-ladder analysis compared training- and validation-CKA after training to assess generalization versus memorization. Separate per-modality encoders trained with a CKA objective provided an alternative to naive concatenation, while single-modality and fixed orthogonal one-hot amino-acid inputs served as controls.
+
+\subsection{Reconstruction metrics and functional recovery}
+
+Coordinate-wise $R^2$ was computed on held-out positions as
+
+\begin{equation}
+R^2=1-\frac{\sum_{m,i,c}(\hat z_{mic}-z_{mic})^2}
+{\sum_{m,i,c}(z_{mic}-\bar z_{ic})^2},
+\end{equation}
+
+where $\bar z_{ic}$ is the validation-target mean for residue $i$ and channel $c$. CKA and $R^2$ answer different questions: high CKA can indicate recovery of the dominant representation subspace even when coordinate-level $R^2$ remains modest. Training-minus-validation CKA gaps were used as a generalization diagnostic, and the one-hot control tested whether amino-acid identity alone could account for reconstruction.
+
+Functional recovery was evaluated separately by training the standard DMS head on reconstructed $\Zmsa$. Within that functional protocol, $\rho$ was 0.446 for $\Zno$, 0.575 for reconstructed $\Zmsa$, and 0.663 for real $\Zmsa$. The recovered fraction was
+
+\begin{equation}
+\frac{0.575-0.446}{0.663-0.446}=0.594.
+\end{equation}
+
+Thus, approximately 40\% of the \emph{MSA-specific functional advantage} was not recovered at the tested model scales. This is not a claim that 40\% of every aspect of the MSA write is intrinsically unreconstructible, nor does it establish a capacity-independent upper bound.
+
+\section{Distogram scoring, template checks, and coordinate validation}
+
+\subsection{Template construction and input verification}
+
+Experimental structures and chain choices were checked against RCSB and PDBe SIFTS mappings. Templates were single-chain mmCIF inputs derived from the corresponding state structures; original chain identifiers were preserved. Template tokens were appended after query tokens in the modelled assembly, and query regions were selected by component length for scoring.
+
+Each template run was required to have a nonzero templated-atom count before inference. This check was introduced after an early input configuration silently dropped the template, which could otherwise make a template-conditioned arm indistinguishable from a non-template arm. Pre-correction template results were excluded from the analysis.
+
+\subsection{Range-matched distogram preference}
+
+For state $S\in\{A,B\}$, the mean negative log-likelihood of its experimental C$\alpha$--C$\alpha$ distance map under the predicted 64-bin distogram (2--22~\AA{} plus a no-contact bin) was
+
+\begin{equation}
+\mathrm{NLL}_S=-\frac{1}{|\mathcal P|}
+\sum_{(i,j)\in\mathcal P}\log p_{ij}(d_{ij}^{S}),
+\qquad
+\mathrm{pref}=\mathrm{NLL}_B-\mathrm{NLL}_A.
+\end{equation}
+
+Positive \texttt{pref} indicates distogram preference for State A. Each reference map was aligned to the folded query sequence using a minimum matching block of five residues. The pair set $\mathcal P$ contained only residue pairs covered and finite in both experimental maps, ensuring that both states were scored over exactly the same residue universe.
+
+Range matching corrected two distinct failure modes: scoring each state over its own span, which manufactured apparent shifts in targets including LacY and EGFR; and a 14-residue misalignment caused by a compressed disordered loop (UniProt residues 101--114 missing in the RfaH State-A reference). Only post-correction values were retained.
+
+The empirical repeat-forward noise band for MSA-induced preference shifts was approximately $\pm0.14$ to $\pm0.27$. It was used to classify distogram shifts, not as an uncertainty estimate for coordinate RMSD. Template steering and MSA/template conflict at the distogram level were defined as $\mathrm{pref}_{\mathrm{tplB}}-\mathrm{pref}_{\mathrm{tplA}}$ and $\mathrm{pref}_{\mathrm{msa,tplA}}-\mathrm{pref}_{\mathrm{tplA}}$, respectively.
+
+\subsection{E428 structure generation}
+
+Coordinate validation covered KaiB, RfaH, Mad2, and XCL1 under \texttt{nomsa}, \texttt{msa}, \texttt{tplA}, \texttt{tplB}, and \texttt{msa\_tplA}; and GA88/GB88 under \texttt{nomsa}, \texttt{msa}, \texttt{tplOwn}, \texttt{tplOther}, and \texttt{msa\_tplOther}. Each cell comprised eight sequential repetitions with two diffusion samples per repetition, yielding 16 structures and 30 cells or 480 structures overall. No cells failed the analysis.
+
+Only sample-level files matching \texttt{*sample-*\_model.cif} were scored. Ranked top-level copies were not included, preventing double counting of a sampled structure. Query coordinates were read from chain Q, and the first model in each CIF was reduced to C$\alpha$ atoms.
+
+\subsection{Shared-subset alignment and Kabsch RMSD}
+
+The query C$\alpha$ sequence was aligned independently to each reference C$\alpha$ sequence by Needleman--Wunsch alignment with match score $+2$, mismatch score $-1$, and gap score $-2$. Query positions aligned to both references were intersected, and at least ten shared positions were required. Both RMSD values for a given structure were therefore computed on the same coordinates, mirroring the shared-residue-universe principle of the distogram analysis.
+
+After centering the paired coordinate sets, Kabsch superposition used singular-value decomposition with a reflection correction when required. For $N$ shared residues, the RMSD to state $S$ was
+
+\begin{equation}
+\mathrm{RMSD}_S=\sqrt{\frac{1}{N}\sum_{i=1}^{N}
+\left\lVert\mathbf p_i^{\mathrm{aligned}}-\mathbf q_i^{S}\right\rVert_2^2}.
+\end{equation}
+
+The per-structure preference was $\Delta\mathrm{RMSD}=\mathrm{RMSD}_B-\mathrm{RMSD}_A$, so a positive value indicates coordinates closer to State A. A structure was counted as closer to A when $\mathrm{RMSD}_A<\mathrm{RMSD}_B$. Cell summaries reported mean $\mathrm{RMSD}_A$, mean $\mathrm{RMSD}_B$, their difference (equivalently, mean per-structure $\Delta\mathrm{RMSD}$), and the fraction of 16 structures closer to A.
+
+For GA88/GB88, State A always denotes the GA88 $3\alpha$ fold and State B the GB88 $\alpha/\beta$ fold, regardless of which sequence was predicted. These finite-sample fractions describe model preferences under the declared conditions, not experimental conformational populations, Boltzmann weights, or free energies. Large absolute RMSDs in some arms further restrict the interpretation to relative two-state proximity rather than experimental-accuracy structure prediction.
+
+\section{CASP3 homodimer interface and unpaired-MSA control}
+
+CASP3 was modelled as a two-chain, 488-token homodimer. For 392 mutants in the stride-4 subset, the full pair tensor was partitioned into A--A, B--B, and A--B blocks. For each block, MSA-conditioned and no-MSA representations were compared directly using median cosine similarity and median norm ratio. A paired Wilcoxon signed-rank test compared A--B with A--A cosine values across mutants.
+
+The paired-MSA analysis gave A--A cosine/norm values of $0.712/1.054$, B--B values of $0.712/1.053$, and A--B values of $0.749/1.280$. The A--B minus A--A cosine difference was $+0.037$ ($p=5.5\times10^{-66}$).
+
+The unpaired control shuffled chain-B MSA rows to destroy species-level row pairing while leaving the remaining extraction and scoring pipeline unchanged. This control used 100 mutants and yielded A--A $0.713/1.055$, B--B $0.712/1.054$, and A--B $0.749/1.280$, with the same $+0.037$ cosine difference ($p=3.9\times10^{-18}$). The per-mutant embedding cosine between paired and unpaired extractions was 0.969, confirming that the inputs were not numerically identical despite the preserved block-level amplification.
+
+The supported conclusion is limited to this CASP3 setting: species-paired cross-chain MSA coevolution was not required for the observed inter-chain amplification. The result does not exclude coevolutionary contributions in other proteins, readouts, or model architectures.
+
+\section{Analysis-artifact register and corrective decisions}
+
+Table B collects the principal analysis safeguards. Pre-correction numerical results are not used as evidence in the main manuscript. These entries are included to make the analysis auditable and to prevent superseded values from being reintroduced during revision.
+
+\begin{table}[!htbp]
+\centering
+\caption{Analysis artifacts, their effects, and the corrective convention used for all reported results.}
+\label{tab:artifact_register}
+\scriptsize
+\begin{tabularx}{\textwidth}{l Y Y Y}
+\toprule
+\textbf{Artifact} & \textbf{Failure mode} & \textbf{Corrective decision} & \textbf{Status in reported analysis} \\
+\midrule
+Mutation-site slicing & Position 0 selected for every mutant, producing nearly invariant features and spurious $\texttt{eff90}\approx30$ & Slice at the verified mutation coordinate; archive CASP3 full pair matrices before slicing & Pre-correction results discarded \\
+Standardization and checkpoint selection & Full-sample statistics and single-validation best-epoch selection inflated held-out performance & Train-only normalization and dual-validation test evaluation; retain convention-specific values separately & De-biased RBD/CASP3 estimates prioritized; CI limitation retained \\
+Distogram span mismatch & Different residue universes for States A and B manufactured shifts; RfaH loop compression caused a 14-residue offset & Require shared finite residue pairs and sequence-align each state to the query & Only range-matched values retained \\
+Silent template dropping & Template input could be absent without an obvious failure & Preserve chain identifiers and require nonzero templated-atom counts & Only verified template runs retained \\
+Protocol mixing & Full-set, 500-mutant, block-CV, fusion, and D1 values could be incorrectly treated as one evaluation cell & Keep feature universe, split, normalization, head, and selection rule attached to every number & Cross-protocol absolute comparisons prohibited \\
+Coordinate double counting & Ranked copies could be mistaken for independent diffusion samples & Score only \texttt{*sample-*\_model.cif} files & 480 unique sample-level structures in E428 \\
+Readout substitution & Distogram NLL could be interpreted as direct evidence of generated coordinates & Use distograms for panel-level screening and E428 coordinates for decisive state-selection checks & Sign comparisons allowed; units and uncertainties remain separate \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Supporting-file accounting and interpretation boundaries}
+
+The numerical details underlying the main manuscript are distributed as follows: S1 Fig summarizes pair-representation geometry across the three DMS proteins; S2 Fig summarizes RBD dose-content and recycle-gating series; S1 Table contains DMS de-biasing, E427 block-CV, and light-probe results; S2 Table contains the complete 13-entry distogram panel and template-steering values; S3 Table contains all 30 E428 coordinate-sampling cells; and S4 Table contains the three-stream marginals, D1 ladder, E429 noise-floor replicates, and CASP3 interface statistics. Tables A and B in this S1 Text describe protocols and corrective conventions rather than duplicating those numerical tables.
+
+The following boundaries apply throughout the supplement:
+
+\begin{itemize}
+    \item All model-specific statements are restricted to one RF3 checkpoint and the declared inference configuration.
+    \item Full DMS de-biasing was completed for RBD and CASP3, not CI. The conservation/covariation decomposition and approximately eight-row saturation are specific to the RBD 15-row alignment.
+    \item The unrecovered approximately 40\% in D1 refers to MSA-specific functional advantage at tested capacities, not to the entire geometric or biological MSA write.
+    \item The $\pm0.02$ floor applies to unpaired independent-cell comparisons. Fixed-split, fixed-initialization training noise and split-paired intervention uncertainty are separate quantities.
+    \item Coordinate verification covered six target entries with 16 structures per cell. Distogram-only observations on the remaining entries were not promoted to coordinate-level conclusions.
+    \item Multi-level agreement among representation geometry, DMS prediction, and conformational selection supports a unified family-consensus interpretation, but does not prove that one latent direction causally drives both DMS gains and conformational switching.
+\end{itemize}
+
+These conventions define the intended evidentiary scope of the supporting analyses and should be preserved when numerical results are regenerated or reorganized.
+
+\end{document}

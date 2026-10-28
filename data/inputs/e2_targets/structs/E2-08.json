@@ -1,0 +1,68 @@
+{
+  "id": "E2-08",
+  "name": "Abl1 kinase",
+  "uniprot": "P00519",
+  "boundaries_raw": "228-500",
+  "states": {
+    "stateA": {
+      "pdb": "2GQG",
+      "chain_spec": "A,B",
+      "chain_used": "A",
+      "boundaries_raw": "228-500",
+      "boundaries_parsed": [
+        228,
+        500
+      ],
+      "residue_range_used": [
+        228,
+        500
+      ],
+      "n_residues": 272,
+      "full_chain_length": 277,
+      "npy": "E2-08_stateA_2GQG.npy",
+      "sequence": "SSPNYDKWEMERTDITMKHKLGGGQYGEVYEGVWKKYSLTVAVKTLKEDTMEVEEFLKEAAVMKEIKHPNLVQLLGVCTREPPFYIITEFMTYGNLLDYLRECNRQEVNAVVLLYMATQISSAMEYLEKKNFIHRDLAARNCLVGENHLVKVADFGLSRLMTGDTTAHAGAKFPIKWTAPESLAYNKFSIKSDVWAFGVLLWEIATYGMSPYPGIDLSQVYELLEKDYRMERPEGCPEKVYELMRACWQWNPSDRPSFAEIHQAFETMFQES",
+      "seqres_sequence": "GAMDPSSPNYDKWEMERTDITMKHKLGGGQYGEVYEGVWKKYSLTVAVKTLKEDTMEVEEFLKEAAVMKEIKHPNLVQLLGVCTREPPFYIITEFMTYGNLLDYLRECNRQEVNAVVLLYMATQISSAMEYLEKKNFIHRDLAARNCLVGENHLVKVADFGLSRLMTGDTYTAHAGAKFPIKWTAPESLAYNKFSIKSDVWAFGVLLWEIATYGMSPYPGIDLSQVYELLEKDYRMERPEGCPEKVYELMRACWQWNPSDRPSFAEIHQAFETMFQES",
+      "flags": [
+        "multi-chain spec 'A,B': used first chain 'A'",
+        "partial coverage: range 228-500 expects 273 residues, extracted 272 (auth 228-500); chain auth span 223-500, full length 277"
+      ],
+      "ok": true,
+      "error": null,
+      "download": "ok",
+      "shape": [
+        272,
+        272
+      ]
+    },
+    "stateB": {
+      "pdb": "2HYY",
+      "chain_spec": "A-D",
+      "chain_used": "A",
+      "boundaries_raw": "228-500",
+      "boundaries_parsed": [
+        228,
+        500
+      ],
+      "residue_range_used": [
+        235,
+        498
+      ],
+      "n_residues": 263,
+      "full_chain_length": 263,
+      "npy": "E2-08_stateB_2HYY.npy",
+      "sequence": "WEMERTDITMKHKLGGGQYGEVYEGVWKKYSLTVAVKTLKDTMEVEEFLKEAAVMKEIKHPNLVQLLGVCTREPPFYIITEFMTYGNLLDYLRECNRQEVNAVVLLYMATQISSAMEYLEKKNFIHRDLAARNCLVGENHLVKVADFGLSRLMTGDTYTAHAGAKFPIKWTAPESLAYNKFSIKSDVWAFGVLLWEIATYGMSPYPGIDLSQVYELLEKDYRMERPEGCPEKVYELMRACWQWNPSDRPSFAEIHQAFETMFQ",
+      "seqres_sequence": "VSPNYDKWEMERTDITMKHKLGGGQYGEVYEGVWKKYSLTVAVKTLKEDTMEVEEFLKEAAVMKEIKHPNLVQLLGVCTREPPFYIITEFMTYGNLLDYLRECNRQEVNAVVLLYMATQISSAMEYLEKKNFIHRDLAARNCLVGENHLVKVADFGLSRLMTGDTYTAHAGAKFPIKWTAPESLAYNKFSIKSDVWAFGVLLWEIATYGMSPYPGIDLSQVYELLEKDYRMERPEGCPEKVYELMRACWQWNPSDRPSFAEIHQAFETMFQES",
+      "flags": [
+        "multi-chain spec 'A-D': used first chain 'A'",
+        "partial coverage: range 228-500 expects 273 residues, extracted 263 (auth 235-498); chain auth span 235-498, full length 263"
+      ],
+      "ok": true,
+      "error": null,
+      "download": "ok",
+      "shape": [
+        263,
+        263
+      ]
+    }
+  }
+}

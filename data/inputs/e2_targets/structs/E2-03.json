@@ -1,0 +1,64 @@
+{
+  "id": "E2-03",
+  "name": "Mad2 (MAD2A)",
+  "uniprot": "Q13257",
+  "boundaries_raw": "1-205",
+  "states": {
+    "stateA": {
+      "pdb": "1DUJ",
+      "chain_spec": "A",
+      "chain_used": "A",
+      "boundaries_raw": "1-205",
+      "boundaries_parsed": [
+        1,
+        205
+      ],
+      "residue_range_used": [
+        11,
+        197
+      ],
+      "n_residues": 187,
+      "full_chain_length": 187,
+      "npy": "E2-03_stateA_1DUJ.npy",
+      "sequence": "GSITLRGSAEIVAEFFSFGINSILYQRGIYPSETFTRVQKYGLTLLVTTDLELIKYLNNVVEQLKDWLYKCSVQKLVVVISNIESGEVLERWQFDIECDKTAKDDSAPREKSQKAIQDEIRSVIRQITATVTFLPLLEVSCSFDLLIYTDKDLVVPEKWEESGPQFITNSEEVRLRSFTTTIHKVNS",
+      "seqres_sequence": "GSITLRGSAEIVAEFFSFGINSILYQRGIYPSETFTRVQKYGLTLLVTTDLELIKYLNNVVEQLKDWLYKCSVQKLVVVISNIESGEVLERWQFDIECDKTAKDDSAPREKSQKAIQDEIRSVIRQITATVTFLPLLEVSCSFDLLIYTDKDLVVPEKWEESGPQFITNSEEVRLRSFTTTIHKVNS",
+      "flags": [
+        "partial coverage: range 1-205 expects 205 residues, extracted 187 (auth 11-197); chain auth span 11-197, full length 187"
+      ],
+      "ok": true,
+      "error": null,
+      "download": "ok",
+      "shape": [
+        187,
+        187
+      ]
+    },
+    "stateB": {
+      "pdb": "1S2H",
+      "chain_spec": "A",
+      "chain_used": "A",
+      "boundaries_raw": "1-205",
+      "boundaries_parsed": [
+        1,
+        205
+      ],
+      "residue_range_used": [
+        1,
+        205
+      ],
+      "n_residues": 205,
+      "full_chain_length": 205,
+      "npy": "E2-03_stateB_1S2H.npy",
+      "sequence": "MALQLSREQGITLRGSAEIVAEFFSFGINSILYQRGIYPSETFTRVQKYGLTLLVTTDLELIKYLNNVVEQLKDWLYKCSVQKLVVVISNIESGEVLERWQFDIECDKTAKDDSAPREKSQKAIQDEIRSVIAQITATVTFLPLLEVSCSFDLLIYTDKDLVVPEKWEESGPQFITNSEEVRLRSFTTTIHKVNSMVAYKIPVND",
+      "seqres_sequence": "GMALQLSREQGITLRGSAEIVAEFFSFGINSILYQRGIYPSETFTRVQKYGLTLLVTTDLELIKYLNNVVEQLKDWLYKCSVQKLVVVISNIESGEVLERWQFDIECDKTAKDDSAPREKSQKAIQDEIRSVIAQITATVTFLPLLEVSCSFDLLIYTDKDLVVPEKWEESGPQFITNSEEVRLRSFTTTIHKVNSMVAYKIPVND",
+      "flags": [],
+      "ok": true,
+      "error": null,
+      "download": "ok",
+      "shape": [
+        205,
+        205
+      ]
+    }
+  }
+}

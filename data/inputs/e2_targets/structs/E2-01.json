@@ -1,0 +1,67 @@
+{
+  "id": "E2-01",
+  "name": "KaiB",
+  "uniprot": "Q79V61",
+  "boundaries_raw": "1-108",
+  "states": {
+    "stateA": {
+      "pdb": "2QKE",
+      "chain_spec": "A-F",
+      "chain_used": "A",
+      "boundaries_raw": "1-108",
+      "boundaries_parsed": [
+        1,
+        108
+      ],
+      "residue_range_used": [
+        1,
+        98
+      ],
+      "n_residues": 98,
+      "full_chain_length": 98,
+      "npy": "E2-01_stateA_2QKE.npy",
+      "sequence": "MAPLRKTYVLKLYVAGNTPNSVRALKTLNNILEKEFKGVYALKVIDVLKNPQLAEEDKILATPTLAKVLPPPVRRIIGDLSNREKVLIGLDLLYEEIG",
+      "seqres_sequence": "MAPLRKTYVLKLYVAGNTPNSVRALKTLNNILEKEFKGVYALKVIDVLKNPQLAEEDKILATPTLAKVLPPPVRRIIGDLSNREKVLIGLDLLYEEIGDQAEDDLGLE",
+      "flags": [
+        "multi-chain spec 'A-F': used first chain 'A'",
+        "partial coverage: range 1-108 expects 108 residues, extracted 98 (auth 1-98); chain auth span 1-98, full length 98"
+      ],
+      "ok": true,
+      "error": null,
+      "download": "ok",
+      "shape": [
+        98,
+        98
+      ]
+    },
+    "stateB": {
+      "pdb": "5JYT",
+      "chain_spec": "A",
+      "chain_used": "A",
+      "boundaries_raw": "1-108",
+      "boundaries_parsed": [
+        1,
+        108
+      ],
+      "residue_range_used": [
+        1,
+        106
+      ],
+      "n_residues": 106,
+      "full_chain_length": 106,
+      "npy": "E2-01_stateB_5JYT.npy",
+      "sequence": "MAPLRKTAVLKLYVAGNTPNSVRALKTLANILEKEFKGVYALKVIDVLKNPQLAEEDKILATPTLAKVLPPPVRRIIGDLSNREKVLIALRLLAEEIGDYKDDDDK",
+      "seqres_sequence": "MAPLRKTAVLKLYVAGNTPNSVRALKTLANILEKEFKGVYALKVIDVLKNPQLAEEDKILATPTLAKVLPPPVRRIIGDLSNREKVLIALRLLAEEIGDYKDDDDK",
+      "flags": [
+        "partial coverage: range 1-108 expects 108 residues, extracted 106 (auth 1-106); chain auth span 1-106, full length 106"
+      ],
+      "ok": true,
+      "error": null,
+      "download": "ok",
+      "shape": [
+        106,
+        106
+      ]
+    }
+  }
+}

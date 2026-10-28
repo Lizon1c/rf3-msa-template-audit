@@ -1,0 +1,17 @@
+{
+ "GA88": {
+  "nomsa": 0.376,
+  "msa": 2.737,
+  "tplOwn": 4.877,
+  "tplOther": -4.301,
+  "msa_tplOther": -4.238
+ },
+ "GB88": {
+  "nomsa": -0.232,
+  "msa": -2.657,
+  "tplOwn": -4.337,
+  "tplOther": 4.75,
+  "msa_tplOther": 4.584
+ },
+ "note": "pref = NLL(stateB)-NLL(stateA), positive favors GA-fold(A). Template of the opposite fold flips the designed pair even against sequence+MSA; template > MSA > sequence for state selection in RF3."
+}

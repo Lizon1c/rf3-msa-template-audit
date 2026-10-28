@@ -1,0 +1,66 @@
+{
+  "id": "E2-12",
+  "name": "GB1 (protein G B1 domain)",
+  "uniprot": "P06654",
+  "boundaries_raw": "56-aa B1 domain (UniProt 228-282; MTYKLI...TVTE)",
+  "states": {
+    "stateA": {
+      "pdb": "1PGB",
+      "chain_spec": "A",
+      "chain_used": "A",
+      "boundaries_raw": "56-aa B1 domain (UniProt 228-282; MTYKLI...TVTE)",
+      "boundaries_parsed": [
+        228,
+        282
+      ],
+      "residue_range_used": [
+        1,
+        56
+      ],
+      "n_residues": 56,
+      "full_chain_length": 56,
+      "npy": "E2-12_stateA_1PGB.npy",
+      "sequence": "MTYKLILNGKTLKGETTTEAVDAATAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "seqres_sequence": "MTYKLILNGKTLKGETTTEAVDAATAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "flags": [
+        "EMPTY intersection: range 228-282 vs chain auth 1-56 -> fell back to whole chain"
+      ],
+      "ok": true,
+      "error": null,
+      "download": "ok",
+      "shape": [
+        56,
+        56
+      ]
+    },
+    "stateB": {
+      "pdb": "2GB1",
+      "chain_spec": "A",
+      "chain_used": "A",
+      "boundaries_raw": "56-aa B1 domain (UniProt 228-282; MTYKLI...TVTE)",
+      "boundaries_parsed": [
+        228,
+        282
+      ],
+      "residue_range_used": [
+        1,
+        56
+      ],
+      "n_residues": 56,
+      "full_chain_length": 56,
+      "npy": "E2-12_stateB_2GB1.npy",
+      "sequence": "MTYKLILNGKTLKGETTTEAVDAATAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "seqres_sequence": "MTYKLILNGKTLKGETTTEAVDAATAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "flags": [
+        "EMPTY intersection: range 228-282 vs chain auth 1-56 -> fell back to whole chain"
+      ],
+      "ok": true,
+      "error": null,
+      "download": "ok",
+      "shape": [
+        56,
+        56
+      ]
+    }
+  }
+}

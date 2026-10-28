@@ -1,0 +1,60 @@
+{
+  "id": "E2-06",
+  "name": "GA88 / GB88 (designed)",
+  "uniprot": null,
+  "boundaries_raw": "56 aa (two sequences, 88% identical)",
+  "states": {
+    "stateA": {
+      "pdb": "2JWS",
+      "chain_spec": "A",
+      "chain_used": "A",
+      "boundaries_raw": "56 aa (two sequences, 88% identical)",
+      "boundaries_parsed": null,
+      "residue_range_used": [
+        1,
+        56
+      ],
+      "n_residues": 56,
+      "full_chain_length": 56,
+      "npy": "E2-06_stateA_2JWS.npy",
+      "sequence": "TTYKLILNLKQAKEEAIKELVDAGIAEKYIKLIANAKTVEGVWTLKDEILTFTVTE",
+      "seqres_sequence": "TTYKLILNLKQAKEEAIKELVDAGIAEKYIKLIANAKTVEGVWTLKDEILTFTVTE",
+      "flags": [
+        "no numeric range in boundaries ('56 aa (two sequences, 88% identical)'): used whole chain"
+      ],
+      "ok": true,
+      "error": null,
+      "download": "ok",
+      "shape": [
+        56,
+        56
+      ]
+    },
+    "stateB": {
+      "pdb": "2JWU",
+      "chain_spec": "A",
+      "chain_used": "A",
+      "boundaries_raw": "56 aa (two sequences, 88% identical)",
+      "boundaries_parsed": null,
+      "residue_range_used": [
+        1,
+        56
+      ],
+      "n_residues": 56,
+      "full_chain_length": 56,
+      "npy": "E2-06_stateB_2JWU.npy",
+      "sequence": "TTYKLILNLKQAKEEAIKELVDAATAEKYFKLYANAKTVEGVWTYKDETKTFTVTE",
+      "seqres_sequence": "TTYKLILNLKQAKEEAIKELVDAATAEKYFKLYANAKTVEGVWTYKDETKTFTVTE",
+      "flags": [
+        "no numeric range in boundaries ('56 aa (two sequences, 88% identical)'): used whole chain"
+      ],
+      "ok": true,
+      "error": null,
+      "download": "ok",
+      "shape": [
+        56,
+        56
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "title": "RF3 MSA/template input-channel audit: structures and analysis-ready features",
+  "upload_type": "dataset",
+  "creators": [
+    {
+      "name": "Ding, Cheng",
+      "affiliation": "School of Life Science and Technology, ShanghaiTech University, Shanghai, China",
+      "orcid": "0009-0001-7221-9066"
+    }
+  ],
+  "description": "Analysis-ready data for an input-channel audit of RoseTTAFold3. Includes 480 unique E428 sample-level structures, exact E427 row-sliced feature caches, 53 per-arm distogram tensors, and canonical per-run JSON results. This is not the complete raw per-mutant feature library and contains no model checkpoints.",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "RoseTTAFold3",
+    "multiple sequence alignment",
+    "structural templates",
+    "deep mutational scanning",
+    "conformational selection",
+    "protein structure prediction"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Lizon1c/rf3-msa-template-audit",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "doi": null,
+  "status": "author upload pending"
+}

@@ -1,0 +1,1054 @@
+data_e428_E2-04_nomsa_r0_seed-0_sample-0_model
+#
+_entry.id       e428_E2-04_nomsa_r0_seed-0_sample-0_model
+_entry.author   unknown_user
+_entry.date     2026-10-28
+_entry.time     00:29:49
+#
+loop_
+_chem_comp_bond.pdbx_ordinal 
+_chem_comp_bond.comp_id 
+_chem_comp_bond.atom_id_1 
+_chem_comp_bond.atom_id_2 
+_chem_comp_bond.value_order 
+_chem_comp_bond.pdbx_aromatic_flag 
+_chem_comp_bond.pdbx_stereo_config 
+1   MET N   CA  SING N ?
+2   MET CA  C   SING N ?
+3   MET CA  CB  SING N ?
+4   MET C   O   DOUB N ?
+5   MET CB  CG  SING N ?
+6   MET CG  SD  SING N ?
+7   MET SD  CE  SING N ?
+8   ARG N   CA  SING N ?
+9   ARG CA  C   SING N ?
+10  ARG CA  CB  SING N ?
+11  ARG C   O   DOUB N ?
+12  ARG CB  CG  SING N ?
+13  ARG CG  CD  SING N ?
+14  ARG CD  NE  SING N ?
+15  ARG NE  CZ  SING N ?
+16  ARG CZ  NH1 SING N ?
+17  ARG CZ  NH2 DOUB N ?
+18  LEU N   CA  SING N ?
+19  LEU CA  C   SING N ?
+20  LEU CA  CB  SING N ?
+21  LEU C   O   DOUB N ?
+22  LEU CB  CG  SING N ?
+23  LEU CG  CD1 SING N ?
+24  LEU CG  CD2 SING N ?
+25  ILE N   CA  SING N ?
+26  ILE CA  C   SING N ?
+27  ILE CA  CB  SING N ?
+28  ILE C   O   DOUB N ?
+29  ILE CB  CG1 SING N ?
+30  ILE CB  CG2 SING N ?
+31  ILE CG1 CD1 SING N ?
+32  ALA N   CA  SING N ?
+33  ALA CA  C   SING N ?
+34  ALA CA  CB  SING N ?
+35  ALA C   O   DOUB N ?
+36  GLY N   CA  SING N ?
+37  GLY CA  C   SING N ?
+38  GLY C   O   DOUB N ?
+39  CYS N   CA  SING N ?
+40  CYS CA  C   SING N ?
+41  CYS CA  CB  SING N ?
+42  CYS C   O   DOUB N ?
+43  CYS CB  SG  SING N ?
+44  SER N   CA  SING N ?
+45  SER CA  C   SING N ?
+46  SER CA  CB  SING N ?
+47  SER C   O   DOUB N ?
+48  SER CB  OG  SING N ?
+49  THR N   CA  SING N ?
+50  THR CA  C   SING N ?
+51  THR CA  CB  SING N ?
+52  THR C   O   DOUB N ?
+53  THR CB  OG1 SING N ?
+54  THR CB  CG2 SING N ?
+55  TYR N   CA  SING N ?
+56  TYR CA  C   SING N ?
+57  TYR CA  CB  SING N ?
+58  TYR C   O   DOUB N ?
+59  TYR CB  CG  SING N ?
+60  TYR CG  CD1 DOUB Y ?
+61  TYR CG  CD2 SING Y ?
+62  TYR CD1 CE1 SING Y ?
+63  TYR CD2 CE2 DOUB Y ?
+64  TYR CE1 CZ  DOUB Y ?
+65  TYR CE2 CZ  SING Y ?
+66  TYR CZ  OH  SING N ?
+67  VAL N   CA  SING N ?
+68  VAL CA  C   SING N ?
+69  VAL CA  CB  SING N ?
+70  VAL C   O   DOUB N ?
+71  VAL CB  CG1 SING N ?
+72  VAL CB  CG2 SING N ?
+73  GLU N   CA  SING N ?
+74  GLU CA  C   SING N ?
+75  GLU CA  CB  SING N ?
+76  GLU C   O   DOUB N ?
+77  GLU CB  CG  SING N ?
+78  GLU CG  CD  SING N ?
+79  GLU CD  OE1 DOUB N ?
+80  GLU CD  OE2 SING N ?
+81  ASP N   CA  SING N ?
+82  ASP CA  C   SING N ?
+83  ASP CA  CB  SING N ?
+84  ASP C   O   DOUB N ?
+85  ASP CB  CG  SING N ?
+86  ASP CG  OD1 DOUB N ?
+87  ASP CG  OD2 SING N ?
+88  LYS N   CA  SING N ?
+89  LYS CA  C   SING N ?
+90  LYS CA  CB  SING N ?
+91  LYS C   O   DOUB N ?
+92  LYS CB  CG  SING N ?
+93  LYS CG  CD  SING N ?
+94  LYS CD  CE  SING N ?
+95  LYS CE  NZ  SING N ?
+96  GLN N   CA  SING N ?
+97  GLN CA  C   SING N ?
+98  GLN CA  CB  SING N ?
+99  GLN C   O   DOUB N ?
+100 GLN CB  CG  SING N ?
+101 GLN CG  CD  SING N ?
+102 GLN CD  OE1 DOUB N ?
+103 GLN CD  NE2 SING N ?
+104 PRO N   CA  SING N ?
+105 PRO N   CD  SING N ?
+106 PRO CA  C   SING N ?
+107 PRO CA  CB  SING N ?
+108 PRO C   O   DOUB N ?
+109 PRO CB  CG  SING N ?
+110 PRO CG  CD  SING N ?
+111 PHE N   CA  SING N ?
+112 PHE CA  C   SING N ?
+113 PHE CA  CB  SING N ?
+114 PHE C   O   DOUB N ?
+115 PHE CB  CG  SING N ?
+116 PHE CG  CD1 DOUB Y ?
+117 PHE CG  CD2 SING Y ?
+118 PHE CD1 CE1 SING Y ?
+119 PHE CD2 CE2 DOUB Y ?
+120 PHE CE1 CZ  DOUB Y ?
+121 PHE CE2 CZ  SING Y ?
+122 TRP N   CA  SING N ?
+123 TRP CA  C   SING N ?
+124 TRP CA  CB  SING N ?
+125 TRP C   O   DOUB N ?
+126 TRP CB  CG  SING N ?
+127 TRP CG  CD1 DOUB Y ?
+128 TRP CG  CD2 SING Y ?
+129 TRP CD1 NE1 SING Y ?
+130 TRP CD2 CE2 DOUB Y ?
+131 TRP CD2 CE3 SING Y ?
+132 TRP NE1 CE2 SING Y ?
+133 TRP CE2 CZ2 SING Y ?
+134 TRP CE3 CZ3 DOUB Y ?
+135 TRP CZ2 CH2 DOUB Y ?
+136 TRP CZ3 CH2 SING Y ?
+137 ASN N   CA  SING N ?
+138 ASN CA  C   SING N ?
+139 ASN CA  CB  SING N ?
+140 ASN C   O   DOUB N ?
+141 ASN CB  CG  SING N ?
+142 ASN CG  OD1 DOUB N ?
+143 ASN CG  ND2 SING N ?
+#
+loop_
+_atom_site.group_PDB 
+_atom_site.type_symbol 
+_atom_site.label_atom_id 
+_atom_site.label_alt_id 
+_atom_site.label_comp_id 
+_atom_site.label_asym_id 
+_atom_site.label_entity_id 
+_atom_site.label_seq_id 
+_atom_site.pdbx_PDB_ins_code 
+_atom_site.auth_seq_id 
+_atom_site.auth_comp_id 
+_atom_site.auth_asym_id 
+_atom_site.auth_atom_id 
+_atom_site.id 
+_atom_site.B_iso_or_equiv 
+_atom_site.occupancy 
+_atom_site.pdbx_formal_charge 
+_atom_site.Cartn_x 
+_atom_site.Cartn_y 
+_atom_site.Cartn_z 
+_atom_site.pdbx_PDB_model_num 
+ATOM N N   . MET Q 0 1   . 1   MET Q N   0   nan 1.0 ?  13.241356     -15.437205    -12.856829  1
+ATOM C CA  . MET Q 0 1   . 1   MET Q CA  1   nan 1.0 ?  13.278664     -15.148099    -11.43014   1
+ATOM C C   . MET Q 0 1   . 1   MET Q C   2   nan 1.0 ?  13.640573     -13.694348    -11.142562  1
+ATOM O O   . MET Q 0 1   . 1   MET Q O   3   nan 1.0 ?  13.236693     -13.089364    -10.155216  1
+ATOM C CB  . MET Q 0 1   . 1   MET Q CB  4   nan 1.0 ?  14.239098     -16.0678      -10.698671  1
+ATOM C CG  . MET Q 0 1   . 1   MET Q CG  5   nan 1.0 ?  13.748329     -17.488773    -10.526301  1
+ATOM S SD  . MET Q 0 1   . 1   MET Q SD  6   nan 1.0 ?  14.850095     -18.435665    -9.453924   1
+ATOM C CE  . MET Q 0 1   . 1   MET Q CE  7   nan 1.0 ?  13.753795     -19.809658    -9.043735   1
+ATOM N N   . ARG Q 0 2   . 2   ARG Q N   8   nan 1.0 ?  14.214011     -13.032778    -12.147011  1
+ATOM C CA  . ARG Q 0 2   . 2   ARG Q CA  9   nan 1.0 ?  14.635927     -11.6419115   -12.037733  1
+ATOM C C   . ARG Q 0 2   . 2   ARG Q C   10  nan 1.0 ?  13.463515     -10.69424     -12.112786  1
+ATOM O O   . ARG Q 0 2   . 2   ARG Q O   11  nan 1.0 ?  13.3773       -9.703706     -11.397688  1
+ATOM C CB  . ARG Q 0 2   . 2   ARG Q CB  12  nan 1.0 ?  15.689333     -11.32618     -13.077859  1
+ATOM C CG  . ARG Q 0 2   . 2   ARG Q CG  13  nan 1.0 ?  17.059568     -12.005129    -12.906292  1
+ATOM C CD  . ARG Q 0 2   . 2   ARG Q CD  14  nan 1.0 ?  18.039902     -11.5412855   -13.957365  1
+ATOM N NE  . ARG Q 0 2   . 2   ARG Q NE  15  nan 1.0 ?  19.389338     -12.119276    -13.706724  1
+ATOM C CZ  . ARG Q 0 2   . 2   ARG Q CZ  16  nan 1.0 ?  20.429037     -11.982672    -14.512237  1
+ATOM N NH1 . ARG Q 0 2   . 2   ARG Q NH1 17  nan 1.0 ?  20.347946     -11.264674    -15.643466  1
+ATOM N NH2 . ARG Q 0 2   . 2   ARG Q NH2 18  nan 1.0 +1 21.59356      -12.550015    -14.207816  1
+ATOM N N   . LEU Q 0 3   . 3   LEU Q N   19  nan 1.0 ?  12.487171     -11.088843    -12.947048  1
+ATOM C CA  . LEU Q 0 3   . 3   LEU Q CA  20  nan 1.0 ?  11.317342     -10.21513     -13.09755   1
+ATOM C C   . LEU Q 0 3   . 3   LEU Q C   21  nan 1.0 ?  10.451913     -10.246038    -11.860746  1
+ATOM O O   . LEU Q 0 3   . 3   LEU Q O   22  nan 1.0 ?  9.846738      -9.212281     -11.436814  1
+ATOM C CB  . LEU Q 0 3   . 3   LEU Q CB  23  nan 1.0 ?  10.488004     -10.645921    -14.291731  1
+ATOM C CG  . LEU Q 0 3   . 3   LEU Q CG  24  nan 1.0 ?  11.136756     -10.36286     -15.691172  1
+ATOM C CD1 . LEU Q 0 3   . 3   LEU Q CD1 25  nan 1.0 ?  10.313352     -11.00202     -16.774643  1
+ATOM C CD2 . LEU Q 0 3   . 3   LEU Q CD2 26  nan 1.0 ?  11.258596     -8.870871     -15.881567  1
+ATOM N N   . LEU Q 0 4   . 4   LEU Q N   27  nan 1.0 ?  10.413493     -11.383151    -11.221561  1
+ATOM C CA  . LEU Q 0 4   . 4   LEU Q CA  28  nan 1.0 ?  9.63751       -11.505377    -10.011374  1
+ATOM C C   . LEU Q 0 4   . 4   LEU Q C   29  nan 1.0 ?  10.2397585    -10.697231    -8.890529   1
+ATOM O O   . LEU Q 0 4   . 4   LEU Q O   30  nan 1.0 ?  9.521275      -9.968298     -8.117959   1
+ATOM C CB  . LEU Q 0 4   . 4   LEU Q CB  31  nan 1.0 ?  9.541193      -12.94263     -9.514305   1
+ATOM C CG  . LEU Q 0 4   . 4   LEU Q CG  32  nan 1.0 ?  8.469992      -13.253986    -8.487454   1
+ATOM C CD1 . LEU Q 0 4   . 4   LEU Q CD1 33  nan 1.0 ?  7.591186      -14.392914    -8.964849   1
+ATOM C CD2 . LEU Q 0 4   . 4   LEU Q CD2 34  nan 1.0 ?  9.135877      -13.603095    -7.175948   1
+ATOM N N   . ILE Q 0 5   . 5   ILE Q N   35  nan 1.0 ?  11.525405     -10.6485      -8.823246   1
+ATOM C CA  . ILE Q 0 5   . 5   ILE Q CA  36  nan 1.0 ?  12.273141     -9.89101      -7.815542   1
+ATOM C C   . ILE Q 0 5   . 5   ILE Q C   37  nan 1.0 ?  12.045567     -8.392855     -8.021347   1
+ATOM O O   . ILE Q 0 5   . 5   ILE Q O   38  nan 1.0 ?  11.769072     -7.6281185    -7.1158113  1
+ATOM C CB  . ILE Q 0 5   . 5   ILE Q CB  39  nan 1.0 ?  13.779543     -10.183577    -7.7927465  1
+ATOM C CG1 . ILE Q 0 5   . 5   ILE Q CG1 40  nan 1.0 ?  13.994987     -11.622166    -7.357772   1
+ATOM C CG2 . ILE Q 0 5   . 5   ILE Q CG2 41  nan 1.0 ?  14.531566     -9.218263     -6.8872385  1
+ATOM C CD1 . ILE Q 0 5   . 5   ILE Q CD1 42  nan 1.0 ?  15.417064     -12.102864    -7.542973   1
+ATOM N N   . LEU Q 0 6   . 6   LEU Q N   43  nan 1.0 ?  12.053169     -7.994842     -9.298636   1
+ATOM C CA  . LEU Q 0 6   . 6   LEU Q CA  44  nan 1.0 ?  11.831692     -6.5848145    -9.6400175  1
+ATOM C C   . LEU Q 0 6   . 6   LEU Q C   45  nan 1.0 ?  10.410341     -6.1566596    -9.308778   1
+ATOM O O   . LEU Q 0 6   . 6   LEU Q O   46  nan 1.0 ?  10.1796665    -5.061238     -8.803459   1
+ATOM C CB  . LEU Q 0 6   . 6   LEU Q CB  47  nan 1.0 ?  12.139645     -6.336982     -11.104383  1
+ATOM C CG  . LEU Q 0 6   . 6   LEU Q CG  48  nan 1.0 ?  13.594139     -6.368264     -11.495284  1
+ATOM C CD1 . LEU Q 0 6   . 6   LEU Q CD1 49  nan 1.0 ?  13.717668     -6.297297     -13.023308  1
+ATOM C CD2 . LEU Q 0 6   . 6   LEU Q CD2 50  nan 1.0 ?  14.355002     -5.1857114    -10.860277  1
+ATOM N N   . ALA Q 0 7   . 7   ALA Q N   51  nan 1.0 ?  9.498891      -7.0477285    -9.577002   1
+ATOM C CA  . ALA Q 0 7   . 7   ALA Q CA  52  nan 1.0 ?  8.105577      -6.7652674    -9.268952   1
+ATOM C C   . ALA Q 0 7   . 7   ALA Q C   53  nan 1.0 ?  7.87382       -6.613404     -7.7803807  1
+ATOM O O   . ALA Q 0 7   . 7   ALA Q O   54  nan 1.0 ?  7.207317      -5.713769     -7.3081603  1
+ATOM C CB  . ALA Q 0 7   . 7   ALA Q CB  55  nan 1.0 ?  7.170526      -7.857663     -9.8229     1
+ATOM N N   . LEU Q 0 8   . 8   LEU Q N   56  nan 1.0 ?  8.539875      -7.4953485    -7.0301495  1
+ATOM C CA  . LEU Q 0 8   . 8   LEU Q CA  57  nan 1.0 ?  8.420399      -7.452824     -5.5870485  1
+ATOM C C   . LEU Q 0 8   . 8   LEU Q C   58  nan 1.0 ?  9.051359      -6.1816144    -5.0113335  1
+ATOM O O   . LEU Q 0 8   . 8   LEU Q O   59  nan 1.0 ?  8.522541      -5.570431     -4.10204    1
+ATOM C CB  . LEU Q 0 8   . 8   LEU Q CB  60  nan 1.0 ?  9.097349      -8.697172     -4.965028   1
+ATOM C CG  . LEU Q 0 8   . 8   LEU Q CG  61  nan 1.0 ?  8.270769      -9.993171     -5.086815   1
+ATOM C CD1 . LEU Q 0 8   . 8   LEU Q CD1 62  nan 1.0 ?  9.140538      -11.195014    -4.6377745  1
+ATOM C CD2 . LEU Q 0 8   . 8   LEU Q CD2 63  nan 1.0 ?  7.015249      -9.927889     -4.264882   1
+ATOM N N   . LEU Q 0 9   . 9   LEU Q N   64  nan 1.0 ?  10.174509     -5.8247805    -5.6376824  1
+ATOM C CA  . LEU Q 0 9   . 9   LEU Q CA  65  nan 1.0 ?  10.84626      -4.599158     -5.187025   1
+ATOM C C   . LEU Q 0 9   . 9   LEU Q C   66  nan 1.0 ?  9.972403      -3.375015     -5.477993   1
+ATOM O O   . LEU Q 0 9   . 9   LEU Q O   67  nan 1.0 ?  9.911457      -2.4427235    -4.6625524  1
+ATOM C CB  . LEU Q 0 9   . 9   LEU Q CB  68  nan 1.0 ?  12.187948     -4.455866     -5.8927436  1
+ATOM C CG  . LEU Q 0 9   . 9   LEU Q CG  69  nan 1.0 ?  13.300142     -5.3651614    -5.4009295  1
+ATOM C CD1 . LEU Q 0 9   . 9   LEU Q CD1 70  nan 1.0 ?  14.498161     -5.3011775    -6.349592   1
+ATOM C CD2 . LEU Q 0 9   . 9   LEU Q CD2 71  nan 1.0 ?  13.725511     -4.9659786    -3.9858     1
+ATOM N N   . GLY Q 0 10  . 10  GLY Q N   72  nan 1.0 ?  9.313999      -3.4242535    -6.6269717  1
+ATOM C CA  . GLY Q 0 10  . 10  GLY Q CA  73  nan 1.0 ?  8.406183      -2.3332095    -6.9594016  1
+ATOM C C   . GLY Q 0 10  . 10  GLY Q C   74  nan 1.0 ?  7.235363      -2.2287498    -6.013464   1
+ATOM O O   . GLY Q 0 10  . 10  GLY Q O   75  nan 1.0 ?  6.863678      -1.1545261    -5.5858245  1
+ATOM N N   . ILE Q 0 11  . 11  ILE Q N   76  nan 1.0 ?  6.6945906     -3.3776436    -5.645873   1
+ATOM C CA  . ILE Q 0 11  . 11  ILE Q CA  77  nan 1.0 ?  5.574706      -3.426801     -4.7342405  1
+ATOM C C   . ILE Q 0 11  . 11  ILE Q C   78  nan 1.0 ?  6.0157        -2.9662316    -3.3572333  1
+ATOM O O   . ILE Q 0 11  . 11  ILE Q O   79  nan 1.0 ?  5.2864523     -2.2118464    -2.6725793  1
+ATOM C CB  . ILE Q 0 11  . 11  ILE Q CB  80  nan 1.0 ?  4.957956      -4.8359284    -4.6594453  1
+ATOM C CG1 . ILE Q 0 11  . 11  ILE Q CG1 81  nan 1.0 ?  4.3517075     -5.2189755    -6.0174785  1
+ATOM C CG2 . ILE Q 0 11  . 11  ILE Q CG2 82  nan 1.0 ?  3.902983      -4.928197     -3.5609283  1
+ATOM C CD1 . ILE Q 0 11  . 11  ILE Q CD1 83  nan 1.0 ?  3.9394503     -6.6917605    -6.1192713  1
+ATOM N N   . CYS Q 0 12  . 12  CYS Q N   84  nan 1.0 ?  7.1822762     -3.338243     -2.968564   1
+ATOM C CA  . CYS Q 0 12  . 12  CYS Q CA  85  nan 1.0 ?  7.7197623     -2.9553683    -1.6441375  1
+ATOM C C   . CYS Q 0 12  . 12  CYS Q C   86  nan 1.0 ?  7.9417667     -1.4614583    -1.5693958  1
+ATOM O O   . CYS Q 0 12  . 12  CYS Q O   87  nan 1.0 ?  7.72745       -0.86001265   -0.5206756  1
+ATOM C CB  . CYS Q 0 12  . 12  CYS Q CB  88  nan 1.0 ?  9.012998      -3.7056582    -1.363245   1
+ATOM S SG  . CYS Q 0 12  . 12  CYS Q SG  89  nan 1.0 ?  8.776663      -5.4615965    -0.9558623  1
+ATOM N N   . SER Q 0 13  . 13  SER Q N   90  nan 1.0 ?  8.269873      -0.8708375    -2.6575336  1
+ATOM C CA  . SER Q 0 13  . 13  SER Q CA  91  nan 1.0 ?  8.513611      0.5774691     -2.6884274  1
+ATOM C C   . SER Q 0 13  . 13  SER Q C   92  nan 1.0 ?  7.2020774     1.3431107     -2.4794405  1
+ATOM O O   . SER Q 0 13  . 13  SER Q O   93  nan 1.0 ?  7.2259054     2.4632173     -1.9642302  1
+ATOM C CB  . SER Q 0 13  . 13  SER Q CB  94  nan 1.0 ?  9.160389      0.99638337    -4.009949   1
+ATOM O OG  . SER Q 0 13  . 13  SER Q OG  95  nan 1.0 ?  10.448181     0.42232403    -4.1530647  1
+ATOM N N   . LEU Q 0 14  . 14  LEU Q N   96  nan 1.0 ?  6.1206145     0.696831      -2.7853696  1
+ATOM C CA  . LEU Q 0 14  . 14  LEU Q CA  97  nan 1.0 ?  4.827604      1.3426839     -2.6393657  1
+ATOM C C   . LEU Q 0 14  . 14  LEU Q C   98  nan 1.0 ?  4.4135647     1.4461497     -1.1776817  1
+ATOM O O   . LEU Q 0 14  . 14  LEU Q O   99  nan 1.0 ?  3.5847208     2.2627904     -0.8160357  1
+ATOM C CB  . LEU Q 0 14  . 14  LEU Q CB  100 nan 1.0 ?  3.7600808     0.5880077     -3.4356704  1
+ATOM C CG  . LEU Q 0 14  . 14  LEU Q CG  101 nan 1.0 ?  3.7855723     0.7599912     -4.9402127  1
+ATOM C CD1 . LEU Q 0 14  . 14  LEU Q CD1 102 nan 1.0 ?  2.8241322     -0.2133197    -5.60142    1
+ATOM C CD2 . LEU Q 0 14  . 14  LEU Q CD2 103 nan 1.0 ?  3.4283457     2.1967177     -5.3160458  1
+ATOM N N   . THR Q 0 15  . 15  THR Q N   104 nan 1.0 ?  5.0123096     0.6224998     -0.35723615 1
+ATOM C CA  . THR Q 0 15  . 15  THR Q CA  105 nan 1.0 ?  4.675481      0.64502716    1.0583527   1
+ATOM C C   . THR Q 0 15  . 15  THR Q C   106 nan 1.0 ?  5.1126065     1.9372298     1.705903    1
+ATOM O O   . THR Q 0 15  . 15  THR Q O   107 nan 1.0 ?  4.6664004     2.2573607     2.801407    1
+ATOM C CB  . THR Q 0 15  . 15  THR Q CB  108 nan 1.0 ?  5.326092      -0.5463125    1.7959251   1
+ATOM O OG1 . THR Q 0 15  . 15  THR Q OG1 109 nan 1.0 ?  6.719713      -0.5059843    1.5925419   1
+ATOM C CG2 . THR Q 0 15  . 15  THR Q CG2 110 nan 1.0 ?  4.766736      -1.8603027    1.2779797   1
+ATOM N N   . ALA Q 0 16  . 16  ALA Q N   111 nan 1.0 ?  5.923779      2.6760535     1.00165     1
+ATOM C CA  . ALA Q 0 16  . 16  ALA Q CA  112 nan 1.0 ?  6.365222      3.949946      1.5169948   1
+ATOM C C   . ALA Q 0 16  . 16  ALA Q C   113 nan 1.0 ?  5.3119483     5.0452456     1.3225195   1
+ATOM O O   . ALA Q 0 16  . 16  ALA Q O   114 nan 1.0 ?  5.410412      6.1073403     1.871628    1
+ATOM C CB  . ALA Q 0 16  . 16  ALA Q CB  115 nan 1.0 ?  7.6864758     4.382247      0.84287524  1
+ATOM N N   . TYR Q 0 17  . 17  TYR Q N   116 nan 1.0 ?  4.246566      4.7119484     0.60140264  1
+ATOM C CA  . TYR Q 0 17  . 17  TYR Q CA  117 nan 1.0 ?  3.184466      5.661559      0.3053807   1
+ATOM C C   . TYR Q 0 17  . 17  TYR Q C   118 nan 1.0 ?  1.9233414     5.3061275     1.0651466   1
+ATOM O O   . TYR Q 0 17  . 17  TYR Q O   119 nan 1.0 ?  1.7395811     4.164637      1.4665188   1
+ATOM C CB  . TYR Q 0 17  . 17  TYR Q CB  120 nan 1.0 ?  2.8944402     5.7157326     -1.1945053  1
+ATOM C CG  . TYR Q 0 17  . 17  TYR Q CG  121 nan 1.0 ?  4.056074      6.1567764     -2.0220828  1
+ATOM C CD1 . TYR Q 0 17  . 17  TYR Q CD1 122 nan 1.0 ?  4.2884007     7.5240808     -2.2777336  1
+ATOM C CD2 . TYR Q 0 17  . 17  TYR Q CD2 123 nan 1.0 ?  4.934505      5.2261105     -2.5570834  1
+ATOM C CE1 . TYR Q 0 17  . 17  TYR Q CE1 124 nan 1.0 ?  5.364789      7.9431086     -3.0519416  1
+ATOM C CE2 . TYR Q 0 17  . 17  TYR Q CE2 125 nan 1.0 ?  6.04117       5.652238      -3.346987   1
+ATOM C CZ  . TYR Q 0 17  . 17  TYR Q CZ  126 nan 1.0 ?  6.207608      6.989369      -3.5834649  1
+ATOM O OH  . TYR Q 0 17  . 17  TYR Q OH  127 nan 1.0 ?  7.29178       7.420766      -4.346004   1
+ATOM N N   . ILE Q 0 18  . 18  ILE Q N   128 nan 1.0 ?  1.1064413     6.3227663     1.3919197   1
+ATOM C CA  . ILE Q 0 18  . 18  ILE Q CA  129 nan 1.0 ?  -0.1478551    6.105505      2.0927837   1
+ATOM C C   . ILE Q 0 18  . 18  ILE Q C   130 nan 1.0 ?  -1.1817716    5.475641      1.1586688   1
+ATOM O O   . ILE Q 0 18  . 18  ILE Q O   131 nan 1.0 ?  -1.4490392    6.0051217     0.07591294  1
+ATOM C CB  . ILE Q 0 18  . 18  ILE Q CB  132 nan 1.0 ?  -0.6961223    7.4255342     2.6558163   1
+ATOM C CG1 . ILE Q 0 18  . 18  ILE Q CG1 133 nan 1.0 ?  0.28005663    8.02206       3.6700127   1
+ATOM C CG2 . ILE Q 0 18  . 18  ILE Q CG2 134 nan 1.0 ?  -2.0771       7.224844      3.3117836   1
+ATOM C CD1 . ILE Q 0 18  . 18  ILE Q CD1 135 nan 1.0 ?  -0.06585951   9.430497      4.138633    1
+ATOM N N   . VAL Q 0 19  . 19  VAL Q N   136 nan 1.0 ?  -1.6475382    4.2877407     1.5327358   1
+ATOM C CA  . VAL Q 0 19  . 19  VAL Q CA  137 nan 1.0 ?  -2.6612034    3.5980914     0.7547331   1
+ATOM C C   . VAL Q 0 19  . 19  VAL Q C   138 nan 1.0 ?  -4.035563     4.1701517     1.0700085   1
+ATOM O O   . VAL Q 0 19  . 19  VAL Q O   139 nan 1.0 ?  -4.4449506    4.2205157     2.218224    1
+ATOM C CB  . VAL Q 0 19  . 19  VAL Q CB  140 nan 1.0 ?  -2.6349773    2.076553      1.0284731   1
+ATOM C CG1 . VAL Q 0 19  . 19  VAL Q CG1 141 nan 1.0 ?  -3.738574     1.3685114     0.2697941   1
+ATOM C CG2 . VAL Q 0 19  . 19  VAL Q CG2 142 nan 1.0 ?  -1.2784833    1.4939559     0.68828005  1
+ATOM N N   . GLU Q 0 20  . 20  GLU Q N   143 nan 1.0 ?  -4.732307     4.6384435     0.061103858 1
+ATOM C CA  . GLU Q 0 20  . 20  GLU Q CA  144 nan 1.0 ?  -6.015817     5.2900333     0.22883663  1
+ATOM C C   . GLU Q 0 20  . 20  GLU Q C   145 nan 1.0 ?  -7.1786647    4.313069      0.105139695 1
+ATOM O O   . GLU Q 0 20  . 20  GLU Q O   146 nan 1.0 ?  -8.261921     4.559116      0.63803226  1
+ATOM C CB  . GLU Q 0 20  . 20  GLU Q CB  147 nan 1.0 ?  -6.176126     6.433418      -0.79378015 1
+ATOM C CG  . GLU Q 0 20  . 20  GLU Q CG  148 nan 1.0 ?  -5.2502575    7.5886536     -0.5615011  1
+ATOM C CD  . GLU Q 0 20  . 20  GLU Q CD  149 nan 1.0 ?  -5.4522595    8.742896      -1.5372425  1
+ATOM O OE1 . GLU Q 0 20  . 20  GLU Q OE1 150 nan 1.0 ?  -4.8856936    9.849741      -1.3068559  1
+ATOM O OE2 . GLU Q 0 20  . 20  GLU Q OE2 151 nan 1.0 ?  -6.16527      8.543735      -2.5344884  1
+ATOM N N   . GLY Q 0 21  . 21  GLY Q N   152 nan 1.0 ?  -6.923499     3.187036      -0.5448334  1
+ATOM C CA  . GLY Q 0 21  . 21  GLY Q CA  153 nan 1.0 ?  -7.972968     2.2220564     -0.7586838  1
+ATOM C C   . GLY Q 0 21  . 21  GLY Q C   154 nan 1.0 ?  -7.5120115    0.9893696     -1.5032945  1
+ATOM O O   . GLY Q 0 21  . 21  GLY Q O   155 nan 1.0 ?  -6.4343514    0.9721323     -2.1056533  1
+ATOM N N   . VAL Q 0 22  . 22  VAL Q N   156 nan 1.0 ?  -8.298536     -0.11318515   -1.2835282  1
+ATOM C CA  . VAL Q 0 22  . 22  VAL Q CA  157 nan 1.0 ?  -8.044549     -1.3785696    -1.9652385  1
+ATOM C C   . VAL Q 0 22  . 22  VAL Q C   158 nan 1.0 ?  -9.300528     -1.8337777    -2.6740181  1
+ATOM O O   . VAL Q 0 22  . 22  VAL Q O   159 nan 1.0 ?  -10.40391     -1.8179452    -2.1037815  1
+ATOM C CB  . VAL Q 0 22  . 22  VAL Q CB  160 nan 1.0 ?  -7.5435624    -2.455141     -0.97018075 1
+ATOM C CG1 . VAL Q 0 22  . 22  VAL Q CG1 161 nan 1.0 ?  -7.296731     -3.759305     -1.6887683  1
+ATOM C CG2 . VAL Q 0 22  . 22  VAL Q CG2 162 nan 1.0 ?  -6.305888     -1.9823626    -0.23493987 1
+ATOM N N   . GLY Q 0 23  . 23  GLY Q N   163 nan 1.0 ?  -9.153051     -2.0830946    -3.9572499  1
+ATOM C CA  . GLY Q 0 23  . 23  GLY Q CA  164 nan 1.0 ?  -10.239865    -2.6222475    -4.7448764  1
+ATOM C C   . GLY Q 0 23  . 23  GLY Q C   165 nan 1.0 ?  -9.910615     -3.9599383    -5.398161   1
+ATOM O O   . GLY Q 0 23  . 23  GLY Q O   166 nan 1.0 ?  -8.723524     -4.2949977    -5.5491085  1
+ATOM N N   . SER Q 0 24  . 24  SER Q N   167 nan 1.0 ?  -10.917992    -4.7855363    -5.576183   1
+ATOM C CA  . SER Q 0 24  . 24  SER Q CA  168 nan 1.0 ?  -10.699951    -6.043429     -6.2728233  1
+ATOM C C   . SER Q 0 24  . 24  SER Q C   169 nan 1.0 ?  -11.754135    -6.2661643    -7.3639603  1
+ATOM O O   . SER Q 0 24  . 24  SER Q O   170 nan 1.0 ?  -12.881391    -5.800006     -7.242004   1
+ATOM C CB  . SER Q 0 24  . 24  SER Q CB  171 nan 1.0 ?  -10.741258    -7.2066426    -5.2871585  1
+ATOM O OG  . SER Q 0 24  . 24  SER Q OG  172 nan 1.0 ?  -12.048996    -7.352888     -4.711468   1
+ATOM N N   . GLU Q 0 25  . 25  GLU Q N   173 nan 1.0 ?  -11.257426    -6.7360234    -8.489315   1
+ATOM C CA  . GLU Q 0 25  . 25  GLU Q CA  174 nan 1.0 ?  -12.09813     -7.116394     -9.62536    1
+ATOM C C   . GLU Q 0 25  . 25  GLU Q C   175 nan 1.0 ?  -11.789337    -8.522302     -10.073432  1
+ATOM O O   . GLU Q 0 25  . 25  GLU Q O   176 nan 1.0 ?  -10.635301    -8.889805     -10.237859  1
+ATOM C CB  . GLU Q 0 25  . 25  GLU Q CB  177 nan 1.0 ?  -11.929338    -6.1055765    -10.746963  1
+ATOM C CG  . GLU Q 0 25  . 25  GLU Q CG  178 nan 1.0 ?  -12.88915     -6.357975     -11.949329  1
+ATOM C CD  . GLU Q 0 25  . 25  GLU Q CD  179 nan 1.0 ?  -12.665214    -5.38903      -13.073289  1
+ATOM O OE1 . GLU Q 0 25  . 25  GLU Q OE1 180 nan 1.0 ?  -13.246675    -5.6233315    -14.184449  1
+ATOM O OE2 . GLU Q 0 25  . 25  GLU Q OE2 181 nan 1.0 ?  -11.922572    -4.387353     -12.901563  1
+ATOM N N   . VAL Q 0 26  . 26  VAL Q N   182 nan 1.0 ?  -12.8906975   -9.290587     -10.1902895 1
+ATOM C CA  . VAL Q 0 26  . 26  VAL Q CA  183 nan 1.0 ?  -12.703434    -10.665001    -10.679407  1
+ATOM C C   . VAL Q 0 26  . 26  VAL Q C   184 nan 1.0 ?  -13.396288    -10.814604    -12.009487  1
+ATOM O O   . VAL Q 0 26  . 26  VAL Q O   185 nan 1.0 ?  -14.564373    -10.472931    -12.203027  1
+ATOM C CB  . VAL Q 0 26  . 26  VAL Q CB  186 nan 1.0 ?  -13.278378    -11.711719    -9.652252   1
+ATOM C CG1 . VAL Q 0 26  . 26  VAL Q CG1 187 nan 1.0 ?  -13.082925    -13.118275    -10.153519  1
+ATOM C CG2 . VAL Q 0 26  . 26  VAL Q CG2 188 nan 1.0 ?  -12.606992    -11.502657    -8.29529    1
+ATOM N N   . SER Q 0 27  . 27  SER Q N   189 nan 1.0 ?  -12.586071    -11.200529    -12.996802  1
+ATOM C CA  . SER Q 0 27  . 27  SER Q CA  190 nan 1.0 ?  -13.15454     -11.551122    -14.312375  1
+ATOM C C   . SER Q 0 27  . 27  SER Q C   191 nan 1.0 ?  -12.952733    -13.039219    -14.6283045 1
+ATOM O O   . SER Q 0 27  . 27  SER Q O   192 nan 1.0 ?  -12.395797    -13.753743    -13.824558  1
+ATOM C CB  . SER Q 0 27  . 27  SER Q CB  193 nan 1.0 ?  -12.494467    -10.751967    -15.423864  1
+ATOM O OG  . SER Q 0 27  . 27  SER Q OG  194 nan 1.0 ?  -11.178993    -11.149456    -15.669362  1
+ATOM N N   . ASP Q 0 28  . 28  ASP Q N   195 nan 1.0 ?  -13.588272    -13.558983    -15.644316  1
+ATOM C CA  . ASP Q 0 28  . 28  ASP Q CA  196 nan 1.0 ?  -13.477535    -14.931631    -16.039034  1
+ATOM C C   . ASP Q 0 28  . 28  ASP Q C   197 nan 1.0 ?  -12.03375     -15.345295    -16.260124  1
+ATOM O O   . ASP Q 0 28  . 28  ASP Q O   198 nan 1.0 ?  -11.65138     -16.482597    -15.948495  1
+ATOM C CB  . ASP Q 0 28  . 28  ASP Q CB  199 nan 1.0 ?  -14.315204    -15.230049    -17.270824  1
+ATOM C CG  . ASP Q 0 28  . 28  ASP Q CG  200 nan 1.0 ?  -15.816104    -15.202413    -17.049164  1
+ATOM O OD1 . ASP Q 0 28  . 28  ASP Q OD1 201 nan 1.0 ?  -16.2625      -15.332282    -15.857416  1
+ATOM O OD2 . ASP Q 0 28  . 28  ASP Q OD2 202 nan 1.0 ?  -16.543533    -14.992358    -17.9755    1
+ATOM N N   . LYS Q 0 29  . 29  LYS Q N   203 nan 1.0 ?  -11.162294    -14.387548    -16.469305  1
+ATOM C CA  . LYS Q 0 29  . 29  LYS Q CA  204 nan 1.0 ?  -9.843788     -14.697852    -16.903656  1
+ATOM C C   . LYS Q 0 29  . 29  LYS Q C   205 nan 1.0 ?  -8.785843     -14.283187    -15.913967  1
+ATOM O O   . LYS Q 0 29  . 29  LYS Q O   206 nan 1.0 ?  -7.728639     -14.906464    -15.774258  1
+ATOM C CB  . LYS Q 0 29  . 29  LYS Q CB  207 nan 1.0 ?  -9.545408     -14.097449    -18.29946   1
+ATOM C CG  . LYS Q 0 29  . 29  LYS Q CG  208 nan 1.0 ?  -10.347162    -14.687943    -19.36113   1
+ATOM C CD  . LYS Q 0 29  . 29  LYS Q CD  209 nan 1.0 ?  -9.944757     -14.107214    -20.762173  1
+ATOM C CE  . LYS Q 0 29  . 29  LYS Q CE  210 nan 1.0 ?  -10.774554    -14.686667    -21.899847  1
+ATOM N NZ  . LYS Q 0 29  . 29  LYS Q NZ  211 nan 1.0 +1 -10.3668165   -14.082656    -23.171339  1
+ATOM N N   . ARG Q 0 30  . 30  ARG Q N   212 nan 1.0 ?  -9.167268     -13.270089    -15.077819  1
+ATOM C CA  . ARG Q 0 30  . 30  ARG Q CA  213 nan 1.0 ?  -8.122098     -12.6861105   -14.208351  1
+ATOM C C   . ARG Q 0 30  . 30  ARG Q C   214 nan 1.0 ?  -8.760472     -12.111161    -12.930983  1
+ATOM O O   . ARG Q 0 30  . 30  ARG Q O   215 nan 1.0 ?  -9.926083     -11.765791    -12.924499  1
+ATOM C CB  . ARG Q 0 30  . 30  ARG Q CB  216 nan 1.0 ?  -7.327646     -11.621213    -14.951435  1
+ATOM C CG  . ARG Q 0 30  . 30  ARG Q CG  217 nan 1.0 ?  -6.564962     -12.133524    -16.178226  1
+ATOM C CD  . ARG Q 0 30  . 30  ARG Q CD  218 nan 1.0 ?  -5.7855606    -11.017954    -16.797491  1
+ATOM N NE  . ARG Q 0 30  . 30  ARG Q NE  219 nan 1.0 ?  -5.0486836    -11.524072    -18.000057  1
+ATOM C CZ  . ARG Q 0 30  . 30  ARG Q CZ  220 nan 1.0 ?  -4.3006086    -10.725977    -18.82549   1
+ATOM N NH1 . ARG Q 0 30  . 30  ARG Q NH1 221 nan 1.0 ?  -4.19727      -9.439837     -18.532055  1
+ATOM N NH2 . ARG Q 0 30  . 30  ARG Q NH2 222 nan 1.0 +1 -3.6953173    -11.283225    -19.792503  1
+ATOM N N   . THR Q 0 31  . 31  THR Q N   223 nan 1.0 ?  -7.9537935    -12.171165    -11.895785  1
+ATOM C CA  . THR Q 0 31  . 31  THR Q CA  224 nan 1.0 ?  -8.284294     -11.483542    -10.651954  1
+ATOM C C   . THR Q 0 31  . 31  THR Q C   225 nan 1.0 ?  -7.375034     -10.259325    -10.507008  1
+ATOM O O   . THR Q 0 31  . 31  THR Q O   226 nan 1.0 ?  -6.141182     -10.357742    -10.579703  1
+ATOM C CB  . THR Q 0 31  . 31  THR Q CB  227 nan 1.0 ?  -8.10362      -12.385367    -9.447422   1
+ATOM O OG1 . THR Q 0 31  . 31  THR Q OG1 228 nan 1.0 ?  -8.924978     -13.58039     -9.637119   1
+ATOM C CG2 . THR Q 0 31  . 31  THR Q CG2 229 nan 1.0 ?  -8.490182     -11.707772    -8.152586   1
+ATOM N N   . CYS Q 0 32  . 32  CYS Q N   230 nan 1.0 ?  -8.038996     -9.130172     -10.339248  1
+ATOM C CA  . CYS Q 0 32  . 32  CYS Q CA  231 nan 1.0 ?  -7.2791758    -7.8835287    -10.229763  1
+ATOM C C   . CYS Q 0 32  . 32  CYS Q C   232 nan 1.0 ?  -7.4871745    -7.228397     -8.869883   1
+ATOM O O   . CYS Q 0 32  . 32  CYS Q O   233 nan 1.0 ?  -8.614479     -7.2066636    -8.364615   1
+ATOM C CB  . CYS Q 0 32  . 32  CYS Q CB  234 nan 1.0 ?  -7.6935444    -6.910616     -11.305927  1
+ATOM S SG  . CYS Q 0 32  . 32  CYS Q SG  235 nan 1.0 ?  -7.404315     -7.5287905    -12.986043  1
+ATOM N N   . VAL Q 0 33  . 33  VAL Q N   236 nan 1.0 ?  -6.397072     -6.840741     -8.297254   1
+ATOM C CA  . VAL Q 0 33  . 33  VAL Q CA  237 nan 1.0 ?  -6.412255     -6.071973     -7.061546   1
+ATOM C C   . VAL Q 0 33  . 33  VAL Q C   238 nan 1.0 ?  -5.808658     -4.690094     -7.2941203  1
+ATOM O O   . VAL Q 0 33  . 33  VAL Q O   239 nan 1.0 ?  -4.7324495    -4.5709963    -7.9076896  1
+ATOM C CB  . VAL Q 0 33  . 33  VAL Q CB  240 nan 1.0 ?  -5.6493354    -6.802093     -5.9266148  1
+ATOM C CG1 . VAL Q 0 33  . 33  VAL Q CG1 241 nan 1.0 ?  -5.665079     -5.9572453    -4.6674743  1
+ATOM C CG2 . VAL Q 0 33  . 33  VAL Q CG2 242 nan 1.0 ?  -6.284895     -8.135233     -5.6621456  1
+ATOM N N   . SER Q 0 34  . 34  SER Q N   243 nan 1.0 ?  -6.5491343    -3.6780226    -6.885354   1
+ATOM C CA  . SER Q 0 34  . 34  SER Q CA  244 nan 1.0 ?  -6.077439     -2.3142552    -7.071824   1
+ATOM C C   . SER Q 0 34  . 34  SER Q C   245 nan 1.0 ?  -5.7939157    -1.6244979    -5.7524548  1
+ATOM O O   . SER Q 0 34  . 34  SER Q O   246 nan 1.0 ?  -6.576272     -1.748325     -4.7930374  1
+ATOM C CB  . SER Q 0 34  . 34  SER Q CB  247 nan 1.0 ?  -7.11713      -1.5040854    -7.855946   1
+ATOM O OG  . SER Q 0 34  . 34  SER Q OG  248 nan 1.0 ?  -7.370227     -2.0901272    -9.105573   1
+ATOM N N   . LEU Q 0 35  . 35  LEU Q N   249 nan 1.0 ?  -4.6359067    -1.0205158    -5.6942496  1
+ATOM C CA  . LEU Q 0 35  . 35  LEU Q CA  250 nan 1.0 ?  -4.2715983    -0.18087044   -4.562291   1
+ATOM C C   . LEU Q 0 35  . 35  LEU Q C   251 nan 1.0 ?  -4.232763     1.2806022     -4.950357   1
+ATOM O O   . LEU Q 0 35  . 35  LEU Q O   252 nan 1.0 ?  -3.5298214    1.6840248     -5.8949337  1
+ATOM C CB  . LEU Q 0 35  . 35  LEU Q CB  253 nan 1.0 ?  -2.909708     -0.59991884   -3.9985466  1
+ATOM C CG  . LEU Q 0 35  . 35  LEU Q CG  254 nan 1.0 ?  -2.8232832    -1.994409     -3.4244318  1
+ATOM C CD1 . LEU Q 0 35  . 35  LEU Q CD1 255 nan 1.0 ?  -1.3771087    -2.347385     -3.099201   1
+ATOM C CD2 . LEU Q 0 35  . 35  LEU Q CD2 256 nan 1.0 ?  -3.6973698    -2.12682      -2.1812954  1
+ATOM N N   . THR Q 0 36  . 36  THR Q N   257 nan 1.0 ?  -5.113395     2.015638      -4.311383   1
+ATOM C CA  . THR Q 0 36  . 36  THR Q CA  258 nan 1.0 ?  -5.087458     3.457253      -4.546159   1
+ATOM C C   . THR Q 0 36  . 36  THR Q C   259 nan 1.0 ?  -4.239009     4.1476583     -3.4823446  1
+ATOM O O   . THR Q 0 36  . 36  THR Q O   260 nan 1.0 ?  -4.452183     3.984351      -2.2825894  1
+ATOM C CB  . THR Q 0 36  . 36  THR Q CB  261 nan 1.0 ?  -6.5046062    4.031196      -4.524488   1
+ATOM O OG1 . THR Q 0 36  . 36  THR Q OG1 262 nan 1.0 ?  -7.321493     3.3167038     -5.456995   1
+ATOM C CG2 . THR Q 0 36  . 36  THR Q CG2 263 nan 1.0 ?  -6.522205     5.5103874     -4.8952055  1
+ATOM N N   . THR Q 0 37  . 37  THR Q N   264 nan 1.0 ?  -3.200968     4.822505      -3.9500456  1
+ATOM C CA  . THR Q 0 37  . 37  THR Q CA  265 nan 1.0 ?  -2.2841227    5.5113564     -3.057993   1
+ATOM C C   . THR Q 0 37  . 37  THR Q C   266 nan 1.0 ?  -2.2814507    6.98298       -3.322712   1
+ATOM O O   . THR Q 0 37  . 37  THR Q O   267 nan 1.0 ?  -2.9390495    7.474875      -4.2462416  1
+ATOM C CB  . THR Q 0 37  . 37  THR Q CB  268 nan 1.0 ?  -0.84603417   4.946526      -3.1947157  1
+ATOM O OG1 . THR Q 0 37  . 37  THR Q OG1 269 nan 1.0 ?  -0.34273484   5.303578      -4.489126   1
+ATOM C CG2 . THR Q 0 37  . 37  THR Q CG2 270 nan 1.0 ?  -0.8381495    3.4309094     -3.071424   1
+ATOM N N   . GLN Q 0 38  . 38  GLN Q N   271 nan 1.0 ?  -1.6567811    7.7271795     -2.3893805  1
+ATOM C CA  . GLN Q 0 38  . 38  GLN Q CA  272 nan 1.0 ?  -1.3022348    9.103886      -2.7143161  1
+ATOM C C   . GLN Q 0 38  . 38  GLN Q C   273 nan 1.0 ?  -0.3933108    9.157802      -3.9413743  1
+ATOM O O   . GLN Q 0 38  . 38  GLN Q O   274 nan 1.0 ?  0.15719134    8.121558      -4.370187   1
+ATOM C CB  . GLN Q 0 38  . 38  GLN Q CB  275 nan 1.0 ?  -0.64634717   9.786144      -1.5210159  1
+ATOM C CG  . GLN Q 0 38  . 38  GLN Q CG  276 nan 1.0 ?  -1.5624533    10.005426     -0.3551344  1
+ATOM C CD  . GLN Q 0 38  . 38  GLN Q CD  277 nan 1.0 ?  -0.9025371    10.740186     0.793681    1
+ATOM O OE1 . GLN Q 0 38  . 38  GLN Q OE1 278 nan 1.0 ?  0.29413602    11.006187     0.75924397  1
+ATOM N NE2 . GLN Q 0 38  . 38  GLN Q NE2 279 nan 1.0 ?  -1.678419     11.071231     1.8127086   1
+ATOM N N   . ARG Q 0 39  . 39  ARG Q N   280 nan 1.0 ?  -0.39232144   10.231606     -4.616104   1
+ATOM C CA  . ARG Q 0 39  . 39  ARG Q CA  281 nan 1.0 ?  0.36880112    10.4218645    -5.830791   1
+ATOM C C   . ARG Q 0 39  . 39  ARG Q C   282 nan 1.0 ?  1.7374879     9.794438      -5.7530537  1
+ATOM O O   . ARG Q 0 39  . 39  ARG Q O   283 nan 1.0 ?  2.4998848     10.004038     -4.823445   1
+ATOM C CB  . ARG Q 0 39  . 39  ARG Q CB  284 nan 1.0 ?  0.49281067    11.92673      -6.1636167  1
+ATOM C CG  . ARG Q 0 39  . 39  ARG Q CG  285 nan 1.0 ?  0.9792761     12.171984     -7.5711007  1
+ATOM C CD  . ARG Q 0 39  . 39  ARG Q CD  286 nan 1.0 ?  0.982504      13.691096     -7.890227   1
+ATOM N NE  . ARG Q 0 39  . 39  ARG Q NE  287 nan 1.0 ?  1.5044708     13.968876     -9.2379055  1
+ATOM C CZ  . ARG Q 0 39  . 39  ARG Q CZ  288 nan 1.0 ?  1.6097872     15.164332     -9.772739   1
+ATOM N NH1 . ARG Q 0 39  . 39  ARG Q NH1 289 nan 1.0 ?  1.2347902     16.238094     -9.07632    1
+ATOM N NH2 . ARG Q 0 39  . 39  ARG Q NH2 290 nan 1.0 +1 2.0948591     15.319327     -10.965202  1
+ATOM N N   . LEU Q 0 40  . 40  LEU Q N   291 nan 1.0 ?  2.017089      8.843966      -6.722313   1
+ATOM C CA  . LEU Q 0 40  . 40  LEU Q CA  292 nan 1.0 ?  3.2975736     8.18965       -6.8491206  1
+ATOM C C   . LEU Q 0 40  . 40  LEU Q C   293 nan 1.0 ?  4.2289433     9.004535      -7.7868724  1
+ATOM O O   . LEU Q 0 40  . 40  LEU Q O   294 nan 1.0 ?  3.7760704     9.642825      -8.714378   1
+ATOM C CB  . LEU Q 0 40  . 40  LEU Q CB  295 nan 1.0 ?  3.1459827     6.788755      -7.38434    1
+ATOM C CG  . LEU Q 0 40  . 40  LEU Q CG  296 nan 1.0 ?  2.3818727     5.7999053     -6.4894614  1
+ATOM C CD1 . LEU Q 0 40  . 40  LEU Q CD1 297 nan 1.0 ?  2.1232562     4.4936724     -7.2257624  1
+ATOM C CD2 . LEU Q 0 40  . 40  LEU Q CD2 298 nan 1.0 ?  3.1591108     5.542881      -5.2170277  1
+ATOM N N   . PRO Q 0 41  . 41  PRO Q N   299 nan 1.0 ?  5.477346      9.091118      -7.432644   1
+ATOM C CA  . PRO Q 0 41  . 41  PRO Q CA  300 nan 1.0 ?  6.4319553     9.796522      -8.3083515  1
+ATOM C C   . PRO Q 0 41  . 41  PRO Q C   301 nan 1.0 ?  6.7376423     9.055709      -9.5880575  1
+ATOM O O   . PRO Q 0 41  . 41  PRO Q O   302 nan 1.0 ?  7.851307      8.720863      -9.83653    1
+ATOM C CB  . PRO Q 0 41  . 41  PRO Q CB  303 nan 1.0 ?  7.678575      9.922191      -7.4277663  1
+ATOM C CG  . PRO Q 0 41  . 41  PRO Q CG  304 nan 1.0 ?  7.647367      8.681705      -6.568002   1
+ATOM C CD  . PRO Q 0 41  . 41  PRO Q CD  305 nan 1.0 ?  6.196473      8.354687      -6.296151   1
+ATOM N N   . VAL Q 0 42  . 42  VAL Q N   306 nan 1.0 ?  5.6728783     8.697197      -10.319945  1
+ATOM C CA  . VAL Q 0 42  . 42  VAL Q CA  307 nan 1.0 ?  5.910014      8.061527      -11.60067   1
+ATOM C C   . VAL Q 0 42  . 42  VAL Q C   308 nan 1.0 ?  5.445192      8.969927      -12.722321  1
+ATOM O O   . VAL Q 0 42  . 42  VAL Q O   309 nan 1.0 ?  4.443312      9.680226      -12.6017065 1
+ATOM C CB  . VAL Q 0 42  . 42  VAL Q CB  310 nan 1.0 ?  5.171814      6.689857      -11.659036  1
+ATOM C CG1 . VAL Q 0 42  . 42  VAL Q CG1 311 nan 1.0 ?  5.760871      5.7026463     -10.659596  1
+ATOM C CG2 . VAL Q 0 42  . 42  VAL Q CG2 312 nan 1.0 ?  3.6577718     6.86634       -11.434741  1
+ATOM N N   . SER Q 0 43  . 43  SER Q N   313 nan 1.0 ?  6.2945933     9.144748      -13.725604  1
+ATOM C CA  . SER Q 0 43  . 43  SER Q CA  314 nan 1.0 ?  6.0321755     10.05308      -14.840496  1
+ATOM C C   . SER Q 0 43  . 43  SER Q C   315 nan 1.0 ?  5.185986      9.36458       -15.87435   1
+ATOM O O   . SER Q 0 43  . 43  SER Q O   316 nan 1.0 ?  4.3995776     10.009821     -16.590841  1
+ATOM C CB  . SER Q 0 43  . 43  SER Q CB  317 nan 1.0 ?  7.3095126     10.53306      -15.469177  1
+ATOM O OG  . SER Q 0 43  . 43  SER Q OG  318 nan 1.0 ?  8.095253      9.445384      -15.94091   1
+ATOM N N   . ARG Q 0 44  . 44  ARG Q N   319 nan 1.0 ?  5.22389       8.02332       -15.893805  1
+ATOM C CA  . ARG Q 0 44  . 44  ARG Q CA  320 nan 1.0 ?  4.4935308     7.216879      -16.9168    1
+ATOM C C   . ARG Q 0 44  . 44  ARG Q C   321 nan 1.0 ?  3.9880366     5.9365983     -16.310225  1
+ATOM O O   . ARG Q 0 44  . 44  ARG Q O   322 nan 1.0 ?  4.4362974     5.501877      -15.213338  1
+ATOM C CB  . ARG Q 0 44  . 44  ARG Q CB  323 nan 1.0 ?  5.4066133     6.897168      -18.059855  1
+ATOM C CG  . ARG Q 0 44  . 44  ARG Q CG  324 nan 1.0 ?  5.9211164     8.118881      -18.852982  1
+ATOM C CD  . ARG Q 0 44  . 44  ARG Q CD  325 nan 1.0 ?  6.774749      7.6960764     -20.01979   1
+ATOM N NE  . ARG Q 0 44  . 44  ARG Q NE  326 nan 1.0 ?  7.2655034     8.862379      -20.803036  1
+ATOM C CZ  . ARG Q 0 44  . 44  ARG Q CZ  327 nan 1.0 ?  8.020397      8.862688      -21.84749   1
+ATOM N NH1 . ARG Q 0 44  . 44  ARG Q NH1 328 nan 1.0 ?  8.366839      7.6818924     -22.388245  1
+ATOM N NH2 . ARG Q 0 44  . 44  ARG Q NH2 329 nan 1.0 +1 8.403034      9.981162      -22.411024  1
+ATOM N N   . ILE Q 0 45  . 45  ILE Q N   330 nan 1.0 ?  2.923927      5.4249144     -16.911243  1
+ATOM C CA  . ILE Q 0 45  . 45  ILE Q CA  331 nan 1.0 ?  2.4175828     4.1121893     -16.525415  1
+ATOM C C   . ILE Q 0 45  . 45  ILE Q C   332 nan 1.0 ?  3.4593792     3.0579548     -16.80204   1
+ATOM O O   . ILE Q 0 45  . 45  ILE Q O   333 nan 1.0 ?  4.0549927     2.9748938     -17.911951  1
+ATOM C CB  . ILE Q 0 45  . 45  ILE Q CB  334 nan 1.0 ?  1.1097978     3.7936454     -17.284647  1
+ATOM C CG1 . ILE Q 0 45  . 45  ILE Q CG1 335 nan 1.0 ?  0.01844567    4.8117495     -16.907824  1
+ATOM C CG2 . ILE Q 0 45  . 45  ILE Q CG2 336 nan 1.0 ?  0.6436075     2.3596942     -16.945429  1
+ATOM C CD1 . ILE Q 0 45  . 45  ILE Q CD1 337 nan 1.0 ?  -1.2301869    4.703646      -17.787899  1
+ATOM N N   . LYS Q 0 46  . 46  LYS Q N   338 nan 1.0 ?  3.8140893     2.3298893     -15.761467  1
+ATOM C CA  . LYS Q 0 46  . 46  LYS Q CA  339 nan 1.0 ?  4.701276      1.209611      -15.904242  1
+ATOM C C   . LYS Q 0 46  . 46  LYS Q C   340 nan 1.0 ?  3.9641113     -0.11937037   -15.812575  1
+ATOM O O   . LYS Q 0 46  . 46  LYS Q O   341 nan 1.0 ?  3.0899653     -0.29890448   -14.946587  1
+ATOM C CB  . LYS Q 0 46  . 46  LYS Q CB  342 nan 1.0 ?  5.795817      1.2703058     -14.85395   1
+ATOM C CG  . LYS Q 0 46  . 46  LYS Q CG  343 nan 1.0 ?  6.692808      2.5022912     -14.95798   1
+ATOM C CD  . LYS Q 0 46  . 46  LYS Q CD  344 nan 1.0 ?  7.8556137     2.44311       -13.93241   1
+ATOM C CE  . LYS Q 0 46  . 46  LYS Q CE  345 nan 1.0 ?  8.776939      3.654489      -14.085424  1
+ATOM N NZ  . LYS Q 0 46  . 46  LYS Q NZ  346 nan 1.0 +1 9.88871       3.5950606     -13.112049  1
+ATOM N N   . THR Q 0 47  . 47  THR Q N   347 nan 1.0 ?  4.2789726     -0.9667109    -16.787014  1
+ATOM C CA  . THR Q 0 47  . 47  THR Q CA  348 nan 1.0 ?  3.6376452     -2.2798018    -16.824566  1
+ATOM C C   . THR Q 0 47  . 47  THR Q C   349 nan 1.0 ?  4.6675706     -3.3775826    -16.663113  1
+ATOM O O   . THR Q 0 47  . 47  THR Q O   350 nan 1.0 ?  5.701982      -3.374118     -17.411406  1
+ATOM C CB  . THR Q 0 47  . 47  THR Q CB  351 nan 1.0 ?  2.8271267     -2.4611416    -18.078798  1
+ATOM O OG1 . THR Q 0 47  . 47  THR Q OG1 352 nan 1.0 ?  1.8840585     -1.392708     -18.219147  1
+ATOM C CG2 . THR Q 0 47  . 47  THR Q CG2 353 nan 1.0 ?  2.0596144     -3.7800581    -18.07257   1
+ATOM N N   . TYR Q 0 48  . 48  TYR Q N   354 nan 1.0 ?  4.37925       -4.270716     -15.771317  1
+ATOM C CA  . TYR Q 0 48  . 48  TYR Q CA  355 nan 1.0 ?  5.242195      -5.432352     -15.594464  1
+ATOM C C   . TYR Q 0 48  . 48  TYR Q C   356 nan 1.0 ?  4.4514947     -6.708866     -15.753324  1
+ATOM O O   . TYR Q 0 48  . 48  TYR Q O   357 nan 1.0 ?  3.3130507     -6.817183     -15.311004  1
+ATOM C CB  . TYR Q 0 48  . 48  TYR Q CB  358 nan 1.0 ?  5.887595      -5.4058185    -14.215931  1
+ATOM C CG  . TYR Q 0 48  . 48  TYR Q CG  359 nan 1.0 ?  6.7313943     -4.1894455    -13.9748    1
+ATOM C CD1 . TYR Q 0 48  . 48  TYR Q CD1 360 nan 1.0 ?  8.089512      -4.1660576    -14.286048  1
+ATOM C CD2 . TYR Q 0 48  . 48  TYR Q CD2 361 nan 1.0 ?  6.1788473     -3.053113     -13.3752365 1
+ATOM C CE1 . TYR Q 0 48  . 48  TYR Q CE1 362 nan 1.0 ?  8.84395       -3.0270693    -14.082896  1
+ATOM C CE2 . TYR Q 0 48  . 48  TYR Q CE2 363 nan 1.0 ?  6.945228      -1.9224169    -13.135521  1
+ATOM C CZ  . TYR Q 0 48  . 48  TYR Q CZ  364 nan 1.0 ?  8.278396      -1.9128207    -13.493941  1
+ATOM O OH  . TYR Q 0 48  . 48  TYR Q OH  365 nan 1.0 ?  9.012704      -0.7926991    -13.238514  1
+ATOM N N   . THR Q 0 49  . 49  THR Q N   366 nan 1.0 ?  5.03403       -7.60986      -16.481274  1
+ATOM C CA  . THR Q 0 49  . 49  THR Q CA  367 nan 1.0 ?  4.4548216     -8.931652     -16.660059  1
+ATOM C C   . THR Q 0 49  . 49  THR Q C   368 nan 1.0 ?  5.352509      -9.992942     -16.012537  1
+ATOM O O   . THR Q 0 49  . 49  THR Q O   369 nan 1.0 ?  6.5489807     -10.031486    -16.232729  1
+ATOM C CB  . THR Q 0 49  . 49  THR Q CB  370 nan 1.0 ?  4.2675014     -9.286603     -18.15408   1
+ATOM O OG1 . THR Q 0 49  . 49  THR Q OG1 371 nan 1.0 ?  3.4580245     -8.256001     -18.749828  1
+ATOM C CG2 . THR Q 0 49  . 49  THR Q CG2 372 nan 1.0 ?  3.59674       -10.639735    -18.289133  1
+ATOM N N   . ILE Q 0 50  . 50  ILE Q N   373 nan 1.0 ?  4.7023206     -10.714799    -15.107216  1
+ATOM C CA  . ILE Q 0 50  . 50  ILE Q CA  374 nan 1.0 ?  5.418093      -11.815665    -14.440064  1
+ATOM C C   . ILE Q 0 50  . 50  ILE Q C   375 nan 1.0 ?  4.8303294     -13.115786    -14.787251  1
+ATOM O O   . ILE Q 0 50  . 50  ILE Q O   376 nan 1.0 ?  3.6038926     -13.317522    -14.764617  1
+ATOM C CB  . ILE Q 0 50  . 50  ILE Q CB  377 nan 1.0 ?  5.3524384     -11.641909    -12.879185  1
+ATOM C CG1 . ILE Q 0 50  . 50  ILE Q CG1 378 nan 1.0 ?  5.883302      -10.249238    -12.505089  1
+ATOM C CG2 . ILE Q 0 50  . 50  ILE Q CG2 379 nan 1.0 ?  6.095952      -12.74339     -12.178966  1
+ATOM C CD1 . ILE Q 0 50  . 50  ILE Q CD1 380 nan 1.0 ?  5.574979      -9.873981     -11.048354  1
+ATOM N N   . THR Q 0 51  . 51  THR Q N   381 nan 1.0 ?  5.696497      -13.993527    -15.238823  1
+ATOM C CA  . THR Q 0 51  . 51  THR Q CA  382 nan 1.0 ?  5.2642803     -15.336014    -15.590093  1
+ATOM C C   . THR Q 0 51  . 51  THR Q C   383 nan 1.0 ?  5.979989      -16.384684    -14.72831   1
+ATOM O O   . THR Q 0 51  . 51  THR Q O   384 nan 1.0 ?  7.194468      -16.352386    -14.549598  1
+ATOM C CB  . THR Q 0 51  . 51  THR Q CB  385 nan 1.0 ?  5.556306      -15.668896    -17.067343  1
+ATOM O OG1 . THR Q 0 51  . 51  THR Q OG1 386 nan 1.0 ?  4.9726014     -14.681332    -17.889725  1
+ATOM C CG2 . THR Q 0 51  . 51  THR Q CG2 387 nan 1.0 ?  5.041604      -17.022343    -17.455242  1
+ATOM N N   . GLU Q 0 52  . 52  GLU Q N   388 nan 1.0 ?  5.178271      -17.172531    -14.019898  1
+ATOM C CA  . GLU Q 0 52  . 52  GLU Q CA  389 nan 1.0 ?  5.6434555     -18.305405    -13.26461   1
+ATOM C C   . GLU Q 0 52  . 52  GLU Q C   390 nan 1.0 ?  4.9785233     -19.584784    -13.691754  1
+ATOM O O   . GLU Q 0 52  . 52  GLU Q O   391 nan 1.0 ?  3.8234112     -19.839302    -13.3710165 1
+ATOM C CB  . GLU Q 0 52  . 52  GLU Q CB  392 nan 1.0 ?  5.406014      -18.06567     -11.762657  1
+ATOM C CG  . GLU Q 0 52  . 52  GLU Q CG  393 nan 1.0 ?  6.052535      -19.081402    -10.841071  1
+ATOM C CD  . GLU Q 0 52  . 52  GLU Q CD  394 nan 1.0 ?  5.8383417     -18.812534    -9.376024   1
+ATOM O OE1 . GLU Q 0 52  . 52  GLU Q OE1 395 nan 1.0 ?  6.336926      -19.630985    -8.538918   1
+ATOM O OE2 . GLU Q 0 52  . 52  GLU Q OE2 396 nan 1.0 ?  5.133895      -17.795872    -9.037533   1
+ATOM N N   . GLY Q 0 53  . 53  GLY Q N   397 nan 1.0 ?  5.7497454     -20.430101    -14.413419  1
+ATOM C CA  . GLY Q 0 53  . 53  GLY Q CA  398 nan 1.0 ?  5.1635985     -21.543053    -15.042461  1
+ATOM C C   . GLY Q 0 53  . 53  GLY Q C   399 nan 1.0 ?  4.07726       -21.21659     -16.014355  1
+ATOM O O   . GLY Q 0 53  . 53  GLY Q O   400 nan 1.0 ?  4.313115      -20.514286    -17.018536  1
+ATOM N N   . SER Q 0 54  . 54  SER Q N   401 nan 1.0 ?  2.8633142     -21.653742    -15.748533  1
+ATOM C CA  . SER Q 0 54  . 54  SER Q CA  402 nan 1.0 ?  1.6913443     -21.359375    -16.61469   1
+ATOM C C   . SER Q 0 54  . 54  SER Q C   403 nan 1.0 ?  0.8999486     -20.185238    -16.076187  1
+ATOM O O   . SER Q 0 54  . 54  SER Q O   404 nan 1.0 ?  -0.09574934   -19.773726    -16.719898  1
+ATOM C CB  . SER Q 0 54  . 54  SER Q CB  405 nan 1.0 ?  0.7846911     -22.5976      -16.737541  1
+ATOM O OG  . SER Q 0 54  . 54  SER Q OG  406 nan 1.0 ?  0.27917632    -22.937359    -15.467718  1
+ATOM N N   . LEU Q 0 55  . 55  LEU Q N   407 nan 1.0 ?  1.3892573     -19.629429    -14.989615  1
+ATOM C CA  . LEU Q 0 55  . 55  LEU Q CA  408 nan 1.0 ?  0.64646775    -18.551414    -14.368949  1
+ATOM C C   . LEU Q 0 55  . 55  LEU Q C   409 nan 1.0 ?  1.1931845     -17.1296      -14.788127  1
+ATOM O O   . LEU Q 0 55  . 55  LEU Q O   410 nan 1.0 ?  2.4192548     -17.046545    -14.992088  1
+ATOM C CB  . LEU Q 0 55  . 55  LEU Q CB  411 nan 1.0 ?  0.70827484    -18.647587    -12.838156  1
+ATOM C CG  . LEU Q 0 55  . 55  LEU Q CG  412 nan 1.0 ?  0.096569575   -19.890072    -12.218886  1
+ATOM C CD1 . LEU Q 0 55  . 55  LEU Q CD1 413 nan 1.0 ?  0.38781902    -19.95315     -10.727743  1
+ATOM C CD2 . LEU Q 0 55  . 55  LEU Q CD2 414 nan 1.0 ?  -1.367608     -19.92263     -12.490187  1
+ATOM N N   . ARG Q 0 56  . 56  ARG Q N   415 nan 1.0 ?  0.2755449     -16.239517    -15.005454  1
+ATOM C CA  . ARG Q 0 56  . 56  ARG Q CA  416 nan 1.0 ?  0.67913383    -14.943489    -15.4816065 1
+ATOM C C   . ARG Q 0 56  . 56  ARG Q C   417 nan 1.0 ?  0.06861116    -13.840771    -14.606629  1
+ATOM O O   . ARG Q 0 56  . 56  ARG Q O   418 nan 1.0 ?  -1.0833933    -13.890233    -14.200129  1
+ATOM C CB  . ARG Q 0 56  . 56  ARG Q CB  419 nan 1.0 ?  0.24667071    -14.705026    -16.94728   1
+ATOM C CG  . ARG Q 0 56  . 56  ARG Q CG  420 nan 1.0 ?  0.71130514    -13.416791    -17.559256  1
+ATOM C CD  . ARG Q 0 56  . 56  ARG Q CD  421 nan 1.0 ?  0.27778378    -13.318454    -19.020643  1
+ATOM N NE  . ARG Q 0 56  . 56  ARG Q NE  422 nan 1.0 ?  0.63699204    -12.005586    -19.567184  1
+ATOM C CZ  . ARG Q 0 56  . 56  ARG Q CZ  423 nan 1.0 ?  0.23486382    -11.5635395   -20.769785  1
+ATOM N NH1 . ARG Q 0 56  . 56  ARG Q NH1 424 nan 1.0 ?  -0.5942737    -12.293369    -21.547596  1
+ATOM N NH2 . ARG Q 0 56  . 56  ARG Q NH2 425 nan 1.0 +1 0.5910886     -10.354483    -21.18431   1
+ATOM N N   . ALA Q 0 57  . 57  ALA Q N   426 nan 1.0 ?  0.9165437     -12.85109     -14.243684  1
+ATOM C CA  . ALA Q 0 57  . 57  ALA Q CA  427 nan 1.0 ?  0.46391818    -11.687204    -13.573267  1
+ATOM C C   . ALA Q 0 57  . 57  ALA Q C   428 nan 1.0 ?  0.9743429     -10.391453    -14.24338   1
+ATOM O O   . ALA Q 0 57  . 57  ALA Q O   429 nan 1.0 ?  2.0822158     -10.356491    -14.755504  1
+ATOM C CB  . ALA Q 0 57  . 57  ALA Q CB  430 nan 1.0 ?  0.915914      -11.707877    -12.108864  1
+ATOM N N   . VAL Q 0 58  . 58  VAL Q N   431 nan 1.0 ?  0.06817935    -9.434577     -14.296276  1
+ATOM C CA  . VAL Q 0 58  . 58  VAL Q CA  432 nan 1.0 ?  0.42887288    -8.146172     -14.866271  1
+ATOM C C   . VAL Q 0 58  . 58  VAL Q C   433 nan 1.0 ?  0.2890396     -7.079348     -13.801047  1
+ATOM O O   . VAL Q 0 58  . 58  VAL Q O   434 nan 1.0 ?  -0.74232894   -6.964821     -13.140604  1
+ATOM C CB  . VAL Q 0 58  . 58  VAL Q CB  435 nan 1.0 ?  -0.43789902   -7.789198     -16.093264  1
+ATOM C CG1 . VAL Q 0 58  . 58  VAL Q CG1 436 nan 1.0 ?  -0.0018742718 -6.476234     -16.67416   1
+ATOM C CG2 . VAL Q 0 58  . 58  VAL Q CG2 437 nan 1.0 ?  -0.36975825   -8.915117     -17.129955  1
+ATOM N N   . ILE Q 0 59  . 59  ILE Q N   438 nan 1.0 ?  1.3393724     -6.287132     -13.641245  1
+ATOM C CA  . ILE Q 0 59  . 59  ILE Q CA  439 nan 1.0 ?  1.3590666     -5.220892     -12.641037  1
+ATOM C C   . ILE Q 0 59  . 59  ILE Q C   440 nan 1.0 ?  1.3567401     -3.8752565    -13.354936  1
+ATOM O O   . ILE Q 0 59  . 59  ILE Q O   441 nan 1.0 ?  2.2046468     -3.611206     -14.194762  1
+ATOM C CB  . ILE Q 0 59  . 59  ILE Q CB  442 nan 1.0 ?  2.5700123     -5.3544197    -11.71735   1
+ATOM C CG1 . ILE Q 0 59  . 59  ILE Q CG1 443 nan 1.0 ?  2.582829      -6.7186055    -11.058572  1
+ATOM C CG2 . ILE Q 0 59  . 59  ILE Q CG2 444 nan 1.0 ?  2.5676455     -4.2358894    -10.667339  1
+ATOM C CD1 . ILE Q 0 59  . 59  ILE Q CD1 445 nan 1.0 ?  3.9013338     -7.052921     -10.332598  1
+ATOM N N   . PHE Q 0 60  . 60  PHE Q N   446 nan 1.0 ?  0.3793537     -3.0474508    -12.955038  1
+ATOM C CA  . PHE Q 0 60  . 60  PHE Q CA  447 nan 1.0 ?  0.31076506    -1.6923213    -13.472646  1
+ATOM C C   . PHE Q 0 60  . 60  PHE Q C   448 nan 1.0 ?  0.62359387    -0.687701     -12.380487  1
+ATOM O O   . PHE Q 0 60  . 60  PHE Q O   449 nan 1.0 ?  -0.021934517  -0.6904362    -11.316137  1
+ATOM C CB  . PHE Q 0 60  . 60  PHE Q CB  450 nan 1.0 ?  -1.0901415    -1.4136901    -14.046055  1
+ATOM C CG  . PHE Q 0 60  . 60  PHE Q CG  451 nan 1.0 ?  -1.4862674    -2.3696697    -15.143195  1
+ATOM C CD1 . PHE Q 0 60  . 60  PHE Q CD1 452 nan 1.0 ?  -1.1699843    -2.080271     -16.47278   1
+ATOM C CD2 . PHE Q 0 60  . 60  PHE Q CD2 453 nan 1.0 ?  -2.2039096    -3.5126786    -14.855309  1
+ATOM C CE1 . PHE Q 0 60  . 60  PHE Q CE1 454 nan 1.0 ?  -1.5312133    -2.966094     -17.492783  1
+ATOM C CE2 . PHE Q 0 60  . 60  PHE Q CE2 455 nan 1.0 ?  -2.573224     -4.4022007    -15.875618  1
+ATOM C CZ  . PHE Q 0 60  . 60  PHE Q CZ  456 nan 1.0 ?  -2.230964     -4.1201515    -17.188671  1
+ATOM N N   . ILE Q 0 61  . 61  ILE Q N   457 nan 1.0 ?  1.6256908     0.12206836    -12.620181  1
+ATOM C CA  . ILE Q 0 61  . 61  ILE Q CA  458 nan 1.0 ?  1.9447308     1.195224      -11.698586  1
+ATOM C C   . ILE Q 0 61  . 61  ILE Q C   459 nan 1.0 ?  1.5906104     2.5358355     -12.303069  1
+ATOM O O   . ILE Q 0 61  . 61  ILE Q O   460 nan 1.0 ?  2.1134589     2.8959928     -13.382394  1
+ATOM C CB  . ILE Q 0 61  . 61  ILE Q CB  461 nan 1.0 ?  3.4274478     1.1925046     -11.289519  1
+ATOM C CG1 . ILE Q 0 61  . 61  ILE Q CG1 462 nan 1.0 ?  3.801363      -0.18846458   -10.726798  1
+ATOM C CG2 . ILE Q 0 61  . 61  ILE Q CG2 463 nan 1.0 ?  3.7371023     2.2969449     -10.309449  1
+ATOM C CD1 . ILE Q 0 61  . 61  ILE Q CD1 464 nan 1.0 ?  5.3082867     -0.3444641    -10.448871  1
+ATOM N N   . THR Q 0 62  . 62  THR Q N   465 nan 1.0 ?  0.63767844    3.2104976     -11.673685  1
+ATOM C CA  . THR Q 0 62  . 62  THR Q CA  466 nan 1.0 ?  0.17595363    4.4985986     -12.154824  1
+ATOM C C   . THR Q 0 62  . 62  THR Q C   467 nan 1.0 ?  0.41309184    5.5729065     -11.117016  1
+ATOM O O   . THR Q 0 62  . 62  THR Q O   468 nan 1.0 ?  0.85752743    5.2897625     -10.009     1
+ATOM C CB  . THR Q 0 62  . 62  THR Q CB  469 nan 1.0 ?  -1.3149313    4.45451       -12.554668  1
+ATOM O OG1 . THR Q 0 62  . 62  THR Q OG1 470 nan 1.0 ?  -2.0965407    4.3825603     -11.3590555 1
+ATOM C CG2 . THR Q 0 62  . 62  THR Q CG2 471 nan 1.0 ?  -1.6157886    3.2540617     -13.435741  1
+ATOM N N   . LYS Q 0 63  . 63  LYS Q N   472 nan 1.0 ?  0.16051932    6.8041525     -11.504369  1
+ATOM C CA  . LYS Q 0 63  . 63  LYS Q CA  473 nan 1.0 ?  0.27357844    7.9251213     -10.5733185 1
+ATOM C C   . LYS Q 0 63  . 63  LYS Q C   474 nan 1.0 ?  -0.7321222    7.7803645     -9.431826   1
+ATOM O O   . LYS Q 0 63  . 63  LYS Q O   475 nan 1.0 ?  -0.5069572    8.302986      -8.332095   1
+ATOM C CB  . LYS Q 0 63  . 63  LYS Q CB  476 nan 1.0 ?  0.055014327   9.244259      -11.291871  1
+ATOM C CG  . LYS Q 0 63  . 63  LYS Q CG  477 nan 1.0 ?  1.2113075     9.620301      -12.194988  1
+ATOM C CD  . LYS Q 0 63  . 63  LYS Q CD  478 nan 1.0 ?  1.0135314     11.006043     -12.801239  1
+ATOM C CE  . LYS Q 0 63  . 63  LYS Q CE  479 nan 1.0 ?  2.1562593     11.385532     -13.727564  1
+ATOM N NZ  . LYS Q 0 63  . 63  LYS Q NZ  480 nan 1.0 +1 1.9549667     12.74365      -14.335655  1
+ATOM N N   . ARG Q 0 64  . 64  ARG Q N   481 nan 1.0 ?  -1.7624623    7.02335       -9.639795   1
+ATOM C CA  . ARG Q 0 64  . 64  ARG Q CA  482 nan 1.0 ?  -2.849637     6.9249864     -8.709551   1
+ATOM C C   . ARG Q 0 64  . 64  ARG Q C   483 nan 1.0 ?  -2.717371     5.6990275     -7.8166776  1
+ATOM O O   . ARG Q 0 64  . 64  ARG Q O   484 nan 1.0 ?  -3.3816628    5.576545      -6.7914863  1
+ATOM C CB  . ARG Q 0 64  . 64  ARG Q CB  485 nan 1.0 ?  -4.193787     6.9062996     -9.42749    1
+ATOM C CG  . ARG Q 0 64  . 64  ARG Q CG  486 nan 1.0 ?  -4.565935     8.225675      -10.081493  1
+ATOM C CD  . ARG Q 0 64  . 64  ARG Q CD  487 nan 1.0 ?  -5.9771733    8.191636      -10.648416  1
+ATOM N NE  . ARG Q 0 64  . 64  ARG Q NE  488 nan 1.0 ?  -6.3435063    9.49832       -11.2465725 1
+ATOM C CZ  . ARG Q 0 64  . 64  ARG Q CZ  489 nan 1.0 ?  -7.449964     9.734442      -11.877198  1
+ATOM N NH1 . ARG Q 0 64  . 64  ARG Q NH1 490 nan 1.0 ?  -8.390025     8.783199      -12.019508  1
+ATOM N NH2 . ARG Q 0 64  . 64  ARG Q NH2 491 nan 1.0 +1 -7.701873     10.928888     -12.368872  1
+ATOM N N   . GLY Q 0 65  . 65  GLY Q N   492 nan 1.0 ?  -1.8537302    4.8065457     -8.2517605  1
+ATOM C CA  . GLY Q 0 65  . 65  GLY Q CA  493 nan 1.0 ?  -1.7159295    3.6238804     -7.450415   1
+ATOM C C   . GLY Q 0 65  . 65  GLY Q C   494 nan 1.0 ?  -1.1946775    2.4377856     -8.234167   1
+ATOM O O   . GLY Q 0 65  . 65  GLY Q O   495 nan 1.0 ?  -0.47304285   2.5936375     -9.191306   1
+ATOM N N   . LEU Q 0 66  . 66  LEU Q N   496 nan 1.0 ?  -1.4416156    1.2567732     -7.637868   1
+ATOM C CA  . LEU Q 0 66  . 66  LEU Q CA  497 nan 1.0 ?  -0.95246947   -0.0044144765 -8.174473   1
+ATOM C C   . LEU Q 0 66  . 66  LEU Q C   498 nan 1.0 ?  -2.1108456    -0.93959236   -8.44235    1
+ATOM O O   . LEU Q 0 66  . 66  LEU Q O   499 nan 1.0 ?  -3.0486517    -1.0510856    -7.646824   1
+ATOM C CB  . LEU Q 0 66  . 66  LEU Q CB  500 nan 1.0 ?  0.013001807   -0.66125697   -7.179099   1
+ATOM C CG  . LEU Q 0 66  . 66  LEU Q CG  501 nan 1.0 ?  0.54476786    -2.040604     -7.576739   1
+ATOM C CD1 . LEU Q 0 66  . 66  LEU Q CD1 502 nan 1.0 ?  1.6604139     -1.910945     -8.636014   1
+ATOM C CD2 . LEU Q 0 66  . 66  LEU Q CD2 503 nan 1.0 ?  1.0742259     -2.7960296    -6.366491   1
+ATOM N N   . LYS Q 0 67  . 67  LYS Q N   504 nan 1.0 ?  -2.0797634    -1.5061828    -9.644875   1
+ATOM C CA  . LYS Q 0 67  . 67  LYS Q CA  505 nan 1.0 ?  -3.0337796    -2.5401094    -9.992986   1
+ATOM C C   . LYS Q 0 67  . 67  LYS Q C   506 nan 1.0 ?  -2.3290563    -3.81142      -10.414516  1
+ATOM O O   . LYS Q 0 67  . 67  LYS Q O   507 nan 1.0 ?  -1.4199599    -3.7901976    -11.269173  1
+ATOM C CB  . LYS Q 0 67  . 67  LYS Q CB  508 nan 1.0 ?  -3.9326315    -2.0415604    -11.138404  1
+ATOM C CG  . LYS Q 0 67  . 67  LYS Q CG  509 nan 1.0 ?  -5.0558715    -3.0082915    -11.4969    1
+ATOM C CD  . LYS Q 0 67  . 67  LYS Q CD  510 nan 1.0 ?  -6.003617     -2.4138346    -12.526884  1
+ATOM C CE  . LYS Q 0 67  . 67  LYS Q CE  511 nan 1.0 ?  -7.150745     -3.3402596    -12.885755  1
+ATOM N NZ  . LYS Q 0 67  . 67  LYS Q NZ  512 nan 1.0 +1 -8.091228     -2.734069     -13.833612  1
+ATOM N N   . VAL Q 0 68  . 68  VAL Q N   513 nan 1.0 ?  -2.7506802    -4.8984313    -9.789105   1
+ATOM C CA  . VAL Q 0 68  . 68  VAL Q CA  514 nan 1.0 ?  -2.161301     -6.210119     -10.111175  1
+ATOM C C   . VAL Q 0 68  . 68  VAL Q C   515 nan 1.0 ?  -3.2474575    -7.1233106    -10.641588  1
+ATOM O O   . VAL Q 0 68  . 68  VAL Q O   516 nan 1.0 ?  -4.2854266    -7.326458     -9.988621   1
+ATOM C CB  . VAL Q 0 68  . 68  VAL Q CB  517 nan 1.0 ?  -1.4639889    -6.8264985    -8.868199   1
+ATOM C CG1 . VAL Q 0 68  . 68  VAL Q CG1 518 nan 1.0 ?  -0.8207302    -8.154364     -9.26504    1
+ATOM C CG2 . VAL Q 0 68  . 68  VAL Q CG2 519 nan 1.0 ?  -0.46536994   -5.8712826    -8.287323   1
+ATOM N N   . CYS Q 0 69  . 69  CYS Q N   520 nan 1.0 ?  -3.0110407    -7.650047     -11.81528   1
+ATOM C CA  . CYS Q 0 69  . 69  CYS Q CA  521 nan 1.0 ?  -3.9226584    -8.59959      -12.392718  1
+ATOM C C   . CYS Q 0 69  . 69  CYS Q C   522 nan 1.0 ?  -3.2322283    -9.925313     -12.624769  1
+ATOM O O   . CYS Q 0 69  . 69  CYS Q O   523 nan 1.0 ?  -2.1646385    -9.975477     -13.255428  1
+ATOM C CB  . CYS Q 0 69  . 69  CYS Q CB  524 nan 1.0 ?  -4.488883     -8.053305     -13.711514  1
+ATOM S SG  . CYS Q 0 69  . 69  CYS Q SG  525 nan 1.0 ?  -5.3972173    -6.5183935    -13.566443  1
+ATOM N N   . ALA Q 0 70  . 70  ALA Q N   526 nan 1.0 ?  -3.8651536    -10.946067    -12.112321  1
+ATOM C CA  . ALA Q 0 70  . 70  ALA Q CA  527 nan 1.0 ?  -3.2415423    -12.269831    -12.2182665 1
+ATOM C C   . ALA Q 0 70  . 70  ALA Q C   528 nan 1.0 ?  -4.2638965    -13.324103    -12.626269  1
+ATOM O O   . ALA Q 0 70  . 70  ALA Q O   529 nan 1.0 ?  -5.4790893    -13.090106    -12.5161495 1
+ATOM C CB  . ALA Q 0 70  . 70  ALA Q CB  530 nan 1.0 ?  -2.5853524    -12.629805    -10.890714  1
+ATOM N N   . ASP Q 0 71  . 71  ASP Q N   531 nan 1.0 ?  -3.7550018    -14.400961    -13.136585  1
+ATOM C CA  . ASP Q 0 71  . 71  ASP Q CA  532 nan 1.0 ?  -4.636414     -15.556853    -13.400176  1
+ATOM C C   . ASP Q 0 71  . 71  ASP Q C   533 nan 1.0 ?  -5.3292937    -15.994682    -12.114913  1
+ATOM O O   . ASP Q 0 71  . 71  ASP Q O   534 nan 1.0 ?  -4.813079     -15.809291    -10.998925  1
+ATOM C CB  . ASP Q 0 71  . 71  ASP Q CB  535 nan 1.0 ?  -3.8344975    -16.727522    -13.942402  1
+ATOM C CG  . ASP Q 0 71  . 71  ASP Q CG  536 nan 1.0 ?  -3.3414068    -16.479797    -15.364965  1
+ATOM O OD1 . ASP Q 0 71  . 71  ASP Q OD1 537 nan 1.0 ?  -4.026751     -15.762537    -16.17465   1
+ATOM O OD2 . ASP Q 0 71  . 71  ASP Q OD2 538 nan 1.0 ?  -2.278159     -17.046543    -15.740366  1
+ATOM N N   . PRO Q 0 72  . 72  PRO Q N   539 nan 1.0 ?  -6.56154      -16.45633     -12.248685  1
+ATOM C CA  . PRO Q 0 72  . 72  PRO Q CA  540 nan 1.0 ?  -7.342681     -16.8575      -11.056639  1
+ATOM C C   . PRO Q 0 72  . 72  PRO Q C   541 nan 1.0 ?  -6.58969      -17.827522    -10.137113  1
+ATOM O O   . PRO Q 0 72  . 72  PRO Q O   542 nan 1.0 ?  -6.8025627    -17.786747    -8.930312   1
+ATOM C CB  . PRO Q 0 72  . 72  PRO Q CB  543 nan 1.0 ?  -8.591863     -17.489517    -11.652865  1
+ATOM C CG  . PRO Q 0 72  . 72  PRO Q CG  544 nan 1.0 ?  -8.716982     -16.877356    -13.001087  1
+ATOM C CD  . PRO Q 0 72  . 72  PRO Q CD  545 nan 1.0 ?  -7.3700304    -16.574232    -13.539181  1
+ATOM N N   . GLN Q 0 73  . 73  GLN Q N   546 nan 1.0 ?  -5.706256     -18.546202    -10.695192  1
+ATOM C CA  . GLN Q 0 73  . 73  GLN Q CA  547 nan 1.0 ?  -4.9727044    -19.568024    -9.906628   1
+ATOM C C   . GLN Q 0 73  . 73  GLN Q C   548 nan 1.0 ?  -3.7567642    -18.971806    -9.214142   1
+ATOM O O   . GLN Q 0 73  . 73  GLN Q O   549 nan 1.0 ?  -3.2052093    -19.532064    -8.323568   1
+ATOM C CB  . GLN Q 0 73  . 73  GLN Q CB  550 nan 1.0 ?  -4.4970016    -20.670918    -10.821031  1
+ATOM C CG  . GLN Q 0 73  . 73  GLN Q CG  551 nan 1.0 ?  -5.666001     -21.503216    -11.348967  1
+ATOM C CD  . GLN Q 0 73  . 73  GLN Q CD  552 nan 1.0 ?  -5.189928     -22.656448    -12.217393  1
+ATOM O OE1 . GLN Q 0 73  . 73  GLN Q OE1 553 nan 1.0 ?  -4.227813     -22.644854    -12.962423  1
+ATOM N NE2 . GLN Q 0 73  . 73  GLN Q NE2 554 nan 1.0 ?  -5.9119       -23.816818    -12.167184  1
+ATOM N N   . ALA Q 0 74  . 74  ALA Q N   555 nan 1.0 ?  -3.3881638    -17.74482     -9.600876   1
+ATOM C CA  . ALA Q 0 74  . 74  ALA Q CA  556 nan 1.0 ?  -2.2568362    -17.086714    -9.005316   1
+ATOM C C   . ALA Q 0 74  . 74  ALA Q C   557 nan 1.0 ?  -2.6769924    -16.279814    -7.798144   1
+ATOM O O   . ALA Q 0 74  . 74  ALA Q O   558 nan 1.0 ?  -2.465319     -15.061534    -7.7452846  1
+ATOM C CB  . ALA Q 0 74  . 74  ALA Q CB  559 nan 1.0 ?  -1.5790122    -16.180073    -10.0176325 1
+ATOM N N   . THR Q 0 75  . 75  THR Q N   560 nan 1.0 ?  -3.2513855    -16.866539    -6.7888007  1
+ATOM C CA  . THR Q 0 75  . 75  THR Q CA  561 nan 1.0 ?  -3.7939985    -16.150986    -5.6243668  1
+ATOM C C   . THR Q 0 75  . 75  THR Q C   562 nan 1.0 ?  -2.7144413    -15.556072    -4.7706456  1
+ATOM O O   . THR Q 0 75  . 75  THR Q O   563 nan 1.0 ?  -2.9579103    -14.68905     -3.9701705  1
+ATOM C CB  . THR Q 0 75  . 75  THR Q CB  564 nan 1.0 ?  -4.6176844    -17.188725    -4.7835507  1
+ATOM O OG1 . THR Q 0 75  . 75  THR Q OG1 565 nan 1.0 ?  -3.8313172    -18.277237    -4.458385   1
+ATOM C CG2 . THR Q 0 75  . 75  THR Q CG2 566 nan 1.0 ?  -5.854271     -17.644032    -5.5359077  1
+ATOM N N   . TRP Q 0 76  . 76  TRP Q N   567 nan 1.0 ?  -1.5085502    -15.990589    -4.965002   1
+ATOM C CA  . TRP Q 0 76  . 76  TRP Q CA  568 nan 1.0 ?  -0.409805     -15.521099    -4.149949   1
+ATOM C C   . TRP Q 0 76  . 76  TRP Q C   569 nan 1.0 ?  -0.15368117   -14.013598    -4.4052444  1
+ATOM O O   . TRP Q 0 76  . 76  TRP Q O   570 nan 1.0 ?  0.2556572     -13.306993    -3.4956515  1
+ATOM C CB  . TRP Q 0 76  . 76  TRP Q CB  571 nan 1.0 ?  0.84482485    -16.286985    -4.4356613  1
+ATOM C CG  . TRP Q 0 76  . 76  TRP Q CG  572 nan 1.0 ?  1.3177172     -16.263561    -5.888861   1
+ATOM C CD1 . TRP Q 0 76  . 76  TRP Q CD1 573 nan 1.0 ?  0.93889093    -17.11956     -6.912072   1
+ATOM C CD2 . TRP Q 0 76  . 76  TRP Q CD2 574 nan 1.0 ?  2.2044044     -15.296553    -6.45522    1
+ATOM N NE1 . TRP Q 0 76  . 76  TRP Q NE1 575 nan 1.0 ?  1.5643494     -16.684864    -8.068468   1
+ATOM C CE2 . TRP Q 0 76  . 76  TRP Q CE2 576 nan 1.0 ?  2.3333042     -15.601786    -7.8365197  1
+ATOM C CE3 . TRP Q 0 76  . 76  TRP Q CE3 577 nan 1.0 ?  2.8765085     -14.183702    -5.942458   1
+ATOM C CZ2 . TRP Q 0 76  . 76  TRP Q CZ2 578 nan 1.0 ?  3.1218247     -14.845456    -8.691239   1
+ATOM C CZ3 . TRP Q 0 76  . 76  TRP Q CZ3 579 nan 1.0 ?  3.6557372     -13.440952    -6.8215184  1
+ATOM C CH2 . TRP Q 0 76  . 76  TRP Q CH2 580 nan 1.0 ?  3.7851927     -13.784565    -8.17954    1
+ATOM N N   . VAL Q 0 77  . 77  VAL Q N   581 nan 1.0 ?  -0.38194203   -13.585247    -5.6537075  1
+ATOM C CA  . VAL Q 0 77  . 77  VAL Q CA  582 nan 1.0 ?  -0.19244865   -12.189616    -5.96655    1
+ATOM C C   . VAL Q 0 77  . 77  VAL Q C   583 nan 1.0 ?  -1.1691337    -11.313422    -5.174653   1
+ATOM O O   . VAL Q 0 77  . 77  VAL Q O   584 nan 1.0 ?  -0.79886484   -10.342234    -4.5996246  1
+ATOM C CB  . VAL Q 0 77  . 77  VAL Q CB  585 nan 1.0 ?  -0.35537916   -11.94639     -7.4772353  1
+ATOM C CG1 . VAL Q 0 77  . 77  VAL Q CG1 586 nan 1.0 ?  -0.2748464    -10.430935    -7.7905607  1
+ATOM C CG2 . VAL Q 0 77  . 77  VAL Q CG2 587 nan 1.0 ?  0.6877761     -12.69795     -8.27753    1
+ATOM N N   . ARG Q 0 78  . 78  ARG Q N   588 nan 1.0 ?  -2.392274     -11.730826    -5.154484   1
+ATOM C CA  . ARG Q 0 78  . 78  ARG Q CA  589 nan 1.0 ?  -3.3990371    -11.044573    -4.3997073  1
+ATOM C C   . ARG Q 0 78  . 78  ARG Q C   590 nan 1.0 ?  -3.0407119    -10.958382    -2.9171677  1
+ATOM O O   . ARG Q 0 78  . 78  ARG Q O   591 nan 1.0 ?  -3.1743035    -9.938646     -2.2785482  1
+ATOM C CB  . ARG Q 0 78  . 78  ARG Q CB  592 nan 1.0 ?  -4.7384434    -11.714428    -4.5582156  1
+ATOM C CG  . ARG Q 0 78  . 78  ARG Q CG  593 nan 1.0 ?  -5.872381     -11.072252    -3.8093765  1
+ATOM C CD  . ARG Q 0 78  . 78  ARG Q CD  594 nan 1.0 ?  -7.1650424    -11.861878    -3.9123986  1
+ATOM N NE  . ARG Q 0 78  . 78  ARG Q NE  595 nan 1.0 ?  -7.043189     -13.185189    -3.3112419  1
+ATOM C CZ  . ARG Q 0 78  . 78  ARG Q CZ  596 nan 1.0 ?  -7.922004     -14.177818    -3.4138675  1
+ATOM N NH1 . ARG Q 0 78  . 78  ARG Q NH1 597 nan 1.0 ?  -9.056335     -14.003144    -4.0849004  1
+ATOM N NH2 . ARG Q 0 78  . 78  ARG Q NH2 598 nan 1.0 +1 -7.677996     -15.317877    -2.8318756  1
+ATOM N N   . ASP Q 0 79  . 79  ASP Q N   599 nan 1.0 ?  -2.5565925    -12.061234    -2.3768816  1
+ATOM C CA  . ASP Q 0 79  . 79  ASP Q CA  600 nan 1.0 ?  -2.2073903    -12.146487    -0.97536266 1
+ATOM C C   . ASP Q 0 79  . 79  ASP Q C   601 nan 1.0 ?  -1.0835516    -11.168736    -0.62732226 1
+ATOM O O   . ASP Q 0 79  . 79  ASP Q O   602 nan 1.0 ?  -1.0996209    -10.530717    0.41514724  1
+ATOM C CB  . ASP Q 0 79  . 79  ASP Q CB  603 nan 1.0 ?  -1.809696     -13.554012    -0.61216116 1
+ATOM C CG  . ASP Q 0 79  . 79  ASP Q CG  604 nan 1.0 ?  -2.9735098    -14.530889    -0.61306393 1
+ATOM O OD1 . ASP Q 0 79  . 79  ASP Q OD1 605 nan 1.0 ?  -4.134522     -14.079205    -0.58093166 1
+ATOM O OD2 . ASP Q 0 79  . 79  ASP Q OD2 606 nan 1.0 ?  -2.7343807    -15.756231    -0.6262388  1
+ATOM N N   . VAL Q 0 80  . 80  VAL Q N   607 nan 1.0 ?  -0.16054887   -11.064327    -1.5210838  1
+ATOM C CA  . VAL Q 0 80  . 80  VAL Q CA  608 nan 1.0 ?  0.9736961     -10.170205    -1.3075144  1
+ATOM C C   . VAL Q 0 80  . 80  VAL Q C   609 nan 1.0 ?  0.49793687    -8.742124     -1.2679529  1
+ATOM O O   . VAL Q 0 80  . 80  VAL Q O   610 nan 1.0 ?  0.8779497     -7.95268      -0.36793974 1
+ATOM C CB  . VAL Q 0 80  . 80  VAL Q CB  611 nan 1.0 ?  2.0603828     -10.332057    -2.4098382  1
+ATOM C CG1 . VAL Q 0 80  . 80  VAL Q CG1 612 nan 1.0 ?  3.0878289     -9.237893     -2.3080292  1
+ATOM C CG2 . VAL Q 0 80  . 80  VAL Q CG2 613 nan 1.0 ?  2.7203763     -11.706959    -2.2744489  1
+ATOM N N   . VAL Q 0 81  . 81  VAL Q N   614 nan 1.0 ?  -0.3383572    -8.369253     -2.1905344  1
+ATOM C CA  . VAL Q 0 81  . 81  VAL Q CA  615 nan 1.0 ?  -0.82816434   -6.9894557    -2.2648757  1
+ATOM C C   . VAL Q 0 81  . 81  VAL Q C   616 nan 1.0 ?  -1.6570597    -6.670872     -1.0328006  1
+ATOM O O   . VAL Q 0 81  . 81  VAL Q O   617 nan 1.0 ?  -1.5300852    -5.5865135    -0.4364217  1
+ATOM C CB  . VAL Q 0 81  . 81  VAL Q CB  618 nan 1.0 ?  -1.6641443    -6.7451863    -3.5450068  1
+ATOM C CG1 . VAL Q 0 81  . 81  VAL Q CG1 619 nan 1.0 ?  -2.3242166    -5.3788276    -3.498172   1
+ATOM C CG2 . VAL Q 0 81  . 81  VAL Q CG2 620 nan 1.0 ?  -0.80213934   -6.8927817    -4.780925   1
+ATOM N N   . ARG Q 0 82  . 82  ARG Q N   621 nan 1.0 ?  -2.4868789    -7.5723057    -0.6030709  1
+ATOM C CA  . ARG Q 0 82  . 82  ARG Q CA  622 nan 1.0 ?  -3.2907517    -7.386698     0.58778644  1
+ATOM C C   . ARG Q 0 82  . 82  ARG Q C   623 nan 1.0 ?  -2.4232976    -7.2371       1.8369565   1
+ATOM O O   . ARG Q 0 82  . 82  ARG Q O   624 nan 1.0 ?  -2.7049143    -6.4109135    2.70467     1
+ATOM C CB  . ARG Q 0 82  . 82  ARG Q CB  625 nan 1.0 ?  -4.2660847    -8.56957      0.7786851   1
+ATOM C CG  . ARG Q 0 82  . 82  ARG Q CG  626 nan 1.0 ?  -5.473707     -8.500497     -0.1433417  1
+ATOM C CD  . ARG Q 0 82  . 82  ARG Q CD  627 nan 1.0 ?  -6.4660254    -9.610505     0.16682458  1
+ATOM N NE  . ARG Q 0 82  . 82  ARG Q NE  628 nan 1.0 ?  -7.632741     -9.547315     -0.6980504  1
+ATOM C CZ  . ARG Q 0 82  . 82  ARG Q CZ  629 nan 1.0 ?  -8.570964     -10.510229    -0.7942611  1
+ATOM N NH1 . ARG Q 0 82  . 82  ARG Q NH1 630 nan 1.0 ?  -8.49331      -11.57825     -0.06830836 1
+ATOM N NH2 . ARG Q 0 82  . 82  ARG Q NH2 631 nan 1.0 +1 -9.5739155    -10.342054    -1.6166044  1
+ATOM N N   . SER Q 0 83  . 83  SER Q N   632 nan 1.0 ?  -1.4299428    -8.069858     1.8945286   1
+ATOM C CA  . SER Q 0 83  . 83  SER Q CA  633 nan 1.0 ?  -0.501251     -7.983784     3.017168    1
+ATOM C C   . SER Q 0 83  . 83  SER Q C   634 nan 1.0 ?  0.17520922    -6.6185203    3.0768278   1
+ATOM O O   . SER Q 0 83  . 83  SER Q O   635 nan 1.0 ?  0.33118305    -6.023684     4.145313    1
+ATOM C CB  . SER Q 0 83  . 83  SER Q CB  636 nan 1.0 ?  0.551628      -9.071534     2.9023163   1
+ATOM O OG  . SER Q 0 83  . 83  SER Q OG  637 nan 1.0 ?  1.4851242     -8.980619     3.9671109   1
+ATOM N N   . MET Q 0 84  . 84  MET Q N   638 nan 1.0 ?  0.5265545     -6.09603      1.9630843   1
+ATOM C CA  . MET Q 0 84  . 84  MET Q CA  639 nan 1.0 ?  1.1432468     -4.7712345    1.8823743   1
+ATOM C C   . MET Q 0 84  . 84  MET Q C   640 nan 1.0 ?  0.1789524     -3.6918998    2.3529043   1
+ATOM O O   . MET Q 0 84  . 84  MET Q O   641 nan 1.0 ?  0.57315505    -2.745626     3.0420568   1
+ATOM C CB  . MET Q 0 84  . 84  MET Q CB  642 nan 1.0 ?  1.6141862     -4.478202     0.4679799   1
+ATOM C CG  . MET Q 0 84  . 84  MET Q CG  643 nan 1.0 ?  2.804237      -5.2955203    0.03515546  1
+ATOM S SD  . MET Q 0 84  . 84  MET Q SD  644 nan 1.0 ?  3.327078      -4.9385962    -1.6958624  1
+ATOM C CE  . MET Q 0 84  . 84  MET Q CE  645 nan 1.0 ?  3.9708822     -3.262315     -1.4940054  1
+ATOM N N   . ASP Q 0 85  . 85  ASP Q N   646 nan 1.0 ?  -1.0309306    -3.815672     1.906414    1
+ATOM C CA  . ASP Q 0 85  . 85  ASP Q CA  647 nan 1.0 ?  -2.048279     -2.8700354    2.3195918   1
+ATOM C C   . ASP Q 0 85  . 85  ASP Q C   648 nan 1.0 ?  -2.2110796    -2.8649297    3.8320591   1
+ATOM O O   . ASP Q 0 85  . 85  ASP Q O   649 nan 1.0 ?  -2.308508     -1.8014364    4.4518194   1
+ATOM C CB  . ASP Q 0 85  . 85  ASP Q CB  650 nan 1.0 ?  -3.3861728    -3.1961284    1.6542294   1
+ATOM C CG  . ASP Q 0 85  . 85  ASP Q CG  651 nan 1.0 ?  -4.4904547    -2.1808798    1.9569992   1
+ATOM O OD1 . ASP Q 0 85  . 85  ASP Q OD1 652 nan 1.0 ?  -4.273837     -0.97127664   1.6876287   1
+ATOM O OD2 . ASP Q 0 85  . 85  ASP Q OD2 653 nan 1.0 ?  -5.555264     -2.5902004    2.4657588   1
+ATOM N N   . ARG Q 0 86  . 86  ARG Q N   654 nan 1.0 ?  -2.2486994    -4.0010943    4.4311414   1
+ATOM C CA  . ARG Q 0 86  . 86  ARG Q CA  655 nan 1.0 ?  -2.3920083    -4.1276894    5.8705187   1
+ATOM C C   . ARG Q 0 86  . 86  ARG Q C   656 nan 1.0 ?  -1.2203438    -3.497912     6.59331     1
+ATOM O O   . ARG Q 0 86  . 86  ARG Q O   657 nan 1.0 ?  -1.3996001    -2.7846863    7.595345    1
+ATOM C CB  . ARG Q 0 86  . 86  ARG Q CB  658 nan 1.0 ?  -2.5083742    -5.600414     6.263565    1
+ATOM C CG  . ARG Q 0 86  . 86  ARG Q CG  659 nan 1.0 ?  -3.845108     -6.2386103    5.9211173   1
+ATOM C CD  . ARG Q 0 86  . 86  ARG Q CD  660 nan 1.0 ?  -3.9265318    -7.674465     6.3850846   1
+ATOM N NE  . ARG Q 0 86  . 86  ARG Q NE  661 nan 1.0 ?  -5.1296043    -8.3458805    5.884514    1
+ATOM C CZ  . ARG Q 0 86  . 86  ARG Q CZ  662 nan 1.0 ?  -5.362755     -9.633776     5.979326    1
+ATOM N NH1 . ARG Q 0 86  . 86  ARG Q NH1 663 nan 1.0 ?  -4.5093417    -10.464781    6.545426    1
+ATOM N NH2 . ARG Q 0 86  . 86  ARG Q NH2 664 nan 1.0 +1 -6.484311     -10.140409    5.468013    1
+ATOM N N   . LYS Q 0 87  . 87  LYS Q N   665 nan 1.0 ?  -0.040801346  -3.721509     6.098558    1
+ATOM C CA  . LYS Q 0 87  . 87  LYS Q CA  666 nan 1.0 ?  1.150711      -3.1585088    6.689203    1
+ATOM C C   . LYS Q 0 87  . 87  LYS Q C   667 nan 1.0 ?  1.1517328     -1.6331097    6.594611    1
+ATOM O O   . LYS Q 0 87  . 87  LYS Q O   668 nan 1.0 ?  1.5244888     -0.9524124    7.5726285   1
+ATOM C CB  . LYS Q 0 87  . 87  LYS Q CB  669 nan 1.0 ?  2.414351      -3.7199502    6.0227075   1
+ATOM C CG  . LYS Q 0 87  . 87  LYS Q CG  670 nan 1.0 ?  2.710143      -5.152314     6.39015     1
+ATOM C CD  . LYS Q 0 87  . 87  LYS Q CD  671 nan 1.0 ?  4.02742       -5.629977     5.757663    1
+ATOM C CE  . LYS Q 0 87  . 87  LYS Q CE  672 nan 1.0 ?  4.35645       -7.0632796    6.1074195   1
+ATOM N NZ  . LYS Q 0 87  . 87  LYS Q NZ  673 nan 1.0 +1 5.6275864     -7.5423775    5.4952736   1
+ATOM N N   . SER Q 0 88  . 88  SER Q N   674 nan 1.0 ?  0.7402638     -1.1541578    5.454235    1
+ATOM C CA  . SER Q 0 88  . 88  SER Q CA  675 nan 1.0 ?  0.66972524    0.30300984    5.265018    1
+ATOM C C   . SER Q 0 88  . 88  SER Q C   676 nan 1.0 ?  -0.35333884   0.9307675     6.20002     1
+ATOM O O   . SER Q 0 88  . 88  SER Q O   677 nan 1.0 ?  -0.1251038    1.9963081     6.764225    1
+ATOM C CB  . SER Q 0 88  . 88  SER Q CB  678 nan 1.0 ?  0.31571788    0.61979204    3.812481    1
+ATOM O OG  . SER Q 0 88  . 88  SER Q OG  679 nan 1.0 ?  1.355797      0.24418545    2.924269    1
+ATOM N N   . ASN Q 0 89  . 89  ASN Q N   680 nan 1.0 ?  -1.4858569    0.26265633    6.3529825   1
+ATOM C CA  . ASN Q 0 89  . 89  ASN Q CA  681 nan 1.0 ?  -2.5113235    0.7653543     7.2516665   1
+ATOM C C   . ASN Q 0 89  . 89  ASN Q C   682 nan 1.0 ?  -2.046829     0.76059467    8.686633    1
+ATOM O O   . ASN Q 0 89  . 89  ASN Q O   683 nan 1.0 ?  -2.3237908    1.6997489     9.442341    1
+ATOM C CB  . ASN Q 0 89  . 89  ASN Q CB  684 nan 1.0 ?  -3.7790926    -0.08113216   7.1224413   1
+ATOM C CG  . ASN Q 0 89  . 89  ASN Q CG  685 nan 1.0 ?  -4.5693517    0.250517      5.870838    1
+ATOM O OD1 . ASN Q 0 89  . 89  ASN Q OD1 686 nan 1.0 ?  -4.388954     1.3113188     5.2687573   1
+ATOM N ND2 . ASN Q 0 89  . 89  ASN Q ND2 687 nan 1.0 ?  -5.4803305    -0.6409046    5.4830656   1
+ATOM N N   . THR Q 0 90  . 90  THR Q N   688 nan 1.0 ?  -1.3434776    -0.3014142    9.085652    1
+ATOM C CA  . THR Q 0 90  . 90  THR Q CA  689 nan 1.0 ?  -0.7900262    -0.38632524   10.430951   1
+ATOM C C   . THR Q 0 90  . 90  THR Q C   690 nan 1.0 ?  0.20497343    0.7369664     10.6823225  1
+ATOM O O   . THR Q 0 90  . 90  THR Q O   691 nan 1.0 ?  0.19293788    1.3716593     11.692968   1
+ATOM C CB  . THR Q 0 90  . 90  THR Q CB  692 nan 1.0 ?  -0.08981064   -1.7385172    10.66761    1
+ATOM O OG1 . THR Q 0 90  . 90  THR Q OG1 693 nan 1.0 ?  -1.0532421    -2.763362     10.466282   1
+ATOM C CG2 . THR Q 0 90  . 90  THR Q CG2 694 nan 1.0 ?  0.4594453     -1.839183     12.043264   1
+ATOM N N   . ARG Q 0 91  . 91  ARG Q N   695 nan 1.0 ?  1.0501901     0.96638435    9.695273    1
+ATOM C CA  . ARG Q 0 91  . 91  ARG Q CA  696 nan 1.0 ?  2.032598      2.0394466     9.790532    1
+ATOM C C   . ARG Q 0 91  . 91  ARG Q C   697 nan 1.0 ?  1.3652703     3.4068227     9.941935    1
+ATOM O O   . ARG Q 0 91  . 91  ARG Q O   698 nan 1.0 ?  1.7679299     4.2521534     10.731975   1
+ATOM C CB  . ARG Q 0 91  . 91  ARG Q CB  699 nan 1.0 ?  2.9677138     2.0337281     8.598448    1
+ATOM C CG  . ARG Q 0 91  . 91  ARG Q CG  700 nan 1.0 ?  4.10101       3.0207233     8.687607    1
+ATOM C CD  . ARG Q 0 91  . 91  ARG Q CD  701 nan 1.0 ?  4.9904847     2.9772925     7.452615    1
+ATOM N NE  . ARG Q 0 91  . 91  ARG Q NE  702 nan 1.0 ?  5.762909      1.7220745     7.377228    1
+ATOM C CZ  . ARG Q 0 91  . 91  ARG Q CZ  703 nan 1.0 ?  6.3994055     1.2971567     6.2946877   1
+ATOM N NH1 . ARG Q 0 91  . 91  ARG Q NH1 704 nan 1.0 ?  6.3925567     2.019964      5.1589437   1
+ATOM N NH2 . ARG Q 0 91  . 91  ARG Q NH2 705 nan 1.0 +1 7.0453377     0.13864243    6.316979    1
+ATOM N N   . ASN Q 0 92  . 92  ASN Q N   706 nan 1.0 ?  0.35146183    3.6344545     9.098394    1
+ATOM C CA  . ASN Q 0 92  . 92  ASN Q CA  707 nan 1.0 ?  -0.3784192    4.906793      9.140724    1
+ATOM C C   . ASN Q 0 92  . 92  ASN Q C   708 nan 1.0 ?  -1.0677499    5.1007037     10.504822   1
+ATOM O O   . ASN Q 0 92  . 92  ASN Q O   709 nan 1.0 ?  -1.1057165    6.198917      11.016618   1
+ATOM C CB  . ASN Q 0 92  . 92  ASN Q CB  710 nan 1.0 ?  -1.4139619    4.974839      8.004411    1
+ATOM C CG  . ASN Q 0 92  . 92  ASN Q CG  711 nan 1.0 ?  -0.7776197    5.227329      6.661192    1
+ATOM O OD1 . ASN Q 0 92  . 92  ASN Q OD1 712 nan 1.0 ?  0.36513978    5.683263      6.5690436   1
+ATOM N ND2 . ASN Q 0 92  . 92  ASN Q ND2 713 nan 1.0 ?  -1.5365949    4.9511304     5.5988784   1
+ATOM N N   . ASN Q 0 93  . 93  ASN Q N   714 nan 1.0 ?  -1.6048198    4.0193863     11.043093   1
+ATOM C CA  . ASN Q 0 93  . 93  ASN Q CA  715 nan 1.0 ?  -2.227037     4.098415      12.331847   1
+ATOM C C   . ASN Q 0 93  . 93  ASN Q C   716 nan 1.0 ?  -1.2416267    4.3758993     13.429259   1
+ATOM O O   . ASN Q 0 93  . 93  ASN Q O   717 nan 1.0 ?  -1.5337148    5.1011157     14.366317   1
+ATOM C CB  . ASN Q 0 93  . 93  ASN Q CB  718 nan 1.0 ?  -2.980011     2.7855206     12.625797   1
+ATOM C CG  . ASN Q 0 93  . 93  ASN Q CG  719 nan 1.0 ?  -4.248917     2.6446435     11.82285    1
+ATOM O OD1 . ASN Q 0 93  . 93  ASN Q OD1 720 nan 1.0 ?  -4.79746      3.623042      11.323347   1
+ATOM N ND2 . ASN Q 0 93  . 93  ASN Q ND2 721 nan 1.0 ?  -4.7358747    1.4237943     11.700157   1
+ATOM N N   . MET Q 0 94  . 94  MET Q N   722 nan 1.0 ?  -0.04040946   3.8419833     13.312891   1
+ATOM C CA  . MET Q 0 94  . 94  MET Q CA  723 nan 1.0 ?  1.0267792     4.0482926     14.270127   1
+ATOM C C   . MET Q 0 94  . 94  MET Q C   724 nan 1.0 ?  1.4865469     5.5139823     14.260422   1
+ATOM O O   . MET Q 0 94  . 94  MET Q O   725 nan 1.0 ?  1.7437391     6.093141      15.294783   1
+ATOM C CB  . MET Q 0 94  . 94  MET Q CB  726 nan 1.0 ?  2.210569      3.1364527     13.996776   1
+ATOM C CG  . MET Q 0 94  . 94  MET Q CG  727 nan 1.0 ?  1.9525478     1.6950935     14.390833   1
+ATOM S SD  . MET Q 0 94  . 94  MET Q SD  728 nan 1.0 ?  3.3906972     0.5858457     14.000071   1
+ATOM C CE  . MET Q 0 94  . 94  MET Q CE  729 nan 1.0 ?  4.5616713     1.1432037     15.28271    1
+ATOM N N   . ILE Q 0 95  . 95  ILE Q N   730 nan 1.0 ?  1.5413383     6.105948      13.058735   1
+ATOM C CA  . ILE Q 0 95  . 95  ILE Q CA  731 nan 1.0 ?  1.9682949     7.4858522     12.943746   1
+ATOM C C   . ILE Q 0 95  . 95  ILE Q C   732 nan 1.0 ?  0.9187729     8.402584      13.506705   1
+ATOM O O   . ILE Q 0 95  . 95  ILE Q O   733 nan 1.0 ?  1.2381533     9.400483      14.15759    1
+ATOM C CB  . ILE Q 0 95  . 95  ILE Q CB  734 nan 1.0 ?  2.201164      7.8549848     11.443304   1
+ATOM C CG1 . ILE Q 0 95  . 95  ILE Q CG1 735 nan 1.0 ?  3.3966384     7.0611258     10.885486   1
+ATOM C CG2 . ILE Q 0 95  . 95  ILE Q CG2 736 nan 1.0 ?  2.4037933     9.35864       11.246396   1
+ATOM C CD1 . ILE Q 0 95  . 95  ILE Q CD1 737 nan 1.0 ?  3.5568006     7.1561165     9.374257    1
+ATOM N N   . GLN Q 0 96  . 96  GLN Q N   738 nan 1.0 ?  -0.34413633   8.017925      13.419201   1
+ATOM C CA  . GLN Q 0 96  . 96  GLN Q CA  739 nan 1.0 ?  -1.4286507    8.856731      13.927217   1
+ATOM C C   . GLN Q 0 96  . 96  GLN Q C   740 nan 1.0 ?  -1.5492197    8.76016       15.412511   1
+ATOM O O   . GLN Q 0 96  . 96  GLN Q O   741 nan 1.0 ?  -2.006857     9.691238      16.083395   1
+ATOM C CB  . GLN Q 0 96  . 96  GLN Q CB  742 nan 1.0 ?  -2.7563303    8.437081      13.267682   1
+ATOM C CG  . GLN Q 0 96  . 96  GLN Q CG  743 nan 1.0 ?  -2.8829348    8.7971945     11.830568   1
+ATOM C CD  . GLN Q 0 96  . 96  GLN Q CD  744 nan 1.0 ?  -4.1980796    8.389807      11.194943   1
+ATOM O OE1 . GLN Q 0 96  . 96  GLN Q OE1 745 nan 1.0 ?  -5.0995235    7.896359      11.8855715  1
+ATOM N NE2 . GLN Q 0 96  . 96  GLN Q NE2 746 nan 1.0 ?  -4.347118     8.666652      9.913703    1
+ATOM N N   . THR Q 0 97  . 97  THR Q N   747 nan 1.0 ?  -1.0467653    7.6738353     16.058104   1
+ATOM C CA  . THR Q 0 97  . 97  THR Q CA  748 nan 1.0 ?  -1.1619385    7.498089      17.442726   1
+ATOM C C   . THR Q 0 97  . 97  THR Q C   749 nan 1.0 ?  0.078611016   7.988358      18.229532   1
+ATOM O O   . THR Q 0 97  . 97  THR Q O   750 nan 1.0 ?  0.16717823    7.897789      19.408203   1
+ATOM C CB  . THR Q 0 97  . 97  THR Q CB  751 nan 1.0 ?  -1.4057546    6.001628      17.855665   1
+ATOM O OG1 . THR Q 0 97  . 97  THR Q OG1 752 nan 1.0 ?  -0.3824885    5.23293       17.27811    1
+ATOM C CG2 . THR Q 0 97  . 97  THR Q CG2 753 nan 1.0 ?  -2.7421248    5.545817      17.290302   1
+ATOM N N   . LYS Q 0 98  . 98  LYS Q N   754 nan 1.0 ?  1.0434979     8.5560465     17.489172   1
+ATOM C CA  . LYS Q 0 98  . 98  LYS Q CA  755 nan 1.0 ?  2.207099      9.101423      18.223265   1
+ATOM C C   . LYS Q 0 98  . 98  LYS Q C   756 nan 1.0 ?  1.791442      10.218243     19.114292   1
+ATOM O O   . LYS Q 0 98  . 98  LYS Q O   757 nan 1.0 ?  1.0849664     11.130953     18.738663   1
+ATOM C CB  . LYS Q 0 98  . 98  LYS Q CB  758 nan 1.0 ?  3.278017      9.580612      17.246346   1
+ATOM C CG  . LYS Q 0 98  . 98  LYS Q CG  759 nan 1.0 ?  4.6443553     8.9716        17.461994   1
+ATOM C CD  . LYS Q 0 98  . 98  LYS Q CD  760 nan 1.0 ?  5.6229277     9.48349       16.375818   1
+ATOM C CE  . LYS Q 0 98  . 98  LYS Q CE  761 nan 1.0 ?  6.998169      8.855724      16.5785     1
+ATOM N NZ  . LYS Q 0 98  . 98  LYS Q NZ  762 nan 1.0 +1 7.9860415     9.329542      15.603963   1
+ATOM N N   . PRO Q 0 99  . 99  PRO Q N   763 nan 1.0 ?  1.872556      9.994434      20.424881   1
+ATOM C CA  . PRO Q 0 99  . 99  PRO Q CA  764 nan 1.0 ?  1.5211362     11.008649     21.461327   1
+ATOM C C   . PRO Q 0 99  . 99  PRO Q C   765 nan 1.0 ?  2.1957228     12.34395      21.229086   1
+ATOM O O   . PRO Q 0 99  . 99  PRO Q O   766 nan 1.0 ?  3.3353968     12.394883     20.778925   1
+ATOM C CB  . PRO Q 0 99  . 99  PRO Q CB  767 nan 1.0 ?  2.0313816     10.402451     22.781666   1
+ATOM C CG  . PRO Q 0 99  . 99  PRO Q CG  768 nan 1.0 ?  2.914946      9.251451      22.370451   1
+ATOM C CD  . PRO Q 0 99  . 99  PRO Q CD  769 nan 1.0 ?  2.6560173     8.993764      20.943485   1
+ATOM N N   . THR Q 0 100 . 100 THR Q N   770 nan 1.0 ?  1.5161073     13.321763     20.575434   1
+ATOM C CA  . THR Q 0 100 . 100 THR Q CA  771 nan 1.0 ?  1.9608046     14.698736     20.602358   1
+ATOM C C   . THR Q 0 100 . 100 THR Q C   772 nan 1.0 ?  2.5473511     15.070458     21.966421   1
+ATOM O O   . THR Q 0 100 . 100 THR Q O   773 nan 1.0 ?  1.8866495     14.921261     23.011564   1
+ATOM C CB  . THR Q 0 100 . 100 THR Q CB  774 nan 1.0 ?  0.8185663     15.65746      20.239178   1
+ATOM O OG1 . THR Q 0 100 . 100 THR Q OG1 775 nan 1.0 ?  -0.33581477   15.325447     21.039711   1
+ATOM C CG2 . THR Q 0 100 . 100 THR Q CG2 776 nan 1.0 ?  0.47132432    15.54594      18.818464   1
+ATOM N N   . GLY Q 0 101 . 101 GLY Q N   777 nan 1.0 ?  3.6772823     14.522416     22.442598   1
+ATOM C CA  . GLY Q 0 101 . 101 GLY Q CA  778 nan 1.0 ?  4.4700007     14.950395     23.523203   1
+ATOM C C   . GLY Q 0 101 . 101 GLY Q C   779 nan 1.0 ?  4.237301      16.42343      23.900858   1
+ATOM O O   . GLY Q 0 101 . 101 GLY Q O   780 nan 1.0 ?  4.3425727     17.34537      23.07901    1
+ATOM N N   . THR Q 0 102 . 102 THR Q N   781 nan 1.0 ?  3.1299953     16.793606     24.570257   1
+ATOM C CA  . THR Q 0 102 . 102 THR Q CA  782 nan 1.0 ?  2.9636421     18.063501     25.265398   1
+ATOM C C   . THR Q 0 102 . 102 THR Q C   783 nan 1.0 ?  4.1962748     18.361511     26.09574    1
+ATOM O O   . THR Q 0 102 . 102 THR Q O   784 nan 1.0 ?  4.6717033     17.589699     26.902548   1
+ATOM C CB  . THR Q 0 102 . 102 THR Q CB  785 nan 1.0 ?  1.7797849     18.002443     26.213      1
+ATOM O OG1 . THR Q 0 102 . 102 THR Q OG1 786 nan 1.0 ?  0.7836516     17.13817      25.592842   1
+ATOM C CG2 . THR Q 0 102 . 102 THR Q CG2 787 nan 1.0 ?  1.1470164     19.387043     26.42668    1
+ATOM N N   . GLN Q 0 103 . 103 GLN Q N   788 nan 1.0 ?  5.264122      18.863651     25.476517   1
+ATOM C CA  . GLN Q 0 103 . 103 GLN Q CA  789 nan 1.0 ?  6.364346      19.500572     26.159397   1
+ATOM C C   . GLN Q 0 103 . 103 GLN Q C   790 nan 1.0 ?  5.807132      20.527384     27.158873   1
+ATOM O O   . GLN Q 0 103 . 103 GLN Q O   791 nan 1.0 ?  5.1031237     21.468346     26.826794   1
+ATOM C CB  . GLN Q 0 103 . 103 GLN Q CB  792 nan 1.0 ?  7.2850266     20.22275      25.180937   1
+ATOM C CG  . GLN Q 0 103 . 103 GLN Q CG  793 nan 1.0 ?  8.429842      19.347612     24.676912   1
+ATOM C CD  . GLN Q 0 103 . 103 GLN Q CD  794 nan 1.0 ?  9.401375      20.0907       23.710995   1
+ATOM O OE1 . GLN Q 0 103 . 103 GLN Q OE1 795 nan 1.0 ?  9.152911      21.237225     23.349207   1
+ATOM N NE2 . GLN Q 0 103 . 103 GLN Q NE2 796 nan 1.0 ?  10.501429     19.480795     23.409483   1
+ATOM N N   . GLN Q 0 104 . 104 GLN Q N   797 nan 1.0 ?  5.390917      20.133245     28.36113    1
+ATOM C CA  . GLN Q 0 104 . 104 GLN Q CA  798 nan 1.0 ?  5.192079      21.009075     29.494236   1
+ATOM C C   . GLN Q 0 104 . 104 GLN Q C   799 nan 1.0 ?  6.4605484     21.83085      29.767357   1
+ATOM O O   . GLN Q 0 104 . 104 GLN Q O   800 nan 1.0 ?  7.5596886     21.242235     29.94404    1
+ATOM C CB  . GLN Q 0 104 . 104 GLN Q CB  801 nan 1.0 ?  4.8067174     20.22786      30.698942   1
+ATOM C CG  . GLN Q 0 104 . 104 GLN Q CG  802 nan 1.0 ?  3.3457909     20.125637     30.994848   1
+ATOM C CD  . GLN Q 0 104 . 104 GLN Q CD  803 nan 1.0 ?  2.995359      19.339083     32.215054   1
+ATOM O OE1 . GLN Q 0 104 . 104 GLN Q OE1 804 nan 1.0 ?  3.8073993     18.647448     32.79859    1
+ATOM N NE2 . GLN Q 0 104 . 104 GLN Q NE2 805 nan 1.0 ?  1.785294      19.556797     32.681084   1
+ATOM N N   . SER Q 0 105 . 105 SER Q N   806 nan 1.0 ?  6.72436       22.86654      29.110882   1
+ATOM C CA  . SER Q 0 105 . 105 SER Q CA  807 nan 1.0 ?  7.644009      23.92905      29.494247   1
+ATOM C C   . SER Q 0 105 . 105 SER Q C   808 nan 1.0 ?  7.384988      24.452486     30.890324   1
+ATOM O O   . SER Q 0 105 . 105 SER Q O   809 nan 1.0 ?  6.2905836     24.840776     31.27395    1
+ATOM C CB  . SER Q 0 105 . 105 SER Q CB  810 nan 1.0 ?  7.5207376     25.106064     28.4761     1
+ATOM O OG  . SER Q 0 105 . 105 SER Q OG  811 nan 1.0 ?  8.37835       26.21867      28.887056   1
+ATOM N N   . THR Q 0 106 . 106 THR Q N   812 nan 1.0 ?  7.9829865     23.88007      31.944637   1
+ATOM C CA  . THR Q 0 106 . 106 THR Q CA  813 nan 1.0 ?  8.105888      24.3384       33.293827   1
+ATOM C C   . THR Q 0 106 . 106 THR Q C   814 nan 1.0 ?  8.9157        25.627157     33.32375    1
+ATOM O O   . THR Q 0 106 . 106 THR Q O   815 nan 1.0 ?  10.061552     25.698112     32.854588   1
+ATOM C CB  . THR Q 0 106 . 106 THR Q CB  816 nan 1.0 ?  8.7402115     23.318062     34.134      1
+ATOM O OG1 . THR Q 0 106 . 106 THR Q OG1 817 nan 1.0 ?  8.344261      22.019892     33.820045   1
+ATOM C CG2 . THR Q 0 106 . 106 THR Q CG2 818 nan 1.0 ?  8.291539      23.537014     35.61644    1
+ATOM N N   . ASN Q 0 107 . 107 ASN Q N   819 nan 1.0 ?  8.381183      26.770788     33.119144   1
+ATOM C CA  . ASN Q 0 107 . 107 ASN Q CA  820 nan 1.0 ?  8.882485      28.07725      33.361423   1
+ATOM C C   . ASN Q 0 107 . 107 ASN Q C   821 nan 1.0 ?  9.1768675     28.232092     34.87341    1
+ATOM O O   . ASN Q 0 107 . 107 ASN Q O   822 nan 1.0 ?  8.294224      28.100372     35.755493   1
+ATOM C CB  . ASN Q 0 107 . 107 ASN Q CB  823 nan 1.0 ?  7.9012427     29.205643     32.98981    1
+ATOM C CG  . ASN Q 0 107 . 107 ASN Q CG  824 nan 1.0 ?  8.311034      29.92255      31.857752   1
+ATOM O OD1 . ASN Q 0 107 . 107 ASN Q OD1 825 nan 1.0 ?  9.421708      29.845217     31.328712   1
+ATOM N ND2 . ASN Q 0 107 . 107 ASN Q ND2 826 nan 1.0 ?  7.413441      30.734564     31.268906   1
+ATOM N N   . THR Q 0 108 . 108 THR Q N   827 nan 1.0 ?  10.331157     27.876787     35.35948    1
+ATOM C CA  . THR Q 0 108 . 108 THR Q CA  828 nan 1.0 ?  10.942813     28.177055     36.704105   1
+ATOM C C   . THR Q 0 108 . 108 THR Q C   829 nan 1.0 ?  11.295419     29.655867     36.774055   1
+ATOM O O   . THR Q 0 108 . 108 THR Q O   830 nan 1.0 ?  12.08213      30.106165     35.864483   1
+ATOM C CB  . THR Q 0 108 . 108 THR Q CB  831 nan 1.0 ?  12.085905     27.285944     37.05997    1
+ATOM O OG1 . THR Q 0 108 . 108 THR Q OG1 832 nan 1.0 ?  11.780348     25.924255     36.737392   1
+ATOM C CG2 . THR Q 0 108 . 108 THR Q CG2 833 nan 1.0 ?  12.45141      27.379507     38.50415    1
+ATOM N N   . ALA Q 0 109 . 109 ALA Q N   834 nan 1.0 ?  10.493632     30.604618     37.16094    1
+ATOM C CA  . ALA Q 0 109 . 109 ALA Q CA  835 nan 1.0 ?  10.698976     31.932434     37.678177   1
+ATOM C C   . ALA Q 0 109 . 109 ALA Q C   836 nan 1.0 ?  11.638508     31.98152      38.843266   1
+ATOM O O   . ALA Q 0 109 . 109 ALA Q O   837 nan 1.0 ?  11.433412     31.3206       39.743206   1
+ATOM C CB  . ALA Q 0 109 . 109 ALA Q CB  838 nan 1.0 ?  9.415172      32.63277      37.973534   1
+ATOM N N   . VAL Q 0 110 . 110 VAL Q N   839 nan 1.0 ?  12.969776     32.17126      38.57692    1
+ATOM C CA  . VAL Q 0 110 . 110 VAL Q CA  840 nan 1.0 ?  13.990965     32.498253     39.696613   1
+ATOM C C   . VAL Q 0 110 . 110 VAL Q C   841 nan 1.0 ?  13.826455     34.04243      39.990288   1
+ATOM O O   . VAL Q 0 110 . 110 VAL Q O   842 nan 1.0 ?  13.792209     34.83089      39.094772   1
+ATOM C CB  . VAL Q 0 110 . 110 VAL Q CB  843 nan 1.0 ?  15.401256     32.26037      39.155247   1
+ATOM C CG1 . VAL Q 0 110 . 110 VAL Q CG1 844 nan 1.0 ?  16.430744     32.66481      40.11974    1
+ATOM C CG2 . VAL Q 0 110 . 110 VAL Q CG2 845 nan 1.0 ?  15.52764      30.742863     38.736633   1
+ATOM N N   . THR Q 0 111 . 111 THR Q N   846 nan 1.0 ?  13.197883     34.431816     41.10557    1
+ATOM C CA  . THR Q 0 111 . 111 THR Q CA  847 nan 1.0 ?  13.1148405    35.70292      41.792038   1
+ATOM C C   . THR Q 0 111 . 111 THR Q C   848 nan 1.0 ?  14.396039     35.795883     42.66342    1
+ATOM O O   . THR Q 0 111 . 111 THR Q O   849 nan 1.0 ?  14.672079     35.00465      43.39883    1
+ATOM C CB  . THR Q 0 111 . 111 THR Q CB  850 nan 1.0 ?  11.9118805    35.793888     42.70729    1
+ATOM O OG1 . THR Q 0 111 . 111 THR Q OG1 851 nan 1.0 ?  10.733073     35.324196     41.907127   1
+ATOM C CG2 . THR Q 0 111 . 111 THR Q CG2 852 nan 1.0 ?  11.600041     37.23334      43.021896   1
+ATOM N N   . LEU Q 0 112 . 112 LEU Q N   853 nan 1.0 ?  15.437825     36.514797     42.23974    1
+ATOM C CA  . LEU Q 0 112 . 112 LEU Q CA  854 nan 1.0 ?  16.512577     37.04672      42.9476     1
+ATOM C C   . LEU Q 0 112 . 112 LEU Q C   855 nan 1.0 ?  16.150854     38.32346      43.77105    1
+ATOM O O   . LEU Q 0 112 . 112 LEU Q O   856 nan 1.0 ?  15.583458     39.245747     43.36777    1
+ATOM C CB  . LEU Q 0 112 . 112 LEU Q CB  857 nan 1.0 ?  17.62861      37.51476      42.040413   1
+ATOM C CG  . LEU Q 0 112 . 112 LEU Q CG  858 nan 1.0 ?  18.493448     36.27398      41.482346   1
+ATOM C CD1 . LEU Q 0 112 . 112 LEU Q CD1 859 nan 1.0 ?  19.166456     36.786343     40.137222   1
+ATOM C CD2 . LEU Q 0 112 . 112 LEU Q CD2 860 nan 1.0 ?  19.54519      35.84951      42.56193    1
+ATOM N N   . THR Q 0 113 . 113 THR Q N   861 nan 1.0 ?  15.864908     38.18524      45.098934   1
+ATOM C CA  . THR Q 0 113 . 113 THR Q CA  862 nan 1.0 ?  15.768829     39.22907      46.14069    1
+ATOM C C   . THR Q 0 113 . 113 THR Q C   863 nan 1.0 ?  17.16275      39.483974     46.581947   1
+ATOM O O   . THR Q 0 113 . 113 THR Q O   864 nan 1.0 ?  17.862898     38.62773      47.16195    1
+ATOM C CB  . THR Q 0 113 . 113 THR Q CB  865 nan 1.0 ?  14.829388     38.771095     47.231544   1
+ATOM O OG1 . THR Q 0 113 . 113 THR Q OG1 866 nan 1.0 ?  14.4196615    37.51749      46.99936    1
+ATOM C CG2 . THR Q 0 113 . 113 THR Q CG2 867 nan 1.0 ?  13.585779     39.719273     47.25121    1
+ATOM N N   . GLY Q 0 114 . 114 GLY Q N   868 nan 1.0 ?  17.857685     40.55614      46.238003   1
+ATOM C CA  . GLY Q 0 114 . 114 GLY Q CA  869 nan 1.0 ?  18.947193     41.273113     46.901596   1
+ATOM C C   . GLY Q 0 114 . 114 GLY Q C   870 nan 1.0 ?  18.507496     42.258106     48.137836   1
+ATOM O O   . GLY Q 0 114 . 114 GLY Q O   871 nan 1.0 ?  17.254263     42.56979      48.03671    1
+#

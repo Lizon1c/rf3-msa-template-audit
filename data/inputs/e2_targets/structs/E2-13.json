@@ -1,0 +1,64 @@
+{
+  "id": "E2-13",
+  "name": "Thioredoxin (TrxA)",
+  "uniprot": "P0AA25",
+  "boundaries_raw": "1-108 (auth) / 2-109 (UniProt)",
+  "states": {
+    "stateA": {
+      "pdb": "2TRX",
+      "chain_spec": "A,B",
+      "chain_used": "A",
+      "boundaries_raw": "1-108 (auth) / 2-109 (UniProt)",
+      "boundaries_parsed": [
+        1,
+        108
+      ],
+      "residue_range_used": [
+        1,
+        108
+      ],
+      "n_residues": 108,
+      "full_chain_length": 108,
+      "npy": "E2-13_stateA_2TRX.npy",
+      "sequence": "SDKIIHLTDDSFDTDVLKADGAILVDFWAEWCGPCKMIAPILDEIADEYQGKLTVAKLNIDQNPGTAPKYGIRGIPTLLLFKNGEVAATKVGALSKGQLKEFLDANLA",
+      "seqres_sequence": "SDKIIHLTDDSFDTDVLKADGAILVDFWAEWCGPCKMIAPILDEIADEYQGKLTVAKLNIDQNPGTAPKYGIRGIPTLLLFKNGEVAATKVGALSKGQLKEFLDANLA",
+      "flags": [
+        "multi-chain spec 'A,B': used first chain 'A'"
+      ],
+      "ok": true,
+      "error": null,
+      "download": "ok",
+      "shape": [
+        108,
+        108
+      ]
+    },
+    "stateB": {
+      "pdb": "1XOA",
+      "chain_spec": "A",
+      "chain_used": "A",
+      "boundaries_raw": "1-108 (auth) / 2-109 (UniProt)",
+      "boundaries_parsed": [
+        1,
+        108
+      ],
+      "residue_range_used": [
+        1,
+        108
+      ],
+      "n_residues": 108,
+      "full_chain_length": 108,
+      "npy": "E2-13_stateB_1XOA.npy",
+      "sequence": "SDKIIHLTDDSFDTDVLKADGAILVDFWAEWCGPCKMIAPILDEIADEYQGKLTVAKLNIDQNPGTAPKYGIRGIPTLLLFKNGEVAATKVGALSKGQLKEFLDANLA",
+      "seqres_sequence": "SDKIIHLTDDSFDTDVLKADGAILVDFWAEWCGPCKMIAPILDEIADEYQGKLTVAKLNIDQNPGTAPKYGIRGIPTLLLFKNGEVAATKVGALSKGQLKEFLDANLA",
+      "flags": [],
+      "ok": true,
+      "error": null,
+      "download": "ok",
+      "shape": [
+        108,
+        108
+      ]
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "E2-11",
+  "name": "Ubiquitin",
+  "uniprot": "P0CG48",
+  "boundaries_raw": "1-76",
+  "states": {
+    "stateA": {
+      "pdb": "1UBQ",
+      "chain_spec": "A",
+      "chain_used": "A",
+      "boundaries_raw": "1-76",
+      "boundaries_parsed": [
+        1,
+        76
+      ],
+      "residue_range_used": [
+        1,
+        76
+      ],
+      "n_residues": 76,
+      "full_chain_length": 76,
+      "npy": "E2-11_stateA_1UBQ.npy",
+      "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG",
+      "seqres_sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG",
+      "flags": [],
+      "ok": true,
+      "error": null,
+      "download": "cached",
+      "shape": [
+        76,
+        76
+      ]
+    },
+    "stateB": {
+      "pdb": "1D3Z",
+      "chain_spec": "A",
+      "chain_used": "A",
+      "boundaries_raw": "1-76",
+      "boundaries_parsed": [
+        1,
+        76
+      ],
+      "residue_range_used": [
+        1,
+        76
+      ],
+      "n_residues": 76,
+      "full_chain_length": 76,
+      "npy": "E2-11_stateB_1D3Z.npy",
+      "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG",
+      "seqres_sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG",
+      "flags": [],
+      "ok": true,
+      "error": null,
+      "download": "ok",
+      "shape": [
+        76,
+        76
+      ]
+    }
+  }
+}

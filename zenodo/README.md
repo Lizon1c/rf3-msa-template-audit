@@ -1,6 +1,6 @@
 # Zenodo Analysis-Ready Package
 
-The external dataset package for the RF3 MSA/template audit is published at [10.5281/zenodo.23758807](https://doi.org/10.5281/zenodo.23758807).
+The external dataset package for the RF3 MSA/template audit is published at [10.5281/zenodo.23859152](https://doi.org/10.5281/zenodo.23859152).
 
 ## Record
 

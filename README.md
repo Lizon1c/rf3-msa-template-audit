@@ -72,7 +72,7 @@ Model checkpoints, ESM weights, regenerable caches, and approximately 250 GB of 
 - `manuscript/S1_text.tex`
 - `manuscript/S1_text.pdf`
 
-The manuscript currently targets **PLOS Computational Biology**. The analysis-ready external package is published at [10.5281/zenodo.23758807](https://doi.org/10.5281/zenodo.23758807). This GitHub repository remains private during preparation and must be made public before submission.
+The manuscript currently targets **PLOS Computational Biology**. The analysis-ready external package is published at [10.5281/zenodo.23859152](https://doi.org/10.5281/zenodo.23859152). This GitHub repository remains private during preparation and must be made public before submission.
 
 ## Result Conventions
 

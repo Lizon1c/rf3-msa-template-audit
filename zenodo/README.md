@@ -1,15 +1,15 @@
 # Zenodo Analysis-Ready Package
 
-This directory documents the external dataset package for the RF3 MSA/template audit. The upload itself is performed by the author; no Zenodo DOI exists yet.
+The external dataset package for the RF3 MSA/template audit is published at [10.5281/zenodo.23758807](https://doi.org/10.5281/zenodo.23758807).
 
-## Intended Record
+## Record
 
 - **Title:** RF3 MSA/template input-channel audit: structures and analysis-ready features
 - **Resource type:** Dataset
 - **Creator:** Cheng Ding, School of Life Science and Technology, ShanghaiTech University
 - **Related code:** https://github.com/Lizon1c/rf3-msa-template-audit
 
-The package is generated without modifying any numerical result:
+The original package is generated without modifying any numerical result:
 
 ```bash
 python scripts/prepare_zenodo.py \
@@ -19,15 +19,23 @@ python scripts/prepare_zenodo.py \
 
 The feature root must contain `e2/*/*/disto.pt` and `e427_blocksplit_lightprobe/cache/*.npy`.
 
-## Package Contents
+## Published Split Package
+
+The published record uses 21 independent ZIP archives, each no larger than approximately 90 MB, rather than the original four large archives:
 
 - `e428_sample_structures.zip`: all 480 unique sample-level E428 CIFs and 240 repetition metadata files, organized by target, arm, and repetition.
-- `e427_feature_cache.zip`: the exact row-sliced NumPy feature caches used by E427 contiguous-block cross-validation and lightweight probes, including the RBD four template/MSA arms and the RBD/CASP3/CI no-MSA and MSA arms.
-- `e2_distogram_outputs.zip`: all 53 per-arm distogram tensors underlying the range-matched two-state analysis.
+- Fifteen `e427_*.zip` archives: the exact row-sliced NumPy feature caches used by E427 contiguous-block cross-validation and lightweight probes. Large arrays are losslessly sharded along the sample axis; complete arrays and shard locations are recorded in `E427_MANIFEST.json`.
+- Four `e2_distograms_part*.zip` archives: all 53 original per-arm distogram tensors underlying the range-matched two-state analysis, with paths and hashes recorded in `E2_MANIFEST.json`.
 - `canonical_results.zip`: the complete canonical JSON result tree used by the manuscript.
-- `MANIFEST.json` and `SHA256SUMS.txt`: archive sizes, file counts, and integrity hashes.
+- `MANIFEST.json` and `SHA256SUMS.txt`: archive sizes, file counts, and integrity hashes for the split package.
 
-The three larger archives make the key E427 and distogram analyses directly reproducible without downloading the full raw feature library. The 480 structures support independent recomputation of every E428 RMSD summary.
+To restore the original ten E427 arrays, keep the E427 archives, `E427_MANIFEST.json`, and `reassemble_e427.py` in one directory and run:
+
+```bash
+python reassemble_e427.py --output ./e427_feature_cache
+```
+
+The reassembled arrays were verified against every original array with exact equality. Extract all four E2 archives into the same destination to recover the original `e2/.../disto.pt` tree. The 480 E428 structures support independent recomputation of every E428 RMSD summary.
 
 ## Scope and Exclusions
 
@@ -35,13 +43,4 @@ This is an **analysis-ready subset**, not a copy of the approximately 250 GB unp
 
 Full regeneration of other feature stores (E1/E7 variants, D1 inputs, FAESM fusion inputs, and full CASP3 pair matrices) requires the upstream RF3/ESM environments and the protocol scripts in `analysis/`. Per-run numerical outputs for those protocols are nevertheless included both in the GitHub repository and in `canonical_results.zip`. Do not describe this package as the complete raw feature archive.
 
-## Author Upload Checklist
-
-1. Create a new Zenodo record using the title and creator information above.
-2. Upload the four ZIP archives plus `MANIFEST.json` and `SHA256SUMS.txt`.
-3. Add the GitHub repository as a related identifier and link the manuscript when a public DOI or URL is available.
-4. Use CC BY 4.0 for original analysis artifacts where permitted; retain the original terms and citations for public DMS/PDB inputs and third-party software outputs.
-5. Verify the uploaded file sizes and hashes against `SHA256SUMS.txt`.
-6. Publish the record, then replace the Zenodo placeholder in `manuscript/rf3_msa_template_audit_manuscript.tex` with the real DOI and rebuild `M12.pdf`.
-
-The repository must be public at submission. A private preparation repository and an unpublished Zenodo draft do not satisfy the manuscript's final Data Availability requirement.
+Original analysis artifacts use CC BY 4.0 where permitted; public DMS/PDB inputs and third-party software outputs retain their original terms and citations. The GitHub repository must also be public at submission to satisfy the manuscript's final Data Availability requirement.

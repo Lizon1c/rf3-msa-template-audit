@@ -43,4 +43,4 @@ This is an **analysis-ready subset**, not a copy of the approximately 250 GB unp
 
 Full regeneration of other feature stores (E1/E7 variants, D1 inputs, FAESM fusion inputs, and full CASP3 pair matrices) requires the upstream RF3/ESM environments and the protocol scripts in `analysis/`. Per-run numerical outputs for those protocols are nevertheless included both in the GitHub repository and in `canonical_results.zip`. Do not describe this package as the complete raw feature archive.
 
-Original analysis artifacts use CC BY 4.0 where permitted; public DMS/PDB inputs and third-party software outputs retain their original terms and citations. The GitHub repository must also be public at submission to satisfy the manuscript's final Data Availability requirement.
+Original analysis artifacts use CC BY 4.0 where permitted; public DMS/PDB inputs and third-party software outputs retain their original terms and citations. The GitHub repository is publicly available alongside the Zenodo record.

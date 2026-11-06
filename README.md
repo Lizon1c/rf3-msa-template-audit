@@ -29,14 +29,15 @@ AlphaFold3-style biomolecular structure predictors discard the explicit multiple
 - `data/inputs/`: MSA arms, two-state inputs, template mmCIFs, DMS labels, and metadata.
 - `data/results/`: canonical per-run and per-mutant numerical outputs used by the manuscript.
 - `data/structures/e428/`: all 480 unique sample-level E428 structures and 240 repetition metadata files.
-- `manuscript/`: the unified manuscript and standalone S1 Text, in LaTeX and PDF.
-- `figures/`: Fig 1 and Fig 2 as vector PDF, 600-dpi PNG, and 600-dpi RGB LZW TIFF.
+- `manuscript/`: the unified manuscript, standalone S1 Text, Cover Letter, and S1--S4 Table workbooks.
+- `figures/`: Fig 1, Fig 2, S1 Fig, and S2 Fig as vector PDF, 600-dpi PNG, and 600-dpi RGB LZW TIFF.
 - `provenance/`: claim-to-source traceability ledgers from the two precursor studies.
 - `zenodo/`: metadata and documentation for the external analysis-ready data package.
+- `submission/`: the complete PLOS Computational Biology initial-submission directory, including upload files, source copies, metadata, and checksums.
 
 Only sample-level `*sample-*_model.cif` files are included in E428. Ranked top-level duplicates are intentionally excluded to prevent double counting.
 
-## Quick Start: Validate and Reproduce the Main Figures
+## Quick Start: Validate and Reproduce the Figures and Tables
 
 ```bash
 python -m venv .venv
@@ -44,6 +45,10 @@ source .venv/bin/activate
 pip install -r requirements.txt
 python scripts/validate_repository.py
 python scripts/make_figures.py
+python scripts/make_supporting_figures.py
+python scripts/make_supporting_tables.py
+python scripts/assemble_submission.py
+python scripts/validate_submission.py
 ```
 
 To recompute the E428 summary from the 480 deposited structures:
@@ -67,12 +72,13 @@ Model checkpoints, ESM weights, regenerable caches, and approximately 250 GB of 
 
 ## Manuscript
 
-- `manuscript/rf3_msa_template_audit_manuscript.tex`
-- `manuscript/M12.pdf`
-- `manuscript/S1_text.tex`
-- `manuscript/S1_text.pdf`
+- `manuscript/rf3_msa_template_audit_manuscript.tex` and `manuscript/M12.pdf`
+- `manuscript/S1_text.tex` and `manuscript/S1_text.pdf`
+- `manuscript/cover_letter.tex` and `manuscript/cover_letter.pdf`
+- `manuscript/supporting_information/S1_Table.xlsx` through `S4_Table.xlsx`
+- `submission/Manuscript.pdf`, `submission/Cover_Letter.pdf`, and the named upload files described in `submission/README.md`
 
-The manuscript currently targets **PLOS Computational Biology**. The analysis-ready external package is published at [10.5281/zenodo.23859152](https://doi.org/10.5281/zenodo.23859152). This GitHub repository and the Zenodo record are publicly available.
+The manuscript currently targets **PLOS Computational Biology**. The initial-submission package contains 11 upload files, LaTeX source copies, submission metadata, SHA-256 checksums, and a 13-check validation report. The analysis-ready external package is published at [10.5281/zenodo.23859152](https://doi.org/10.5281/zenodo.23859152). This GitHub repository and the Zenodo record are publicly available.
 
 ## Result Conventions
 

@@ -1,0 +1,40 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=blue,pdftitle={Cover Letter: RF3 Input-Channel Audit},pdfauthor={Cheng Ding}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{9pt}
+\pagestyle{empty}
+
+\begin{document}
+
+Cheng Ding\\
+School of Life Science and Technology\\
+ShanghaiTech University, Shanghai, China\\
+\href{mailto:dingcheng2024@shanghaitech.edu.cn}{dingcheng2024@shanghaitech.edu.cn}\\
+ORCID: \href{https://orcid.org/0009-0001-7221-9066}{0009-0001-7221-9066}
+
+6 November 2026
+
+Dear Editors,
+
+Please consider the manuscript \textbf{``An input-channel audit of RoseTTAFold3: MSA writing, mutation-effect prediction, and conformational-state selection''} for publication as a \textbf{Research Article} in \textit{PLOS Computational Biology}, in the \textbf{Biological Macromolecules} section.
+
+The manuscript addresses a computational structural biology question created by recent AlphaFold3-style architectures: what happens to evolutionary information after the explicit multiple sequence alignment representation has been discarded? We audit this input channel in RoseTTAFold3 across three connected levels---pair-representation geometry, deep mutational scanning, and conformational-state selection---using one fixed checkpoint and inference configuration. This multilevel design links an architectural mechanism to both mutation-sensitive functional readouts and generated three-dimensional structures.
+
+Two aspects should be useful to the computational biology community. First, controlled alignment-content and recycle-gating experiments distinguish biological alignment information from dimensionality reduction alone. The reported mutation-effect gains are examined using train-only standardization, separate validation and test partitions, contiguous sequence-block cross-validation, and lower-capacity readout probes. Second, direct comparison of multiple sequence alignments and structural templates shows that these inputs are not interchangeable priors. Explicit sampling of 480 structures demonstrates target-dependent conflict resolution and reveals cases in which internal distogram preferences disagree with the coordinates actually generated. These findings provide concrete evaluation protocols and cautions for researchers studying or applying AlphaFold3-style predictors, rather than proposing a universal layer-selection or input-dominance rule.
+
+The analysis code, evaluation protocols, numerical outputs, and figure-generation scripts are publicly available at \url{https://github.com/Lizon1c/rf3-msa-template-audit}. The sampled coordinates and analysis-ready feature archives are available at \url{https://doi.org/10.5281/zenodo.23859152}. The submission includes two main figures and separate supporting information comprising S1 Text, S1--S2 Figs, and S1--S4 Tables.
+
+This manuscript is original, is not published or under consideration elsewhere, and has been approved by the author. The author declares no competing interests. No external funding was received for this work. Generative AI assistance used for manuscript-text unification and editing is disclosed in the Acknowledgments; the author verified the numerical values, citations, and scientific statements and takes full responsibility for the content.
+
+Thank you for considering this manuscript.
+
+Sincerely,
+
+Cheng Ding
+
+\end{document}

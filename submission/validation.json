@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "11 upload files and auxiliary guides present",
+      "status": "PASS",
+      "detail": "11 upload files; all below 10 MB"
+    },
+    {
+      "name": "LaTeX and vector source copies match originals",
+      "status": "PASS",
+      "detail": "8 byte-identical source files"
+    },
+    {
+      "name": "Manuscript PDF content and page count",
+      "status": "PASS",
+      "detail": "14 pages; corrected references; captions after bibliography; no embedded SI tables"
+    },
+    {
+      "name": "Cover Letter PDF content",
+      "status": "PASS",
+      "detail": "1 page; journal fit, significance, declarations, and repositories present"
+    },
+    {
+      "name": "S1 Text PDF content",
+      "status": "PASS",
+      "detail": "9 pages; extended methods and artifact register present"
+    },
+    {
+      "name": "Main and supporting TIFF specifications",
+      "status": "PASS",
+      "detail": "Fig1.tif 4056x4529; Fig2.tif 3955x4028; S1_Fig.tif 3703x1585; S2_Fig.tif 3705x3317"
+    },
+    {
+      "name": "Workbook containers and worksheet names",
+      "status": "PASS",
+      "detail": "4 valid XLSX containers; 34 worksheets"
+    },
+    {
+      "name": "S1 run counts and E427 archived values",
+      "status": "PASS",
+      "detail": "780 run-level rows; all 300 E427 values match canonical JSON"
+    },
+    {
+      "name": "S2 panel, PDB, and MSA-row metadata",
+      "status": "PASS",
+      "detail": "13 entries + 5 template targets + 2 designed-pair records verified"
+    },
+    {
+      "name": "S3 all 30 cells and 480 structures",
+      "status": "PASS",
+      "detail": "30 cells x 16 structures; every sample delta RMSD recomputed"
+    },
+    {
+      "name": "S4 noise, distillation, and interface rows",
+      "status": "PASS",
+      "detail": "16 E429 + 6 functional-recovery + 492 interface records verified"
+    },
+    {
+      "name": "LaTeX logs free of layout and reference failures",
+      "status": "PASS",
+      "detail": "No Overfull, undefined-control-sequence, or unresolved-reference diagnostics"
+    },
+    {
+      "name": "SHA256SUMS complete and correct",
+      "status": "PASS",
+      "detail": "21 hashes match"
+    }
+  ],
+  "passed": 13,
+  "total": 13
+}

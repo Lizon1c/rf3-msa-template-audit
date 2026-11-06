@@ -120,6 +120,18 @@ def figures(repo):
     return " + ".join(figs)
 
 
+@check("Supporting figures and S1--S4 workbooks present")
+def supporting_information(repo):
+    for stem in ("S1_Fig", "S2_Fig"):
+        for ext in (".pdf", ".png", ".tif"):
+            path = repo / "figures" / f"{stem}{ext}"
+            assert path.is_file() and path.stat().st_size > 0, f"missing/empty: {path}"
+    for index in range(1, 5):
+        path = repo / f"manuscript/supporting_information/S{index}_Table.xlsx"
+        assert path.is_file() and path.stat().st_size > 0, f"missing/empty: {path}"
+    return "2 supporting figures in 3 formats + 4 XLSX workbooks"
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--repo", default=str(Path(__file__).resolve().parents[1]),

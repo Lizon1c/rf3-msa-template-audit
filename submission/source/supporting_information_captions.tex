@@ -1,0 +1,22 @@
+\section*{Supporting Information Captions}
+
+\textbf{S1 Fig. Pair-representation geometry across three DMS proteins.}
+(A) Effective rank (\texttt{eff90}) before and after MSA input for SARS-CoV-2 RBD, human CASP3, and $\lambda$ repressor CI; percentages denote relative changes. (B) Linear centered kernel alignment (CKA) between no-MSA and MSA-conditioned mutant ensembles. (C) Median directional cosine similarity (\texttt{dCos}) of mutant-minus-wild-type perturbation vectors between the same conditions.
+
+\textbf{S2 Fig. RBD alignment dose-content decomposition and recycle gating.}
+(A) Effective rank across nine Protocol E1 input arms on the 500-mutant RBD subset. (B) DMS Spearman $\rho$ for the same arms; points show 15 runs (5 position splits $\times$ 3 initializations), and diamonds with error bars show mean $\pm$ SE. (C) Effective rank after MSA exposure for the first $K$ recycles followed by $10-K$ MSA-free recycles in Protocol E7; \texttt{no MSA} and $K=10$ are the reference endpoints. (D) DMS Spearman $\rho$ for the E7 arms under the same run and summary convention as panel B.
+
+\textbf{S1 Text. Extended methods, analysis artifact notes, and supporting information accounting.}
+Detailed description of mutation-site slicing verification, standardization leakage analysis, range-matching alignment fixes, template atom-count checks, Protocol D1 architecture ladder, Protocol E429 paired noise floor, and CASP3 unpaired interface controls.
+
+\textbf{S1 Table. DMS de-biasing, contiguous-block cross-validation, and lightweight-probe results.}
+Excel workbook containing protocol metadata, numerical summaries, paired contrasts, and run-level results for the canonical, dual-validation, strict train-only standardization, Protocol E427 contiguous-block, per-residue MLP, and flattened-linear evaluations across RBD, CASP3, and CI. The RBD template-arm block-CV runs and their paired contrasts are included.
+
+\textbf{S2 Table. Two-state distogram preferences and template-steering results.}
+Excel workbook containing all 13 range-matched two-state entries, PDB identifiers, MSA row counts including the query, shared-residue and pair counts, state labels, no-MSA and MSA negative log-likelihood preference values and shifts, the five targets with template-conditioned arms, and the separate GA88/GB88 residue-universe scoring flow. Source-level values are retained alongside manuscript-oriented summaries.
+
+\textbf{S3 Table. Explicit 3D coordinate-sampling results (Protocol E428).}
+Excel workbook containing 30 target-by-arm cell summaries and all 480 sample-level records (8 repetitions $\times$ 2 diffusion samples per cell), including RMSD to States A and B, $\Delta\mathrm{RMSD}$, closer-state calls, shared-residue counts, and source filenames.
+
+\textbf{S4 Table. Fusion, gradient interventions, distillation, paired-noise, and homodimer-interface results.}
+Excel workbook containing numerical summaries and archived run-level results for three-stream fusion, RBD learning-rate and input-noise interventions, all 16 Protocol E429 replicates, Protocol D1 reconstruction and functional-recovery experiments, and paired versus unpaired CASP3 interface statistics, including per-mutant values.

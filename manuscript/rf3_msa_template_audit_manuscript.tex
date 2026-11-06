@@ -11,7 +11,7 @@
 \usepackage{fancyhdr}
 \usepackage{microtype}
 \usepackage{caption}
-\usepackage[numbers,sort&compress]{natbib}
+\usepackage[numbers,square,sort&compress]{natbib}
 \usepackage[hyphens]{url}
 \usepackage{hyperref}
 
@@ -304,9 +304,6 @@ In Protocol E428, explicit 3D coordinates were sampled for KaiB, RfaH, Mad2, and
 \section*{Acknowledgments}
 The author thanks the developers of RoseTTAFold3, AtomWorks, ESM-2, and ProteinGym for making their model weights, software, and benchmark datasets publicly available. Generative AI tools were used to assist in unifying and editing the manuscript text from the author's experimental archive and fact pack; the author verified all numerical values, citations, and scientific statements and takes full responsibility for the content of the manuscript.
 
-\section*{Funding}
-No external funding was received for this work.
-
 \section*{Competing Interests}
 The author declares that no competing interests exist.
 
@@ -315,29 +312,6 @@ The author declares that no competing interests exist.
 
 \section*{Data Availability Statement}
 Analysis code and the numerical outputs underlying all reported summary statistics are available at \url{https://github.com/Lizon1c/rf3-msa-template-audit}. The 480 sampled coordinate files and analysis-ready feature archives are available at \url{https://doi.org/10.5281/zenodo.23859152}. Publicly available structural and DMS input datasets are identified in Materials and Methods.
-
-\section*{Supporting Information Captions}
-
-\textbf{S1 Fig. Pair-representation effective rank and CKA across three DMS proteins.}
-Effective rank (\texttt{eff90}), linear CKA, and directional cosine (\texttt{dCos}) across SARS-CoV-2 RBD, human CASP3, and $\lambda$ repressor CI (archived panel: \texttt{fig1\_geometry\_collapse.png}).
-
-\textbf{S2 Fig. RBD alignment dose-content decomposition and recycle-gating trajectories.}
-Effective rank (\texttt{eff90}) and Spearman $\rho$ across the 9-arm Protocol E1 series and Protocol E7 recycle-gating series on the 500-mutant RBD subset (archived panel: \texttt{fig2\_arms\_effrank.png}).
-
-\textbf{S1 Text. Extended methods, analysis artifact notes, and supporting information accounting.}
-Detailed description of mutation-site slicing verification, standardization leakage analysis, range-matching alignment fixes, template atom-count checks, Protocol D1 architecture ladder, Protocol E429 paired noise floor, and CASP3 unpaired interface controls.
-
-\textbf{S1 Table. Complete DMS de-biasing and Protocol E427 contiguous-block cross-validation and lightweight probe results.}
-Per-split and per-fold Spearman $\rho$ values for canonical, dual-validation, strict train-only standardization, 5-fold contiguous block-CV, per-residue MLP, and flattened linear probes across RBD, CASP3, and CI.
-
-\textbf{S2 Table. Complete 13-entry two-state distogram preference panel and five-target distogram template steering results.}
-Range-matched residue counts, MSA depths, $\mathrm{pref}_{\mathrm{noMSA}}$, $\mathrm{pref}_{\mathrm{MSA}}$, shift values, and distogram-level template arms (\texttt{tplA}, \texttt{tplB}, \texttt{msa\_tplA}, \texttt{steer}, \texttt{conflict}).
-
-\textbf{S3 Table. Complete 30-cell explicit 3D coordinate sampling benchmark (Protocol E428, $N=480$ structures).}
-Mean $\mathrm{RMSD}_A$, mean $\mathrm{RMSD}_B$, $\Delta\mathrm{RMSD}$, and fraction of structures closer to State A across all 16 structures (8 repetitions $\times$ 2 diffusion samples) for each of the 30 target $\times$ arm cells.
-
-\textbf{S4 Table. Three-stream fusion marginals, Protocol D1 reconstruction ladder, Protocol E429 paired noise-floor replicates, and CASP3 homodimer interface block statistics.}
-Complete numerical tables for $\mathbf{Z}_{\mathrm{no}} / \mathbf{Z}_{\mathrm{msa}} / \text{\texttt{FAESM}}$ fusion, RBD learning-rate ($\lambda=0.25$) and input-noise interventions, 16-run E429 paired noise series, D1 CKA/$R^2$/DMS recovery, and paired vs. unpaired CASP3 $A\text{--}A$, $B\text{--}B$, and $A\text{--}B$ blocks.
 
 % References in strict Vancouver citation-sequence order (ordered by first appearance in text)
 \begin{thebibliography}{99}
@@ -363,14 +337,14 @@ Abramson J, Adler J, Dunger J, Evans R, Green T, Pritzel A, et~al.
 \newblock Nature. 2024;630(8016):493--500.
 
 \bibitem{corley2025atomworks}
-Corley N, Butterfoss GL, Krishna R, et~al.
-\newblock AtomWorks and RosettaFold-3.
-\newblock bioRxiv [Preprint]. 2025;2025.08.14.670328.
+Corley N, Krishna R, Bauer MS, Thompson TR, Ahern W, Kazman MW, et~al.
+\newblock Accelerating biomolecular modeling with AtomWorks and RF3.
+\newblock bioRxiv [Preprint]. 2025:2025.08.14.670328 [posted 2025 Aug 15; cited 2026 Nov 6]. doi: 10.1101/2025.08.14.670328.
 
 \bibitem{akiyama2025scaling}
 Akiyama Y, Zhang Z, Mirdita M, Steinegger M, Ovchinnikov S.
 \newblock Scaling down protein language modeling with MSA Pairformer.
-\newblock bioRxiv [Preprint]. 2025;2025.08.02.668173.
+\newblock bioRxiv [Preprint]. 2025:2025.08.02.668173 [cited 2026 Nov 6]. doi: 10.1101/2025.08.02.668173.
 
 \bibitem{starr2020deep}
 Starr TN, Greaney AJ, Hilton SK, Ellis D, Crawford KH, Dingens AS, et~al.
@@ -500,133 +474,6 @@ Watson JL, Juergens D, Bennett NR, Trippe BL, Yim J, Eisenach HE, et~al.
 \end{thebibliography}
 
 \newpage
-\section*{Supporting Information Tables}
-
-\subsection*{S1 Table. Complete DMS de-biasing and Protocol E427 contiguous-block cross-validation and lightweight probe results}
-\begin{table}[!ht]
-\centering
-\footnotesize
-\begin{tabularx}{\textwidth}{l l r l Y}
-\toprule
-\textbf{Target} & \textbf{Protocol / Probe} & \textbf{$\Delta\rho$ (MSA $-$ no)} & \textbf{Consistency} & \textbf{Fold / Split Breakdown \& Notes} \\
-\midrule
-RBD & Canonical full-set (\texttt{SinglePredictorV2}) & $+0.179$ / $+0.204$ & 5/5 splits & Two independent full-set runs; best-validation selection \\
-RBD & De-biased: test at val-selected epoch & $+0.141$ & 5/5 splits & Removes single-validation epoch-selection optimism ($+0.04$--$0.09$) \\
-RBD & De-biased: best held-out test & $+0.143$ & 5/5 splits & Dual-validation split estimate \\
-RBD & De-biased: strict train-only z-score & $+0.146$ & 15/15 runs & MSA-only $0.644 \rightarrow 0.589$ ($-0.055$); no-MSA $-0.022$ \\
-RBD & E427 Contiguous block-CV (Transformer) & $+0.256$ & 5/5 folds & Folds: $+0.200, +0.328, +0.312, +0.214, +0.226$ \\
-RBD & E427 Per-residue nonlinear MLP & $+0.157$ & 5/5 splits & Matches canonical transformer probe magnitude \\
-RBD & E427 Flattened linear probe & $+0.030$ & 3/5 splits & Readout boundary: both arms $\rho \approx 0.30$ \\
-\midrule
-CASP3 & Canonical full-set (\texttt{SinglePredictorV2}) & $+0.162$ & 5/5 splits & Homodimer $488 \times 488 \times 128$ sliced at true mutant positions \\
-CASP3 & De-biased: dual-validation range & $+0.142$ to $+0.183$ & 5/5 splits & Across dual-validation estimators \\
-CASP3 & E427 Contiguous block-CV (Transformer) & $+0.264$ & 5/5 folds & Folds: $+0.330, +0.141, +0.267, +0.351, +0.231$ \\
-CASP3 & E427 Per-residue nonlinear MLP & $+0.160$ & 5/5 splits & Preserves full transformer probe gain \\
-CASP3 & E427 Flattened linear probe & $+0.163$ & 5/5 splits & Linearly decodable MSA write \\
-\midrule
-CI & Canonical full-set (\texttt{SinglePredictorV2}) & $+0.075$ & 4/5 splits & $N=351$ mutants across 59 positions; not fully de-biased \\
-CI & E427 Per-residue nonlinear MLP & $+0.089$ & 5/5 splits & Consistent gain across all splits \\
-CI & E427 Flattened linear probe & $+0.085$ & 3/5 splits & Direction preserved with lower split consistency \\
-\bottomrule
-\end{tabularx}
-\end{table}
-
-\subsection*{S2 Table. Complete 13-entry two-state distogram preference panel and five-target distogram template steering results}
-\begin{table}[!ht]
-\centering
-\scriptsize
-\begin{tabularx}{\textwidth}{l Y r r r r r r r l}
-\toprule
-\textbf{Target} & \textbf{State A / State B (PDB)} & \textbf{MSA} & \textbf{Res.} & \textbf{no} & \textbf{MSA} & \textbf{Shift} & \textbf{tplA} & \textbf{tplB} & \textbf{MSA+tplA (Steer / Conflict)} \\
-\midrule
-KaiB & 2QKE XR GS / 5JYT NMR FS & 257 & 90 & $+0.72$ & $-1.57$ & $-2.29$ & $+3.59$ & $-3.00$ & $+3.36$ ($-6.59$ / $-0.23$) \\
-RfaH & 2OUG XR $\alpha$ / 2LCL NMR $\beta$ & 257 & 42 & $+0.10$ & $-2.89$ & $-2.99$ & $+1.49$ & $+0.30$ & $+1.45$ ($-1.19$ / $-0.04$) \\
-Mad2 & 1DUJ NMR O / 1S2H NMR C & 257 & 184 & $-0.05$ & $-0.96$ & $-0.91$ & $-0.17$ & $-1.87$ & $-0.17$ ($-1.70$ / $0.00$) \\
-XCL1 & 1J8I chemokine / 2JP1 $\beta$-sand. & 160 & 39 & $-0.78$ & $+2.09$ & $+2.87$ & $-1.49$ & $-0.86$ & $-1.44$ ($+0.63$ / $+0.05$) \\
-LacY & 1PV6 inward / 4OAA outward & 257 & 388 & $+0.06$ & $-0.01$ & $-0.08$ & $+0.54$ & $+0.08$ & $+0.51$ ($-0.47$ / $-0.03$) \\
-selecase & 4QHF mon. / 4QHJ olig. & 2 & 105 & $+0.13$ & $+0.13$ & $-0.01$ & --- & --- & Null shift \\
-GA88/GB88 & 2JWS $3\alpha$ / 2JWU $\alpha/\beta$ (main) & 24 & 40 & $+0.52$ & $+3.07$ & $+2.56$ & --- & --- & E49b GA: $+0.38\rightarrow+2.74$; GB: $-0.23\rightarrow-2.66$ \\
-$\beta_2$AR & 2RH1 inact. / 3SN6 act. & 257 & 271 & $-0.06$ & $+0.09$ & $+0.15$ & --- & --- & Null shift \\
-Abl1 & 2GQG DFG-in / 2HYY DFG-out & 257 & 262 & $\approx 0$ & $+0.01$ & $+0.01$ & --- & --- & Null shift \\
-EGFR & 1M17 $\alpha$C-in / 1XKK $\alpha$C-out & 257 & 265 & $+0.14$ & $+0.12$ & $-0.02$ & --- & --- & Null shift \\
-ubiquitin & 1UBQ XR / 1D3Z NMR & 257 & 76 & $-0.08$ & $-0.10$ & $-0.03$ & --- & --- & Null shift \\
-GB1 & 1PGB XR / 2GB1 NMR & 89 & 55 & $+0.36$ & $+0.44$ & $+0.09$ & --- & --- & Null shift \\
-thioredoxin & 2TRX XR / 1XOA NMR & 257 & 108 & $+0.26$ & $+0.38$ & $+0.13$ & --- & --- & Null shift \\
-\bottomrule
-\end{tabularx}
-\end{table}
-
-\newpage
-\subsection*{S3 Table. Complete 30-cell explicit 3D coordinate sampling benchmark (Protocol E428, $N=480$ structures)}
-\begin{table}[!ht]
-\centering
-\scriptsize
-\renewcommand{\arraystretch}{1.04}
-\begin{tabularx}{\textwidth}{l l r r r r Y}
-\toprule
-\textbf{Target} & \textbf{Arm} & \textbf{RMSD A (\AA{})} & \textbf{RMSD B (\AA{})} & \textbf{$\Delta$RMSD (\AA{})} & \textbf{Closer to A} & \textbf{Coordinate Verification Notes ($n=16$ structures/cell)} \\
-\midrule
-KaiB & \texttt{nomsa} & 4.737 & 8.912 & $+4.174$ & 100.0\% & Sequence-only favors crystallized ground state A \\
-KaiB & \texttt{msa} & 9.524 & 4.826 & $-4.698$ & 0.0\% & MSA shifts 16/16 structures to fold-switched state B \\
-KaiB & \texttt{tplA} & 2.836 & 9.588 & $+6.752$ & 100.0\% & Template A steers 16/16 to state A \\
-KaiB & \texttt{tplB} & 8.944 & 3.073 & $-5.871$ & 0.0\% & Template B steers 16/16 to state B \\
-KaiB & \texttt{msa\_tplA} & 3.083 & 9.432 & $+6.349$ & 100.0\% & Joint conflict arm follows \texttt{tplA} \\
-\midrule
-RfaH & \texttt{nomsa} & 12.296 & 12.482 & $+0.185$ & 56.2\% & Near 50/50 split without MSA \\
-RfaH & \texttt{msa} & 15.065 & 5.274 & $-9.791$ & 0.0\% & MSA strongly steers 16/16 to $\beta$-barrel state B \\
-RfaH & \texttt{tplA} & 0.824 & 13.702 & $+12.879$ & 100.0\% & Template A closely copies $\alpha$-hairpin state A \\
-RfaH & \texttt{tplB} & 13.517 & 7.148 & $-6.369$ & 0.0\% & Template B steers 16/16 to state B (despite $+0.30$ distogram) \\
-RfaH & \texttt{msa\_tplA} & 5.786 & 13.383 & $+7.598$ & 100.0\% & Joint conflict arm follows \texttt{tplA} \\
-\midrule
-Mad2 & \texttt{nomsa} & 12.982 & 13.749 & $+0.767$ & 87.5\% & Modest sequence-only preference for open state A \\
-Mad2 & \texttt{msa} & 9.836 & 5.694 & $-4.142$ & 0.0\% & MSA steers 16/16 to closed state B \\
-Mad2 & \texttt{tplA} & 3.140 & 11.187 & $+8.046$ & 100.0\% & Steers 16/16 to open state A (resolving $-0.17$ distogram) \\
-Mad2 & \texttt{tplB} & 10.656 & 1.013 & $-9.643$ & 0.0\% & Steers 16/16 to closed state B \\
-Mad2 & \texttt{msa\_tplA} & 3.581 & 11.311 & $+7.730$ & 100.0\% & Joint conflict arm follows \texttt{tplA} \\
-\midrule
-XCL1 & \texttt{nomsa} & 13.479 & 9.478 & $-4.000$ & 0.0\% & Sequence-only favors $\beta$-sandwich state B \\
-XCL1 & \texttt{msa} & 6.111 & 12.862 & $+6.751$ & 100.0\% & MSA steers 16/16 to chemokine state A \\
-XCL1 & \texttt{tplA} & 8.023 & 12.942 & $+4.919$ & 100.0\% & Steers 16/16 to state A (resolving $-1.49$ distogram) \\
-XCL1 & \texttt{tplB} & 14.171 & 10.718 & $-3.453$ & 6.2\% & Steers 15/16 to state B \\
-XCL1 & \texttt{msa\_tplA} & 9.632 & 14.158 & $+4.526$ & 93.8\% & Co-directional in 3D coordinates (15/16 at state A) \\
-\midrule
-GA88 & \texttt{nomsa} & 11.400 & 9.221 & $-2.179$ & 6.2\% & Sequence alone does not stably select GA fold (1/16 A) \\
-GA88 & \texttt{msa} & 5.255 & 11.937 & $+6.682$ & 100.0\% & Native MSA restores $3\alpha$ fold A (16/16) \\
-GA88 & \texttt{tplOwn} & 4.875 & 11.798 & $+6.923$ & 100.0\% & Own template selects $3\alpha$ fold A (16/16) \\
-GA88 & \texttt{tplOther} & 13.834 & 1.455 & $-12.378$ & 0.0\% & Opposite template alone flips 16/16 to GB fold B \\
-GA88 & \texttt{msa\_tplOther} & 6.008 & 11.601 & $+5.593$ & 100.0\% & Native MSA preserves GA fold A (16/16; distogram $-4.24$) \\
-\midrule
-GB88 & \texttt{nomsa} & 13.405 & 10.348 & $-3.058$ & 0.0\% & Sequence alone selects native GB fold B (16/16) \\
-GB88 & \texttt{msa} & 13.605 & 1.218 & $-12.387$ & 0.0\% & Native MSA sharpens $\alpha/\beta$ fold B (16/16) \\
-GB88 & \texttt{tplOwn} & 13.597 & 0.837 & $-12.761$ & 0.0\% & Own template selects $\alpha/\beta$ fold B (16/16) \\
-GB88 & \texttt{tplOther} & 3.759 & 12.630 & $+8.871$ & 100.0\% & Opposite template alone flips 16/16 to GA fold A \\
-GB88 & \texttt{msa\_tplOther} & 11.586 & 10.790 & $-0.796$ & 50.0\% & Native MSA yields 50/50 mixed ensemble (distogram $+4.58$) \\
-\bottomrule
-\end{tabularx}
-\end{table}
-
-\newpage
-\subsection*{S4 Table. Three-stream fusion marginals, D1 distillation, E429 paired noise floor, and CASP3 interface blocks}
-\begin{table}[!ht]
-\centering
-\scriptsize
-\begin{tabularx}{\textwidth}{l l Y}
-\toprule
-\textbf{Audit Module} & \textbf{Condition / Metric} & \textbf{Archived Numerical Result \& Interpretation} \\
-\midrule
-Three-stream fusion & RBD ($\mathbf{Z}_{\mathrm{no}}, \mathbf{Z}_{\mathrm{msa}}, \text{\texttt{FAESM}}$) & Single-stream $\rho$: $0.465, 0.644, 0.484$; \texttt{FAESM} marginal on $\mathbf{Z}_{\mathrm{msa}}$: $-0.005$ (vs. $+0.075$ on $\mathbf{Z}_{\mathrm{no}}$); $\mathbf{Z}_{\mathrm{no}}$ marginal on $\mathbf{Z}_{\mathrm{msa}}+\text{\texttt{FAESM}}$: $+0.002$. \\
-Three-stream fusion & CASP3 ($\mathbf{Z}_{\mathrm{no}}, \mathbf{Z}_{\mathrm{msa}}, \text{\texttt{FAESM}}$) & Single-stream $\rho$: $0.394, 0.556, 0.584$; \texttt{FAESM} marginal on $\mathbf{Z}_{\mathrm{msa}}$: $+0.051$ (5/5 splits); $\mathbf{Z}_{\mathrm{no}}$ marginal on $\mathbf{Z}_{\mathrm{msa}}+\text{\texttt{FAESM}}$: $-0.001$. \\
-Three-stream fusion & CI ($\mathbf{Z}_{\mathrm{no}}, \mathbf{Z}_{\mathrm{msa}}, \text{\texttt{FAESM}}$) & Single-stream $\rho$: $0.374, 0.449, 0.452$; \texttt{FAESM} marginal on $\mathbf{Z}_{\mathrm{msa}}$: $-0.039$ (unresolved, driven by one outlier split); $\mathbf{Z}_{\mathrm{no}}$ marginal: $+0.008$. \\
-\midrule
-Gradient & RBD $\lambda=0.25$ LR scaling & Late-training gradient ratios $f/z \approx 6.5$, $f/m \approx 2.7$ (CASP3/CI $f/m \approx 3.5$--$3.8$). Scaling \texttt{FAESM} encoder LR by $\lambda=0.25$ gives split deltas $+0.0155, +0.0252, +0.0091, +0.0146, +0.0069$; mean $+0.0143 \pm 0.0032$ paired SE ($t=4.48$, 5/5). \\
-Gradient & RBD \texttt{FAESM} input noise & 75\% Gaussian noise shifts $\rho$ from $0.649 \rightarrow 0.662$ ($+0.0128 \pm 0.0110$ SE, 3/5 splits); 100\% noise returns to $0.648$ (near dead-stream control $0.655$). \\
-Protocol E429 & Paired training noise floor & 16 identical runs (2 processes $\times$ 8 runs) on RBD \texttt{x\_msa\_faesm}: within-process SD $0.0016$ and $0.0027$; 15/16 runs in $0.6683$--$0.6732$ (full range $0.012$ with one outlier at $0.6608$). \\
-\midrule
-Protocol D1 & RBD $\mathbf{Z}_{\mathrm{msa}}$ distillation & Validation CKA: linear $0.74$, MLP-512 and 1--8-layer transformers $0.80$--$0.83$ (coordinate $R^2: 0.25 \rightarrow 0.36$; 8-layer train--val CKA gap $+0.09$; one-hot AA control CKA $\approx 0.50$). Separate CKA encoders (depths 2/4/6/8): both $0.811 > \text{\texttt{FAESM}-only } 0.75\text{--}0.76 > \mathbf{Z}_{\mathrm{no}}\text{-only } 0.716\text{--}0.717$. Functional DMS $\rho$: $\mathbf{Z}_{\mathrm{no}}~0.446$, reconstructed $0.575$, real $\mathbf{Z}_{\mathrm{msa}}~0.663$ ($59.4\%$ recovery; $\sim$40\% unrecovered). \\
-\midrule
-CASP3 interface & Paired vs. unpaired MSA & Paired (392 mutants): $A\text{--}A$ cos $0.712$ / norm $1.054$; $B\text{--}B$ $0.712 / 1.053$; $A\text{--}B$ $0.749 / 1.280$ ($A\text{--}B - A\text{--}A = +0.037$, $p=5.5\times 10^{-66}$). Chain-B shuffled unpaired (100 mutants): $A\text{--}A$ $0.713 / 1.055$; $B\text{--}B$ $0.712 / 1.054$; $A\text{--}B$ $0.749 / 1.280$ ($+0.037$, $p=3.9\times 10^{-18}$); paired vs. unpaired embedding cosine $0.969$. \\
-\bottomrule
-\end{tabularx}
-\end{table}
+\input{supporting_information_captions}
 
 \end{document}

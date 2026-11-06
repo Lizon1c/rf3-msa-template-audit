@@ -156,18 +156,19 @@ def cover_letter_pdf():
     for required in (
         "Research Article",
         "Biological Macromolecules",
+        "pair representation is persistent",
+        "distinct, target-dependent priors",
         "single MSA recycle",
         "480 explicitly sampled structures",
         "75%",
         "85%",
-        "GA88",
-        "GB88",
         "rf3-msa-template-audit",
     ):
         assert required in text, required
-    for required in ("+0.256", "+0.264", "0.129", "10.5281/zenodo.23859152"):
-        assert required in compact_text, required
-    return "1 page; headline findings, journal fit, declarations, and repositories present"
+    for obsolete in ("RBD", "CASP3", "GA88", "GB88", "6M0J", "+0.256", "+0.264", "0.129", "two-thirds", "one-third", "13 two-state entries"):
+        assert obsolete not in text, obsolete
+    assert "10.5281/zenodo.23859152" in compact_text
+    return "1 page; conclusion-first findings, three key numerical results, declarations, and repositories present"
 
 
 @check("S1 Text PDF content")

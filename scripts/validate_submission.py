@@ -153,10 +153,21 @@ def cover_letter_pdf():
     raw_text = "\n".join(page.extract_text() or "" for page in reader.pages)
     text = " ".join(raw_text.split())
     compact_text = "".join(raw_text.split())
-    for required in ("Research Article", "Biological Macromolecules", "480 structures", "rf3-msa-template-audit"):
+    for required in (
+        "Research Article",
+        "Biological Macromolecules",
+        "single MSA recycle",
+        "480 explicitly sampled structures",
+        "75%",
+        "85%",
+        "GA88",
+        "GB88",
+        "rf3-msa-template-audit",
+    ):
         assert required in text, required
-    assert "10.5281/zenodo.23859152" in compact_text
-    return "1 page; journal fit, significance, declarations, and repositories present"
+    for required in ("+0.256", "+0.264", "0.129", "10.5281/zenodo.23859152"):
+        assert required in compact_text, required
+    return "1 page; headline findings, journal fit, declarations, and repositories present"
 
 
 @check("S1 Text PDF content")
